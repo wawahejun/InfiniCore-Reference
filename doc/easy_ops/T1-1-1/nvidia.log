@@ -1,0 +1,5432 @@
+exp_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.082 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.086 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.269 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.834 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.8 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.604 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.989 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.078 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.588 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.083 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.212 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.866 us
+
+=====================================
+[32mAll tests passed[0m
+exp_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.097 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.997 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.615 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.998 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.894 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.758 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.006 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.103 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.528 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.105 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.318 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.962 us
+
+=====================================
+[32mAll tests passed[0m
+exp_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.299 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.032 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.708 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.172 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.886 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.91 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.228 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.327 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.95 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.104 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.597 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.95 us
+
+=====================================
+[32mAll tests passed[0m
+exp_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.08 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.988 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.57 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.509 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.72 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.768 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.003 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.083 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.711 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.714 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.741 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.853 us
+
+=====================================
+[32mAll tests passed[0m
+exp_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.091 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.934 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.327 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.957 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.844 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.726 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.982 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.084 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.958 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.071 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.31 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.911 us
+
+=====================================
+[32mAll tests passed[0m
+exp_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.292 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.295 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.899 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.186 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.226 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.889 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.227 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.336 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.273 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.452 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.79 us
+
+=====================================
+Status: [32mPASS[0m
+Description: exp
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.311 us
+
+=====================================
+[32mAll tests passed[0m
+sin_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.101 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.076 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.306 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.864 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.872 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.254 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.155 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.019 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.205 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.252 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.93 us
+
+=====================================
+[32mAll tests passed[0m
+sin_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.55 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.565 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.455 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.028 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.878 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.8 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.22 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.213 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.901 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.028 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.314 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.898 us
+
+=====================================
+[32mAll tests passed[0m
+sin_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.431 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.444 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.907 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.413 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.307 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.765 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.371 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.578 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.44 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.547 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.847 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sin
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.556 us
+
+=====================================
+[32mAll tests passed[0m
+cos_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.179 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.294 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.573 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.886 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.168 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.229 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.18 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.359 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.467 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.566 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.205 us
+
+=====================================
+[32mAll tests passed[0m
+cos_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.212 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.401 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.624 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.041 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.221 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.8 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.256 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.259 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.289 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.403 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.654 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.255 us
+
+=====================================
+[32mAll tests passed[0m
+cos_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.218 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.379 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.664 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.132 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.158 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.802 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.221 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.165 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.257 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.392 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.636 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cos
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.239 us
+
+=====================================
+[32mAll tests passed[0m
+leaky_relu_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- negative_slope: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.358 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- negative_slope: 0.1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.214 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- negative_slope: 0.1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.663 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- negative_slope: 0.1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.182 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.802 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.766 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.746 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 16.897 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.075 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.401 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.845 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.933 us
+
+=====================================
+[32mAll tests passed[0m
+leaky_relu_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- negative_slope: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.915 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- negative_slope: 0.1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.872 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- negative_slope: 0.1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.584 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- negative_slope: 0.1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.143 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.572 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.081 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.616 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- negative_slope: 0.5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 17.58 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.719 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.112 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.666 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- negative_slope: 0.7
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.684 us
+
+=====================================
+[32mAll tests passed[0m
+leaky_relu_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- negative_slope: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.417 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- negative_slope: 0.1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.99 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- negative_slope: 0.1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.866 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- negative_slope: 0.1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.518 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- negative_slope: 0.5
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.896 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- negative_slope: 0.5
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.711 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- negative_slope: 0.5
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.843 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- negative_slope: 0.5
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 16.997 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- negative_slope: 0.7
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.087 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- negative_slope: 0.7
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.389 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- negative_slope: 0.7
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.901 us
+
+=====================================
+Status: [32mPASS[0m
+Description: leaky_relu
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- negative_slope: 0.7
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.946 us
+
+=====================================
+[32mAll tests passed[0m
+tanh_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.128 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.271 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.552 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.881 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.217 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.801 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.018 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.107 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.335 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.456 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.578 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.225 us
+
+=====================================
+[32mAll tests passed[0m
+tanh_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.3 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.296 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.593 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.915 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.274 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.017 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.081 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.391 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.483 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.615 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.263 us
+
+=====================================
+[32mAll tests passed[0m
+tanh_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.173 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.374 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.618 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.178 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.784 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.012 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.097 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.242 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.385 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.612 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.236 us
+
+=====================================
+[32mAll tests passed[0m
+tanh_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.202 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.761 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.36 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.038 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.516 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.993 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.403 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.897 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.775 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.848 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.431 us
+
+=====================================
+Status: [32mPASS[0m
+Description: tanh
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.583 us
+
+=====================================
+[32mAll tests passed[0m
+sigmoid_backward_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- grad_input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.35 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- grad_input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.436 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- grad_input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.364 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- grad_input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.015 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- grad_input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.305 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- grad_input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.514 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- grad_input: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.233 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- grad_input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.636 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [1], Type: F32
+- input: Shape: [1024], Strides: [1], Type: F32
+- grad_input: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.79 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [2], Type: F32
+- input: Shape: [1024], Strides: [2], Type: F32
+- grad_input: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.696 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [2], Type: F32
+- input: Shape: [1024], Strides: [2], Type: F32
+- grad_input: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.186 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- grad_input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.319 us
+
+=====================================
+[32mAll tests passed[0m
+sigmoid_backward_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- grad_input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.528 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- grad_input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.248 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- grad_input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.391 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- grad_input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.088 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- grad_input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.471 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- grad_input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.929 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- grad_input: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.825 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- grad_input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.101 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [1], Type: F16
+- input: Shape: [1024], Strides: [1], Type: F16
+- grad_input: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.166 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [2], Type: F16
+- input: Shape: [1024], Strides: [2], Type: F16
+- grad_input: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.872 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [2], Type: F16
+- input: Shape: [1024], Strides: [2], Type: F16
+- grad_input: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.367 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- grad_input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.115 us
+
+=====================================
+[32mAll tests passed[0m
+sigmoid_backward_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- grad_input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.245 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- grad_input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.266 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- grad_input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.068 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- grad_input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.725 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- grad_input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.246 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- grad_input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.047 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- grad_input: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.153 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- grad_input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.453 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [1], Type: BF16
+- input: Shape: [1024], Strides: [1], Type: BF16
+- grad_input: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.297 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [2], Type: BF16
+- input: Shape: [1024], Strides: [2], Type: BF16
+- grad_input: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.819 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [1024], Strides: [2], Type: BF16
+- input: Shape: [1024], Strides: [2], Type: BF16
+- grad_input: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.127 us
+
+=====================================
+Status: [32mPASS[0m
+Description: sigmoid_backward
+- grad_output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- grad_input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.266 us
+
+=====================================
+[32mAll tests passed[0m
+hardswish_f32.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.284 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.394 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.715 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.05 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.357 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.094 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.421 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.605 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.447 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.679 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [2], Type: F32
+- output: Shape: [1024], Strides: [2], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.711 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.285 us
+
+=====================================
+[32mAll tests passed[0m
+hardswish_f16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.294 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.291 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.817 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.238 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.217 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.168 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.435 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.574 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.318 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.594 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [2], Type: F16
+- output: Shape: [1024], Strides: [2], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.817 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.264 us
+
+=====================================
+[32mAll tests passed[0m
+hardswish_bf16.gguf
+Found 12 tests
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.308 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.022 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.72 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [1024, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.213 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.891 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.149 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [10240, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.411 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- output: Shape: [16, 20, 512], Strides: [20480, 512, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.488 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.97 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.078 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [1024], Strides: [2], Type: BF16
+- output: Shape: [1024], Strides: [2], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.637 us
+
+=====================================
+Status: [32mPASS[0m
+Description: hardswish
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.938 us
+
+=====================================
+[32mAll tests passed[0m
+cast.gguf
+Found 132 tests
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I32
+- output: Shape: [3, 3], Strides: [3, 1], Type: I64
+- to_type: 6
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2.21 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I32
+- output: Shape: [32, 512], Strides: [512, 1], Type: I64
+- to_type: 6
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.144 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I64
+- to_type: 6
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.161 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I64
+- to_type: 6
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.535 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I32
+- output: Shape: [1024], Strides: [1], Type: I64
+- to_type: 6
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.108 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I64
+- to_type: 6
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I64
+- output: Shape: [3, 3], Strides: [3, 1], Type: I32
+- to_type: 5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.071 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I64
+- output: Shape: [32, 512], Strides: [512, 1], Type: I32
+- to_type: 5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.06 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I32
+- to_type: 5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.055 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I32
+- to_type: 5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.392 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I64
+- output: Shape: [1024], Strides: [1], Type: I32
+- to_type: 5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I32
+- to_type: 5
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.056 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F64
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.069 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F64
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.047 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.44 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F64
+- output: Shape: [1024], Strides: [1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.065 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F64
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F64
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.053 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.575 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F64
+- output: Shape: [1024], Strides: [1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.049 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.062 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F64
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.068 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F64
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.406 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F64
+- output: Shape: [1024], Strides: [1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.075 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.054 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.062 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.57 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.065 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.073 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.067 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.069 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.373 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F32
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.073 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F32
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.057 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.358 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F32
+- output: Shape: [1024], Strides: [1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.085 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.07 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.053 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.03 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.06 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.604 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.057 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.048 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2.476 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.351 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.052 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.055 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: F16
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.061 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: F16
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.05 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.329 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: F16
+- output: Shape: [1024], Strides: [1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.046 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.061 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.074 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.069 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.502 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: F64
+- to_type: 14
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.062 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.067 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.049 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.042 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 2.739 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.222 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: F32
+- to_type: 13
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.042 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.121 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.065 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.067 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.343 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: BF16
+- output: Shape: [1024], Strides: [1], Type: F16
+- to_type: 12
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.064 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.068 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2.438 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.541 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I32
+- output: Shape: [1024], Strides: [1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.057 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.08 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.052 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.04 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.055 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.351 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I32
+- output: Shape: [1024], Strides: [1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.068 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I32
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.057 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I32
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2.491 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.382 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I32
+- output: Shape: [1024], Strides: [1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.069 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.061 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I32
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.06 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I32
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.055 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I32
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 2.459 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I32
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.336 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I32
+- output: Shape: [1024], Strides: [1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I32
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I64
+- output: Shape: [3, 3], Strides: [3, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I64
+- output: Shape: [32, 512], Strides: [512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.621 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I64
+- output: Shape: [1024], Strides: [1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.063 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F64
+- to_type: 14
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.073 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I64
+- output: Shape: [3, 3], Strides: [3, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.057 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I64
+- output: Shape: [32, 512], Strides: [512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.05 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.058 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.446 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I64
+- output: Shape: [1024], Strides: [1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.053 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F32
+- to_type: 13
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I64
+- output: Shape: [3, 3], Strides: [3, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.075 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I64
+- output: Shape: [32, 512], Strides: [512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.579 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I64
+- output: Shape: [1024], Strides: [1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.077 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: F16
+- to_type: 12
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.076 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [3, 3], Strides: [3, 1], Type: I64
+- output: Shape: [3, 3], Strides: [3, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.065 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [32, 512], Strides: [512, 1], Type: I64
+- output: Shape: [32, 512], Strides: [512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.052 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: I64
+- output: Shape: [4, 4, 4], Strides: [16, 4, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.065 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: I64
+- output: Shape: [16, 32, 512], Strides: [16384, 512, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.412 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [1024], Strides: [1], Type: I64
+- output: Shape: [1024], Strides: [1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.051 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cast
+- input: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: I64
+- output: Shape: [2, 3, 4, 5], Strides: [60, 20, 5, 1], Type: BF16
+- to_type: 19
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.067 us
+
+=====================================
+[32mAll tests passed[0m
+where.gguf
+Found 112 tests
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: F64
+- b: Shape: [13, 4], Strides: [4, 1], Type: F64
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.428 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: F64
+- b: Shape: [13, 4], Strides: [10, 1], Type: F64
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.18 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: F64
+- b: Shape: [13, 4], Strides: [4, 1], Type: F64
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.754 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F64
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F64
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.814 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F64
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F64
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.411 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: F64
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: F64
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.368 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: F64
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: F64
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: F64
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: F64
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.441 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F64
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F64
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F64
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F64
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.863 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: F64
+- b: Shape: [1], Strides: [1], Type: F64
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.292 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: F64
+- b: Shape: [1, 1], Strides: [1, 1], Type: F64
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.425 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: F64
+- b: Shape: [5, 1], Strides: [1, 1], Type: F64
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.433 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: F64
+- b: Shape: [1, 5], Strides: [5, 1], Type: F64
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.604 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: F32
+- b: Shape: [13, 4], Strides: [4, 1], Type: F32
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.151 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: F32
+- b: Shape: [13, 4], Strides: [10, 1], Type: F32
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.096 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: F32
+- b: Shape: [13, 4], Strides: [4, 1], Type: F32
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.662 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.325 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F32
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F32
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.407 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: F32
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: F32
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.356 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: F32
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: F32
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.344 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: F32
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: F32
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.345 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F32
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F32
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.337 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F32
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F32
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.861 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: F32
+- b: Shape: [1], Strides: [1], Type: F32
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.302 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: F32
+- b: Shape: [1, 1], Strides: [1, 1], Type: F32
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.427 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: F32
+- b: Shape: [5, 1], Strides: [1, 1], Type: F32
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.427 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: F32
+- b: Shape: [1, 5], Strides: [5, 1], Type: F32
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: F32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.331 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: F16
+- b: Shape: [13, 4], Strides: [4, 1], Type: F16
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.302 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: F16
+- b: Shape: [13, 4], Strides: [10, 1], Type: F16
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.093 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: F16
+- b: Shape: [13, 4], Strides: [4, 1], Type: F16
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.674 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.345 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F16
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F16
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.403 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: F16
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: F16
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.366 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: F16
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: F16
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.4 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: F16
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: F16
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.361 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F16
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F16
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.406 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F16
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F16
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.161 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: F16
+- b: Shape: [1], Strides: [1], Type: F16
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.306 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: F16
+- b: Shape: [1, 1], Strides: [1, 1], Type: F16
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.433 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: F16
+- b: Shape: [5, 1], Strides: [1, 1], Type: F16
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.434 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: F16
+- b: Shape: [1, 5], Strides: [5, 1], Type: F16
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: F16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.335 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- b: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.114 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: BF16
+- b: Shape: [13, 4], Strides: [10, 1], Type: BF16
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.097 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- b: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.725 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.348 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: BF16
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: BF16
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.405 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: BF16
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: BF16
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.368 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: BF16
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: BF16
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.413 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: BF16
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: BF16
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.343 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: BF16
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: BF16
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.397 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: BF16
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: BF16
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.16 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: BF16
+- b: Shape: [1], Strides: [1], Type: BF16
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.301 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: BF16
+- b: Shape: [1, 1], Strides: [1, 1], Type: BF16
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.435 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: BF16
+- b: Shape: [5, 1], Strides: [1, 1], Type: BF16
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.421 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: BF16
+- b: Shape: [1, 5], Strides: [5, 1], Type: BF16
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: BF16
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.322 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I8
+- b: Shape: [13, 4], Strides: [4, 1], Type: I8
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.302 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: I8
+- b: Shape: [13, 4], Strides: [10, 1], Type: I8
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.092 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I8
+- b: Shape: [13, 4], Strides: [4, 1], Type: I8
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.714 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I8
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I8
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.333 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I8
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I8
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.402 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I8
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I8
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.357 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: I8
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: I8
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.156 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: I8
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: I8
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.32 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I8
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I8
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.125 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I8
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I8
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.167 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: I8
+- b: Shape: [1], Strides: [1], Type: I8
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.296 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: I8
+- b: Shape: [1, 1], Strides: [1, 1], Type: I8
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.424 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: I8
+- b: Shape: [5, 1], Strides: [1, 1], Type: I8
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.419 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: I8
+- b: Shape: [1, 5], Strides: [5, 1], Type: I8
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: I8
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.329 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I16
+- b: Shape: [13, 4], Strides: [4, 1], Type: I16
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.308 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: I16
+- b: Shape: [13, 4], Strides: [10, 1], Type: I16
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.098 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I16
+- b: Shape: [13, 4], Strides: [4, 1], Type: I16
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.703 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I16
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I16
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.372 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I16
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I16
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.404 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I16
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I16
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.357 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: I16
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: I16
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.399 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: I16
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: I16
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.4 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I16
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I16
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.443 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I16
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I16
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.168 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: I16
+- b: Shape: [1], Strides: [1], Type: I16
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.899 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: I16
+- b: Shape: [1, 1], Strides: [1, 1], Type: I16
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.849 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: I16
+- b: Shape: [5, 1], Strides: [1, 1], Type: I16
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.897 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: I16
+- b: Shape: [1, 5], Strides: [5, 1], Type: I16
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: I16
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.404 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I32
+- b: Shape: [13, 4], Strides: [4, 1], Type: I32
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.297 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: I32
+- b: Shape: [13, 4], Strides: [10, 1], Type: I32
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.099 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I32
+- b: Shape: [13, 4], Strides: [4, 1], Type: I32
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.728 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I32
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I32
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.358 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I32
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I32
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.408 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I32
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I32
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.356 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: I32
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: I32
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.328 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: I32
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: I32
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.358 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I32
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I32
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.332 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I32
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I32
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.872 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: I32
+- b: Shape: [1], Strides: [1], Type: I32
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.283 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: I32
+- b: Shape: [1, 1], Strides: [1, 1], Type: I32
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.425 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: I32
+- b: Shape: [5, 1], Strides: [1, 1], Type: I32
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.431 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: I32
+- b: Shape: [1, 5], Strides: [5, 1], Type: I32
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: I32
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.334 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I64
+- b: Shape: [13, 4], Strides: [4, 1], Type: I64
+- condition: Shape: [13, 4], Strides: [4, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.453 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [10, 1], Type: I64
+- b: Shape: [13, 4], Strides: [10, 1], Type: I64
+- condition: Shape: [13, 4], Strides: [10, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [10, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.187 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4], Strides: [4, 1], Type: I64
+- b: Shape: [13, 4], Strides: [4, 1], Type: I64
+- condition: Shape: [13, 4], Strides: [0, 1], Type: Q8_K
+- c: Shape: [13, 4], Strides: [4, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.87 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I64
+- b: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I64
+- condition: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.978 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I64
+- b: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I64
+- condition: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [20, 4, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.409 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I64
+- b: Shape: [13, 4, 4], Strides: [0, 4, 1], Type: I64
+- condition: Shape: [13, 4, 4], Strides: [4, 0, 1], Type: Q8_K
+- c: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.365 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [5632, 1], Type: I64
+- b: Shape: [16, 5632], Strides: [5632, 1], Type: I64
+- condition: Shape: [16, 5632], Strides: [5632, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [5632, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [16, 5632], Strides: [13312, 1], Type: I64
+- b: Shape: [16, 5632], Strides: [13312, 1], Type: I64
+- condition: Shape: [16, 5632], Strides: [13312, 1], Type: Q8_K
+- c: Shape: [16, 5632], Strides: [13312, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.419 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I64
+- b: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I64
+- condition: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.806 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I64
+- b: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I64
+- condition: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: Q8_K
+- c: Shape: [4, 4, 5632], Strides: [45056, 5632, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.863 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1], Strides: [1], Type: I64
+- b: Shape: [1], Strides: [1], Type: I64
+- condition: Shape: [1], Strides: [1], Type: Q8_K
+- c: Shape: [1], Strides: [1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.405 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 1], Strides: [1, 1], Type: I64
+- b: Shape: [1, 1], Strides: [1, 1], Type: I64
+- condition: Shape: [1, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [1, 1], Strides: [1, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.417 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [5, 1], Strides: [1, 1], Type: I64
+- b: Shape: [5, 1], Strides: [1, 1], Type: I64
+- condition: Shape: [5, 1], Strides: [1, 1], Type: Q8_K
+- c: Shape: [5, 1], Strides: [1, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.405 us
+
+=====================================
+Status: [32mPASS[0m
+Description: where
+- a: Shape: [1, 5], Strides: [5, 1], Type: I64
+- b: Shape: [1, 5], Strides: [5, 1], Type: I64
+- condition: Shape: [1, 5], Strides: [5, 1], Type: Q8_K
+- c: Shape: [1, 5], Strides: [5, 1], Type: I64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.323 us
+
+=====================================
+[32mAll tests passed[0m
