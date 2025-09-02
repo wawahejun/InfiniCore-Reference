@@ -120,14 +120,14 @@ std::shared_ptr<Result> runTest(const GGUFFileReader &gguf_reader,
         try {
             test = builder.build(attrs, tensors, adjusted_rtol, adjusted_atol);
         } catch (const std::exception &e) {
-            return TEST_INIT_FAILED(op_name + "/n" + e.what());
+            return TEST_INIT_FAILED(op_name + "\n" + e.what());
         }
 
         std::shared_ptr<Result> result;
         try {
             result = test->run(handle, device, device_id, warm_ups, iterations);
         } catch (const std::exception &e) {
-            return TEST_INIT_FAILED(op_name + "/n" + e.what());
+            return TEST_INIT_FAILED(op_name + "\n" + e.what());
         }
 
         CHECK_OR(infiniopDestroyHandle(handle), throw std::runtime_error("Failed to destroy handle"));

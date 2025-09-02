@@ -1,0 +1,58 @@
+{
+    cudnn = {
+        __scriptdir = "/home/intern/junyi/InfiniCore-Intern",
+        description = "Whether to compile cudnn for Nvidia GPU",
+        showmenu = true,
+        __sourceinfo_default = { },
+        default = true,
+        __sourceinfo_showmenu = { },
+        __sourceinfo_description = {
+            ["Whether to compile cudnn for Nvidia GPU"] = {
+                file = "@projectdir(InfiniCore-Intern)/xmake.lua",
+                line = 58
+            }
+        }
+    },
+    ["nv-gpu"] = {
+        __scriptdir = "/home/intern/junyi/InfiniCore-Intern",
+        description = "Whether to compile implementations for Nvidia GPU",
+        showmenu = true,
+        __sourceinfo_default = { },
+        default = false,
+        __sourceinfo_showmenu = { },
+        __sourceinfo_description = {
+            ["Whether to compile implementations for Nvidia GPU"] = {
+                file = "@projectdir(InfiniCore-Intern)/xmake.lua",
+                line = 47
+            }
+        }
+    },
+    omp = {
+        __scriptdir = "/home/intern/junyi/InfiniCore-Intern",
+        description = "Enable or disable OpenMP support for cpu kernel",
+        showmenu = true,
+        __sourceinfo_default = { },
+        default = true,
+        __sourceinfo_showmenu = { },
+        __sourceinfo_description = {
+            ["Enable or disable OpenMP support for cpu kernel"] = {
+                file = "@projectdir(InfiniCore-Intern)/xmake.lua",
+                line = 31
+            }
+        }
+    },
+    cpu = {
+        __scriptdir = "/home/intern/junyi/InfiniCore-Intern",
+        description = "Whether to compile implementations for CPU",
+        showmenu = true,
+        __sourceinfo_default = { },
+        default = true,
+        __sourceinfo_showmenu = { },
+        __sourceinfo_description = {
+            ["Whether to compile implementations for CPU"] = {
+                file = "@projectdir(InfiniCore-Intern)/xmake.lua",
+                line = 25
+            }
+        }
+    }
+}

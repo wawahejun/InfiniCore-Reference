@@ -1,0 +1,15 @@
+{
+    openmp = {
+        installdir = "/home/intern/.xmake/packages/o/openmp/latest/1317af4e5e2d4a6dbd57a45d3554b167",
+        fcldflags = "-fopenmp",
+        shflags = "-fopenmp",
+        __requirestr = "openmp",
+        fcflags = "-fopenmp",
+        cflags = "-fopenmp",
+        ldflags = "-fopenmp",
+        cuflags = "-Xcompiler -fopenmp",
+        cxxflags = "-fopenmp",
+        fcshflags = "-fopenmp",
+        __enabled = true
+    }
+}

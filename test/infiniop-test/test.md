@@ -1,19 +1,22 @@
 #### Exp算子
 ```bash
+python -m test_generate.testcases.scatter
+
+
 # f32精度
-srun ../../build/linux/x86_64/release/infiniop-test exp_f32.gguf --metax --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
+ ../../build/linux/x86_64/release/infiniop-test gather.gguf --nvidia --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
 
 # f16精度
-srun ../../build/linux/x86_64/release/infiniop-test exp_f16.gguf --metax --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
+ ../../build/linux/x86_64/release/infiniop-test tril.gguf --nvidia --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
 
 # bf16精度
-srun ../../build/linux/x86_64/release/infiniop-test exp_bf16.gguf --metax --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
+../../build/linux/x86_64/release/infiniop-test triu.gguf --nvidia --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
 ```
 
 #### Sin算子
 ```bash
 # f32精度
-srun ../../build/linux/x86_64/release/infiniop-test sin_f32.gguf --metax --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
+../../build/linux/x86_64/release/infiniop-test linear.gguf --metax --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log
 
 # f16精度
 srun ../../build/linux/x86_64/release/infiniop-test sin_f16.gguf --metax --warmup 20 --run 1000 2>&1 | tee -a infiniop_test.log

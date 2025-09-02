@@ -1,0 +1,51 @@
+{
+    files = {
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/devices/nvidia/nvidia_common.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/sin/nvidia/sin_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/relu/nvidia/relu_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/linear/nvidia/linear_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/conv/nvidia/conv_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/swiglu/nvidia/swiglu_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/index_copy_inplace/nvidia/index_copy_inplace_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/rms_norm/nvidia/rms_norm_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/sub/nvidia/sub_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/cos/nvidia/cos_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/relu_backward/nvidia/relu_backward_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/and/nvidia/and_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/gather/nvidia/gather_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/rope/nvidia/rope_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/clip/nvidia/clip_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/scatter/nvidia/scatter_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/div/nvidia/div_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/triu/nvidia/triu_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/gemm/nvidia/gemm_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/silu/nvidia/silu_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/add/nvidia/add_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/cast/nvidia/cast_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/causal_softmax/nvidia/causal_softmax_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/exp/nvidia/exp_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/random_sample/nvidia/random_sample_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/gelu_backward/nvidia/gelu_backward_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/tanh/nvidia/tanh_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/gelu/nvidia/gelu_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/equal/nvidia/equal_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/or/nvidia/or_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/sigmoid_backward/nvidia/sigmoid_backward_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/where/nvidia/where_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/leaky_relu/nvidia/leaky_relu_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/linear_backward/nvidia/linear_backward_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/hardswish/nvidia/hardswish_nv.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/rearrange/nvidia/rearrange_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/mul/nvidia/mul_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/crossentropyloss_backward/nvidia/crossentropyloss_backward_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/src/infiniop/ops/tril/nvidia/tril_nvidia.cu.o",
+        "build/.objs/infiniop-nvidia/linux/x86_64/release/rules/cuda/devlink/infiniop-nvidia_gpucode.cu.o",
+        "build/linux/x86_64/release/libinfini-utils.a"
+    },
+    values = {
+        "/usr/bin/ar",
+        {
+            "-cr"
+        }
+    }
+}

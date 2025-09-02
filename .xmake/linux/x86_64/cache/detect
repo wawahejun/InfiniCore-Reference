@@ -1,0 +1,1896 @@
+{
+    find_program_gcc_arch_x86_64_plat_linux_checktoolar = {
+        ar = "/usr/bin/ar"
+    },
+    find_program_envs_arch_x86_64_plat_linux_checktoolcc = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gcc"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gcc"
+    },
+    ["find_program_utils.binary.deplibs"] = {
+        ldd = "/usr/bin/ldd"
+    },
+    ["core.tools.gcc.has_cflags"] = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0"] = {
+            ["-print-sysroot"] = true,
+            ["-v"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-print-search-dirs"] = true,
+            ["--param"] = true,
+            ["--version"] = true,
+            ["--target-help"] = true,
+            ["-S"] = true,
+            ["-print-multiarch"] = true,
+            ["-dumpspecs"] = true,
+            ["-c"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["-pie"] = true,
+            ["-x"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-pipe"] = true,
+            ["-print-multi-lib"] = true,
+            ["-B"] = true,
+            ["-print-multi-directory"] = true,
+            ["-o"] = true,
+            ["-dumpmachine"] = true,
+            ["-E"] = true,
+            ["--help"] = true,
+            ["-save-temps"] = true,
+            ["-Xassembler"] = true,
+            ["-Xlinker"] = true,
+            ["-shared"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["-pass-exit-codes"] = true,
+            ["-time"] = true,
+            ["-dumpversion"] = true
+        }
+    },
+    find_program_envs_arch_x86_64_plat_linux_checktoolld = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"
+    },
+    find_program_cuda_arch_x86_64_plat_linux_checktoolfcld = {
+        nvfortran = false
+    },
+    find_program_cuda_arch_x86_64_plat_linux_checktoolfc = {
+        nvfortran = false
+    },
+    ["core.tools.nvcc.has_flags"] = {
+        ["/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8"] = {
+            ["--split-compile"] = true,
+            ["--compile-as-tools-patch"] = true,
+            ["--restrict"] = true,
+            ["--Wno-deprecated-gpu-targets"] = true,
+            ["--output-file"] = true,
+            ["-bar"] = true,
+            ["--gpu-code"] = true,
+            ["--archive-options"] = true,
+            ["--define-macro"] = true,
+            ["--options-file"] = true,
+            ["--diag-error"] = true,
+            ["--entries"] = true,
+            ["--Wext-lambda-captures-this"] = true,
+            ["--source-in-ptx"] = true,
+            ["--keep-dir"] = true,
+            ["--expt-relaxed-constexpr"] = true,
+            ["--Werror"] = true,
+            ["--ltoir"] = true,
+            ["--debug"] = true,
+            ["--lto"] = true,
+            ["--Wreorder"] = true,
+            ["--no-device-link"] = true,
+            ["--gen-opt-lto"] = true,
+            ["--input-drive-prefix"] = true,
+            ["--threads"] = true,
+            ["--no-align-double"] = true,
+            ["--device-c"] = true,
+            ["--drive-prefix"] = true,
+            ["--include-path"] = true,
+            ["--no-host-device-move-forward"] = true,
+            ["--ftz"] = true,
+            ["--prec-div"] = true,
+            ["--optix-ir"] = true,
+            ["-dc"] = true,
+            ["-forward-unknown-to-host-linker"] = true,
+            ["--list-gpu-code"] = true,
+            ["--host-linker-script"] = true,
+            ["--archiver-binary"] = true,
+            ["-dlto"] = true,
+            ["--generate-dependencies-with-compile"] = true,
+            ["--qpp-config"] = true,
+            ["--force-cl-env-setup"] = true,
+            ["--extended-lambda"] = true,
+            ["-forward-unknown-opts"] = true,
+            ["--fmad"] = true,
+            ["--keep-device-functions"] = true,
+            ["-arch"] = true,
+            ["--default-stream"] = true,
+            ["--relocatable-device-code"] = true,
+            ["--cuda"] = true,
+            ["--cudadevrt"] = true,
+            ["--optimize"] = true,
+            ["--library"] = true,
+            ["--Wno-deprecated-declarations"] = true,
+            ["--jump-table-density"] = true,
+            ["--fdevice-syntax-only"] = true,
+            ["--dependency-output"] = true,
+            ["-MF"] = true,
+            ["-z"] = true,
+            ["--optimization-info"] = true,
+            ["--device-w"] = true,
+            ["--Wmissing-launch-bounds"] = true,
+            ["--generate-nonsystem-dependencies"] = true,
+            ["--library-path"] = true,
+            ["--shared"] = true,
+            ["--help"] = true,
+            ["--no-display-error-number"] = true,
+            ["--compress-mode"] = true,
+            ["--libdevice-directory"] = true,
+            ["--fdevice-time-trace"] = true,
+            ["--no-compress"] = true,
+            ["-Turning"] = true,
+            ["--machine"] = true,
+            ["-code"] = true,
+            ["--dependency-target-name"] = true,
+            ["--link"] = true,
+            ["-ccbin"] = true,
+            ["--linker-options"] = true,
+            ["--dependency-drive-prefix"] = true,
+            ["--forward-unknown-to-host-compiler"] = true,
+            ["--generate-dependency-targets"] = true,
+            ["--ftemplate-backtrace-limit"] = true,
+            ["--split-compile-extended"] = true,
+            ["--objdir-as-tempdir"] = true,
+            ["--run-args"] = true,
+            ["--undefine-macro"] = true,
+            ["--generate-dependencies"] = true,
+            ["--forward-unknown-to-host-linker"] = true,
+            ["--allow-unsupported-compiler"] = true,
+            ["--extensible-whole-program"] = true,
+            ["-o"] = true,
+            ["--use-local-env"] = true,
+            ["--forward-unknown-opts"] = true,
+            ["-lineinfo"] = true,
+            ["--dlink-time-opt"] = true,
+            ["--save-temps"] = true,
+            ["--script"] = true,
+            ["--static-global-template-stub"] = true,
+            ["--extra-device-vectorization"] = true,
+            ["--cudart"] = true,
+            ["--verbose"] = true,
+            ["--keep"] = true,
+            ["--system-include"] = true,
+            ["-aug-hls"] = true,
+            ["--dopt"] = true,
+            ["-gencode"] = true,
+            ["-forward-unknown-to-host-compiler"] = true,
+            ["--x"] = true,
+            ["--std"] = true,
+            ["--preprocess"] = true,
+            ["--augment-host-linker-script"] = true,
+            ["--device-debug"] = true,
+            ["--disable-warnings"] = true,
+            ["--generate-code"] = true,
+            ["--display-error-number"] = true,
+            ["--dryrun"] = true,
+            ["--nvlink-options"] = true,
+            ["--cubin"] = true,
+            ["--device-stack-protector"] = true,
+            ["--dont-use-profile"] = true,
+            ["--profile"] = true,
+            ["--clean-targets"] = true,
+            ["--list-gpu-arch"] = true,
+            ["--resource-usage"] = true,
+            ["-shared"] = true,
+            ["--host-relocatable-link"] = true,
+            ["--ptx"] = true,
+            ["--compiler-options"] = true,
+            ["--generate-line-info"] = true,
+            ["--fatbin"] = true,
+            ["--target-directory"] = true,
+            ["-This"] = true,
+            ["--expt-extended-lambda"] = true,
+            ["--run"] = true,
+            ["--time"] = true,
+            ["--diag-suppress"] = true,
+            ["--brief-diagnostics"] = true,
+            ["-dlink"] = true,
+            ["--generate-nonsystem-dependencies-with-compile"] = true,
+            ["-r"] = true,
+            ["--Wdefault-stream-launch"] = true,
+            ["--ptxas-options"] = true,
+            ["--device-entity-has-hidden-visibility"] = true,
+            ["--prec-sqrt"] = true,
+            ["-dw"] = true,
+            ["--no-host-device-initializer-list"] = true,
+            ["--device-link"] = true,
+            ["--m64"] = true,
+            ["-V"] = true,
+            ["--compiler-bindir"] = true,
+            ["--gpu-architecture"] = true,
+            ["--relocatable-ptx"] = true,
+            ["--maxrregcount"] = true,
+            ["--no-exceptions"] = true,
+            ["--output-directory"] = true,
+            ["--compile"] = true,
+            ["--version"] = true,
+            ["--diag-warn"] = true,
+            ["--pre-include"] = true,
+            ["--ftemplate-depth"] = true,
+            ["--lib"] = true
+        }
+    },
+    ["detect.sdks.find_cuda"] = {
+        cuda = {
+            sdkdir = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m",
+            includedirs = {
+                "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/include"
+            },
+            version = "12.8",
+            bindir = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin",
+            linkdirs = {
+                "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64"
+            }
+        }
+    },
+    find_programver = {
+        ["/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc"] = "12.8",
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"] = "11.3.0"
+    },
+    find_program_cuda_arch_x86_64_plat_linux_checktoolculd = {
+        nvcc = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc"
+    },
+    find_program_gfortran_arch_x86_64_plat_linux_checktoolfc = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gfortran"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gfortran"
+    },
+    find_program_envs_arch_x86_64_plat_linux_checktoolsh = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"
+    },
+    ["lib.detect.has_flags"] = {
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_ld_ldflags_-m64 -m64 -m64 -m64_-Wl,-rpath=@loader_path"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh_ldflags_-shared -m64 -m64 -fPIC_-Wl,-rpath=/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-gencode arch=compute_80,code=sm_80"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh_ldflags_-shared -m64 -m64 -fPIC -m64 -m64_-Wl,-rpath=/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-DNDEBUG"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-MMD -MF"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-Wno-gnu-line-marker -Werror"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_culd_culdflags__-gencode arch=compute_80,code=sm_80"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-rdc=true"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-MMD -MF"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-Xcompiler=-fPIC"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh_shflags_-shared -m64 -m64 -fPIC_-fopenmp"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_culd_culdflags__-Xcompiler=-fPIC"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-fPIC"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-Xcompiler=-Wno-error=deprecated-declarations"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_ld_ldflags_-m64 -m64 -m64 -m64_-fopenmp"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-fopenmp"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_ld_ldflags_-m64 -m64 -m64 -m64_-Wl,-rpath=/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu___-O3"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__--expt-relaxed-constexpr"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh_shflags_-shared -m64 -m64 -fPIC -m64 -m64_-fopenmp"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxxflags_-m64_-fopenmp"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx__-m64_-O3"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-Xcompiler=-Werror"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_ld__-m64 -m64_-fPIC"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-fvisibility-inlines-hidden"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-DNDEBUG"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx__-m64_-fPIC"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh_ldflags_-shared -m64 -m64 -fPIC -m64 -m64 -m64 -m64_-Wl,-rpath=/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-Wno-unknown-pragmas"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh_shflags_-shared -m64 -m64 -fPIC -m64 -m64 -m64 -m64_-fopenmp"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__-Xcompiler=-Wall"] = true,
+        ["linux_x86_64_/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc_12.8_cu_cuflags__--extended-lambda"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_sh__-shared -m64 -m64_-fPIC"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_ld_ldflags_-m64 -m64_-fopenmp"] = true,
+        ["linux_x86_64_/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0_cxx_cxflags_-m64_-fdiagnostics-color=always"] = true
+    },
+    ["core.tools.gcc.has_ldflags"] = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++_11.3.0"] = {
+            ["--exclude-all-symbols"] = true,
+            ["--print-map-discarded"] = true,
+            ["--output"] = true,
+            ["--eh-frame-hdr"] = true,
+            ["--major-subsystem-version"] = true,
+            ["--orphan-handling"] = true,
+            ["-fini"] = true,
+            ["--sort-section"] = true,
+            ["--disable-auto-import"] = true,
+            ["-L"] = true,
+            ["-no-pie"] = true,
+            ["--relocatable"] = true,
+            ["-Map"] = true,
+            ["--end-group"] = true,
+            ["--ld-generated-unwind-info"] = true,
+            ["-l"] = true,
+            ["-c"] = true,
+            ["--demangle"] = true,
+            ["--allow-multiple-definition"] = true,
+            ["--no-export-dynamic"] = true,
+            ["--unique"] = true,
+            ["-Trodata-segment"] = true,
+            ["--default-script"] = true,
+            ["-u"] = true,
+            ["--error-unresolved-symbols"] = true,
+            ["--undefined"] = true,
+            ["-Bsymbolic"] = true,
+            ["--no-relax"] = true,
+            ["--gc-keep-exported"] = true,
+            ["--dynamic-list"] = true,
+            ["-T"] = true,
+            ["-rpath-link"] = true,
+            ["--no-undefined-version"] = true,
+            ["--discard-locals"] = true,
+            ["--large-address-aware"] = true,
+            ["--strip-all"] = true,
+            ["-e"] = true,
+            ["-soname"] = true,
+            ["--dynamic-list-cpp-new"] = true,
+            ["--print-memory-usage"] = true,
+            ["--file-alignment"] = true,
+            ["-dT"] = true,
+            ["--stats"] = true,
+            ["-R"] = true,
+            ["-dp"] = true,
+            ["--no-gc-sections"] = true,
+            ["--no-undefined"] = true,
+            ["--output-def"] = true,
+            ["--print-map"] = true,
+            ["--major-os-version"] = true,
+            ["--architecture"] = true,
+            ["-EB"] = true,
+            ["--warn-common"] = true,
+            ["-Tldata-segment"] = true,
+            ["--no-warn-mismatch"] = true,
+            ["--no-ld-generated-unwind-info"] = true,
+            ["--default-imported-symver"] = true,
+            ["--reduce-memory-overheads"] = true,
+            ["-rpath"] = true,
+            ["--start-group"] = true,
+            ["-Y"] = true,
+            ["--heap"] = true,
+            ["-a"] = true,
+            ["--enable-reloc-section"] = true,
+            ["--as-needed"] = true,
+            ["--no-check-sections"] = true,
+            ["--add-stdcall-alias"] = true,
+            ["--disable-new-dtags"] = true,
+            ["--version-exports-section"] = true,
+            ["--push-state"] = true,
+            ["--enable-auto-import"] = true,
+            ["-m"] = true,
+            ["--enable-non-contiguous-regions-warnings"] = true,
+            ["-f"] = true,
+            ["--trace-symbol"] = true,
+            ["--traditional-format"] = true,
+            ["--enable-auto-image-base"] = true,
+            ["-Bshareable"] = true,
+            ["--split-by-file"] = true,
+            ["--no-define-common"] = true,
+            ["--no-accept-unknown-input-arch"] = true,
+            ["--minor-os-version"] = true,
+            ["--copy-dt-needed-entries"] = true,
+            ["--subsystem"] = true,
+            ["--split-by-reloc"] = true,
+            ["-static"] = true,
+            ["-debug"] = true,
+            ["--dependency-file"] = true,
+            ["--enable-long-section-names"] = true,
+            ["--image-base"] = true,
+            ["--no-omagic"] = true,
+            ["--discard-none"] = true,
+            ["--enable-runtime-pseudo-reloc"] = true,
+            ["--warn-section-align"] = true,
+            ["--dynamic-linker"] = true,
+            ["-b"] = true,
+            ["--default-symver"] = true,
+            ["--disable-runtime-pseudo-reloc"] = true,
+            ["--whole-archive"] = true,
+            ["--dll"] = true,
+            ["--filter"] = true,
+            ["-assert"] = true,
+            ["--library"] = true,
+            ["--no-keep-memory"] = true,
+            ["--strip-discarded"] = true,
+            ["-init"] = true,
+            ["--warn-constructors"] = true,
+            ["--oformat"] = true,
+            ["--disable-stdcall-fixup"] = true,
+            ["--trace"] = true,
+            ["--cref"] = true,
+            ["--spare-dynamic-tags"] = true,
+            ["--no-print-map-discarded"] = true,
+            ["-z"] = true,
+            ["--enable-extra-pep-debug"] = true,
+            ["--just-symbols"] = true,
+            ["--warn-textrel"] = true,
+            ["--allow-shlib-undefined"] = true,
+            ["--accept-unknown-input-arch"] = true,
+            ["--library-path"] = true,
+            ["--entry"] = true,
+            ["--relax"] = true,
+            ["--minor-image-version"] = true,
+            ["--warn-duplicate-exports"] = true,
+            ["--help"] = true,
+            ["-nostdlib"] = true,
+            ["--exclude-libs"] = true,
+            ["-h"] = true,
+            ["--no-allow-shlib-undefined"] = true,
+            ["--emit-relocs"] = true,
+            ["-Bgroup"] = true,
+            ["--task-link"] = true,
+            ["-P"] = true,
+            ["--dynamic-list-data"] = true,
+            ["--section-start"] = true,
+            ["--warn-unresolved-symbols"] = true,
+            ["--no-as-needed"] = true,
+            ["--version"] = true,
+            ["--export-dynamic-symbol-list"] = true,
+            ["-G"] = true,
+            ["--print-gc-sections"] = true,
+            ["--no-whole-archive"] = true,
+            ["--defsym"] = true,
+            ["--compat-implib"] = true,
+            ["--strip-debug"] = true,
+            ["-O"] = true,
+            ["--disable-reloc-section"] = true,
+            ["-Bno-symbolic"] = true,
+            ["-y"] = true,
+            ["--error-handling-script"] = true,
+            ["--warn-alternate-em"] = true,
+            ["--stack"] = true,
+            ["--export-dynamic"] = true,
+            ["--gc-sections"] = true,
+            ["--require-defined"] = true,
+            ["--auxiliary"] = true,
+            ["--no-ctf-variables"] = true,
+            ["--out-implib"] = true,
+            ["--ignore-unresolved-symbol"] = true,
+            ["--support-old-code"] = true,
+            ["--section-alignment"] = true,
+            ["-Ttext"] = true,
+            ["--disable-multiple-abs-defs"] = true,
+            ["--export-all-symbols"] = true,
+            ["--format"] = true,
+            ["--fatal-warnings"] = true,
+            ["--no-strip-discarded"] = true,
+            ["--pic-executable"] = true,
+            ["--verbose"] = true,
+            ["--map-whole-files"] = true,
+            ["--enable-stdcall-fixup"] = true,
+            ["--no-map-whole-files"] = true,
+            ["-F"] = true,
+            ["--enable-extra-pe-debug"] = true,
+            ["--gpsize"] = true,
+            ["--major-image-version"] = true,
+            ["--no-warn-search-mismatch"] = true,
+            ["--minor-subsystem-version"] = true,
+            ["--disable-long-section-names"] = true,
+            ["--no-demangle"] = true,
+            ["-Qy"] = true,
+            ["--discard-all"] = true,
+            ["--omagic"] = true,
+            ["-plugin"] = true,
+            ["-Bsymbolic-functions"] = true,
+            ["--force-exe-suffix"] = true,
+            ["--ctf-variables"] = true,
+            ["--no-fatal-warnings"] = true,
+            ["--exclude-modules-for-implib"] = true,
+            ["--sort-common"] = true,
+            ["--force-group-allocation"] = true,
+            ["--script"] = true,
+            ["-A"] = true,
+            ["-EL"] = true,
+            ["-Tdata"] = true,
+            ["--print-sysroot"] = true,
+            ["--enable-non-contiguous-regions"] = true,
+            ["--no-print-gc-sections"] = true,
+            ["--disable-auto-image-base"] = true,
+            ["--export-dynamic-symbol"] = true,
+            ["--no-dynamic-linker"] = true,
+            ["--warn-multiple-gp"] = true,
+            ["--disable-large-address-aware"] = true,
+            ["--wrap"] = true,
+            ["-Ttext-segment"] = true,
+            ["--dynamic-list-cpp-typeinfo"] = true,
+            ["--retain-symbols-file"] = true,
+            ["-I"] = true,
+            ["--enable-new-dtags"] = true,
+            ["-plugin-opt"] = true,
+            ["--warn-once"] = true,
+            ["--nmagic"] = true,
+            ["-Tbss"] = true,
+            ["--version-script"] = true,
+            ["-flto"] = true,
+            ["--mri-script"] = true,
+            ["-V"] = true,
+            ["-o"] = true,
+            ["--print-output-format"] = true,
+            ["--exclude-symbols"] = true,
+            ["-Ur"] = true,
+            ["-qmagic"] = true,
+            ["--no-copy-dt-needed-entries"] = true,
+            ["--check-sections"] = true,
+            ["--no-eh-frame-hdr"] = true,
+            ["--target-help"] = true,
+            ["--pop-state"] = true,
+            ["-g"] = true,
+            ["--kill-at"] = true
+        }
+    },
+    ["find_program_cuda_arch_x86_64_plat_linux_checktoolcu-ccbin"] = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"
+    },
+    find_cudadevices = {
+        succeed = true,
+        data = {
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 79,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "04f4a826-4beb-28d1-5386-5ac6cd523b2f",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 0,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 0
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 82,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "6700aee7-c0e7-5e04-1582-45ced54605ab",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 1,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 1
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 83,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "854dfc88-a83b-aa6d-35b2-1b9933ffe1c9",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 2,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 2
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 86,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "eebcfe87-e116-abdd-56c8-305502ee9d32",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 3,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 3
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 87,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "db52a543-5fdb-c812-6a9d-bd4b0cdd9de8",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 4,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 4
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 206,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "ff95fd2e-00d8-a28a-7692-8f000daaac79",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 5,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 5
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 209,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "e7df7c4d-a998-b5f9-12d7-0594df495b8a",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 6,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 6
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 210,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "4a82e026-b8ee-bd89-9e37-34296a413de3",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 7,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 7
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 213,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "8a4fef75-ba58-a8ee-65bb-903256a489f5",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 8,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 8
+            },
+            {
+                minor = 0,
+                name = "NVIDIA A100 80GB PCIe",
+                maxTexture2DGather = {
+                    32768,
+                    32768
+                },
+                pciDeviceID = 0,
+                sharedMemPerMultiprocessor = 167936,
+                clockRate = 1410000,
+                asyncEngineCount = 3,
+                maxTexture1DMipmap = 32768,
+                regsPerBlock = 65536,
+                maxTexture2DMipmap = {
+                    32768,
+                    32768
+                },
+                maxTexture2D = {
+                    131072,
+                    65536
+                },
+                major = 8,
+                computePreemptionSupported = true,
+                texturePitchAlignment = 32,
+                warpSize = 32,
+                maxTexture2DLinear = {
+                    131072,
+                    65000,
+                    2097120
+                },
+                maxTexture3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxTextureCubemapLayered = {
+                    32768,
+                    2046
+                },
+                maxThreadsPerMultiProcessor = 2048,
+                memPitch = 2147483647,
+                maxSurface1D = 32768,
+                luid = "0000000000000000",
+                maxSurface3D = {
+                    16384,
+                    16384,
+                    16384
+                },
+                maxSurfaceCubemap = 32768,
+                computeMode = 0,
+                maxTexture1DLayered = {
+                    32768,
+                    2048
+                },
+                pciBusID = 214,
+                maxGridSize = {
+                    2147483647,
+                    65535,
+                    65535
+                },
+                maxTextureCubemap = 32768,
+                maxTexture2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                l2CacheSize = 41943040,
+                globalL1CacheSupported = true,
+                streamPrioritiesSupported = true,
+                maxTexture1DLinear = 268435456,
+                integrated = false,
+                sharedMemPerBlockOptin = 166912,
+                tccDriver = false,
+                singleToDoublePrecisionPerfRatio = 2,
+                maxSurfaceCubemapLayered = {
+                    32768,
+                    2046
+                },
+                regsPerMultiprocessor = 65536,
+                maxTexture1D = 131072,
+                multiProcessorCount = 108,
+                maxThreadsDim = {
+                    1024,
+                    1024,
+                    64
+                },
+                totalConstMem = 65536,
+                maxSurface2D = {
+                    131072,
+                    65536
+                },
+                uuid = "594afe61-1da9-42e1-16e1-8e4978f44c5d",
+                concurrentManagedAccess = true,
+                memoryBusWidth = 5120,
+                isMultiGpuBoard = false,
+                maxSurface2DLayered = {
+                    32768,
+                    32768,
+                    2048
+                },
+                ECCEnabled = true,
+                ["$flops"] = 9745920000,
+                localL1CacheSupported = true,
+                pageableMemoryAccess = false,
+                ["$id"] = 9,
+                concurrentKernels = true,
+                luidDeviceNodeMask = 0,
+                textureAlignment = 512,
+                surfaceAlignment = 512,
+                maxThreadsPerBlock = 1024,
+                canMapHostMemory = true,
+                directManagedMemAccessFromHost = false,
+                cooperativeLaunch = true,
+                deviceOverlap = true,
+                canUseHostPointerForRegisteredMem = true,
+                sharedMemPerBlock = 49152,
+                maxTexture3DAlt = {
+                    8192,
+                    8192,
+                    32768
+                },
+                pciDomainID = 0,
+                pageableMemoryAccessUsesHostPageTables = false,
+                maxSurface1DLayered = {
+                    32768,
+                    2048
+                },
+                cooperativeMultiDeviceLaunch = true,
+                managedMemory = true,
+                memoryClockRate = 1512000,
+                unifiedAddressing = true,
+                totalGlobalMem = 85094825984,
+                kernelExecTimeoutEnabled = false,
+                multiGpuBoardGroupID = 9
+            }
+        }
+    },
+    find_program_cuda_arch_x86_64_plat_linux_checktoolcu = {
+        nvcc = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc"
+    },
+    find_program_gfortran_arch_x86_64_plat_linux_checktoolfcld = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gfortran"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gfortran"
+    },
+    find_program_envs_arch_x86_64_plat_linux_checktoolcxx = {
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"
+    },
+    find_program = {
+        git = "/usr/bin/git",
+        ["/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++"] = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++",
+        gcc = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/gcc",
+        nvcc = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc",
+        ping = "/usr/bin/ping",
+        ["/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc"] = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/bin/nvcc",
+        gzip = "/usr/bin/gzip",
+        tar = "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/tar-1.34-genqct2dqgbi7zblqosa6u2jjmsc5by6/bin/tar",
+        nim = false
+    }
+}

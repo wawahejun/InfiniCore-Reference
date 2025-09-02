@@ -1,0 +1,435 @@
+#include "linear_metax.h"
+#include "../../../devices/metax/metax_common.h"
+#include "../../../devices/metax/metax_handle.h"
+#include "../../../tensor.h"
+#include "../../../../utils/custom_types.h"
+#include "../../../devices/metax/metax_kernel_common.h"
+#include <hcr/hc_runtime_api.h>
+
+namespace op::linear::metax {
+
+// Helper function to compute linear offset from multi-dimensional coordinates
+__device__ __forceinline__ int compute_offset(const int* coords, const int* strides, int ndim) {
+    int offset = 0;
+    for (int i = 0; i < ndim; i++) {
+        offset += coords[i] * strides[i];
+    }
+    return offset;
+}
+
+// Device-side type conversion functions
+template<typename T>
+__device__ __forceinline__ float device_cast_to_float(const T& val) {
+    return static_cast<float>(val);
+}
+
+template<>
+__device__ __forceinline__ float device_cast_to_float<fp16_t>(const fp16_t& val) {
+    uint16_t h = val._v;
+    uint32_t sign = (h & 0x8000) << 16;
+    int32_t exponent = (h >> 10) & 0x1F;
+    uint32_t mantissa = h & 0x3FF;
+
+    uint32_t f32;
+    if (exponent == 31) {
+        if (mantissa != 0) {
+            f32 = sign | 0x7F800000 | (mantissa << 13);
+        } else {
+            f32 = sign | 0x7F800000;
+        }
+    } else if (exponent == 0) {
+        if (mantissa == 0) {
+            f32 = sign;
+        } else {
+            exponent = -14;
+            while ((mantissa & 0x400) == 0) {
+                mantissa <<= 1;
+                exponent--;
+            }
+            mantissa &= 0x3FF;
+            f32 = sign | ((exponent + 127) << 23) | (mantissa << 13);
+        }
+    } else {
+        f32 = sign | ((exponent + 127 - 15) << 23) | (mantissa << 13);
+    }
+
+    float result;
+    memcpy(&result, &f32, sizeof(result));
+    return result;
+}
+
+template<>
+__device__ __forceinline__ float device_cast_to_float<bf16_t>(const bf16_t& val) {
+    uint32_t bits32 = static_cast<uint32_t>(val._v) << 16;
+    float result;
+    memcpy(&result, &bits32, sizeof(result));
+    return result;
+}
+
+template<>
+__device__ __forceinline__ float device_cast_to_float<__hpcc_bfloat16>(const __hpcc_bfloat16& val) {
+    return __bfloat162float(val);
+}
+
+template<typename T>
+__device__ __forceinline__ T device_cast_from_float(float val) {
+    return static_cast<T>(val);
+}
+
+template<>
+__device__ __forceinline__ fp16_t device_cast_from_float<fp16_t>(float val) {
+    uint32_t bits;
+    memcpy(&bits, &val, sizeof(float));
+    
+    uint32_t sign = bits & 0x80000000;
+    uint32_t exp = (bits & 0x7F800000) >> 23;
+    uint32_t mantissa = bits & 0x007FFFFF;
+    
+    uint16_t result_bits;
+    
+    if (exp == 0) {
+        result_bits = static_cast<uint16_t>(sign >> 16);
+    } else if (exp == 0xFF) {
+        result_bits = static_cast<uint16_t>((sign >> 16) | 0x7C00 | (mantissa ? 0x0200 : 0));
+    } else {
+        int new_exp = static_cast<int>(exp) - 127 + 15;
+        if (new_exp <= 0) {
+            result_bits = static_cast<uint16_t>(sign >> 16);
+        } else if (new_exp >= 0x1F) {
+            result_bits = static_cast<uint16_t>((sign >> 16) | 0x7C00);
+        } else {
+            result_bits = static_cast<uint16_t>((sign >> 16) | (new_exp << 10) | (mantissa >> 13));
+        }
+    }
+    
+    fp16_t result;
+    memcpy(&result, &result_bits, sizeof(uint16_t));
+    return result;
+}
+
+template<>
+__device__ __forceinline__ bf16_t device_cast_from_float<bf16_t>(float val) {
+    uint32_t bits32;
+    memcpy(&bits32, &val, sizeof(bits32));
+    const uint32_t rounding_bias = 0x00007FFF + ((bits32 >> 16) & 1);
+    uint16_t bf16_bits = static_cast<uint16_t>((bits32 + rounding_bias) >> 16);
+    return bf16_t{bf16_bits};
+}
+
+template<>
+__device__ __forceinline__ __hpcc_bfloat16 device_cast_from_float<__hpcc_bfloat16>(float val) {
+    return __float2bfloat16(val);
+}
+
+Descriptor::~Descriptor() = default;
+
+infiniStatus_t Descriptor::create(
+    infiniopHandle_t handle_,
+    Descriptor **desc_ptr,
+    infiniopTensorDescriptor_t x_desc,
+    infiniopTensorDescriptor_t w_desc,
+    infiniopTensorDescriptor_t b_desc,
+    infiniopTensorDescriptor_t y_desc) {
+
+    if (!handle_ || !desc_ptr || !x_desc || !w_desc || !y_desc) {
+        return INFINI_STATUS_BAD_PARAM;
+    }
+
+    auto handle = static_cast<device::metax::Handle *>(handle_);
+    
+    auto x_dtype = x_desc->dtype();
+    auto w_dtype = w_desc->dtype();
+    auto y_dtype = y_desc->dtype();
+    
+    // Check data types - support F16, F32, BF16
+    if (x_dtype != INFINI_DTYPE_F16 && x_dtype != INFINI_DTYPE_F32 && x_dtype != INFINI_DTYPE_BF16) {
+        return INFINI_STATUS_BAD_TENSOR_DTYPE;
+    }
+    
+    // Check that all tensors have same dtype
+    if (x_dtype != w_dtype || x_dtype != y_dtype) {
+        return INFINI_STATUS_BAD_TENSOR_DTYPE;
+    }
+    
+    // Check bias data type if provided
+    if (b_desc) {
+        auto b_dtype = b_desc->dtype();
+        if (b_dtype != x_dtype) {
+            return INFINI_STATUS_BAD_TENSOR_DTYPE;
+        }
+    }
+    
+    // Check dimensions
+    auto x_shape = x_desc->shape();
+    auto w_shape = w_desc->shape();
+    auto y_shape = y_desc->shape();
+    
+    int x_ndim = x_shape.size();
+    int w_ndim = w_shape.size();
+    int y_ndim = y_shape.size();
+
+    if (w_ndim != 2 || x_ndim < 1 || y_ndim < 1) {
+        return INFINI_STATUS_BAD_TENSOR_SHAPE;
+    }
+
+    // Get dimensions
+    std::vector<int> x_dims(x_shape.begin(), x_shape.end());
+    std::vector<int> w_dims(w_shape.begin(), w_shape.end());
+    std::vector<int> y_dims(y_shape.begin(), y_shape.end());
+    std::vector<int> b_dims;
+
+    // Check dimension compatibility
+    // x: (..., in_features), w: (out_features, in_features), y: (..., out_features)
+    int in_features = x_dims[x_ndim - 1];
+    int out_features = w_dims[0];
+    int w_in_features = w_dims[1];
+
+    if (in_features != w_in_features) {
+        return INFINI_STATUS_BAD_TENSOR_SHAPE;
+    }
+
+    if (y_dims[y_ndim - 1] != out_features) {
+        return INFINI_STATUS_BAD_TENSOR_SHAPE;
+    }
+
+    bool has_bias = (b_desc != nullptr);
+    
+    // Check bias dimensions if provided
+    if (has_bias) {
+        auto b_shape = b_desc->shape();
+        int b_ndim = b_shape.size();
+        b_dims = std::vector<int>(b_shape.begin(), b_shape.end());
+
+        if (b_ndim != 1 || b_dims[0] != out_features) {
+            return INFINI_STATUS_BAD_TENSOR_SHAPE;
+        }
+    }
+    
+    // Get actual strides from tensor descriptors
+    auto x_strides_ptrdiff = x_desc->strides();
+    auto w_strides_ptrdiff = w_desc->strides();
+    auto y_strides_ptrdiff = y_desc->strides();
+    
+    std::vector<int> x_strides(x_strides_ptrdiff.begin(), x_strides_ptrdiff.end());
+    std::vector<int> w_strides(w_strides_ptrdiff.begin(), w_strides_ptrdiff.end());
+    std::vector<int> y_strides(y_strides_ptrdiff.begin(), y_strides_ptrdiff.end());
+    std::vector<int> b_strides;
+    if (has_bias) {
+        auto b_strides_ptrdiff = b_desc->strides();
+        b_strides = std::vector<int>(b_strides_ptrdiff.begin(), b_strides_ptrdiff.end());
+    }
+    
+    // Calculate batch size
+    int batch_size = 1;
+    for (size_t i = 0; i < x_dims.size() - 1; i++) {
+        batch_size *= x_dims[i];
+    }
+    
+    *desc_ptr = new Descriptor(
+        x_dtype, x_dims, w_dims, y_dims, b_dims,
+        x_strides, w_strides, y_strides, b_strides,
+        batch_size, in_features, out_features, has_bias,
+        handle->device, handle->device_id);
+    
+    return INFINI_STATUS_SUCCESS;
+}
+
+infiniStatus_t Descriptor::calculate(
+    void *workspace,
+    size_t workspace_size,
+    void *y,
+    const void *x,
+    const void *w,
+    const void *b,
+    void *stream) const {
+
+    if (!y || !x || !w) {
+        return INFINI_STATUS_BAD_PARAM;
+    }
+    
+    if (_has_bias && !b) {
+        return INFINI_STATUS_BAD_PARAM;
+    }
+
+    // Dispatch based on data type
+    switch (_dtype) {
+        case INFINI_DTYPE_F16:
+            return linearMetax<fp16_t>(y, x, w, b, stream);
+        case INFINI_DTYPE_F32:
+            return linearMetax<float>(y, x, w, b, stream);
+        case INFINI_DTYPE_BF16:
+            return linearMetax<__hpcc_bfloat16>(y, x, w, b, stream);
+        default:
+            return INFINI_STATUS_BAD_TENSOR_DTYPE;
+    }
+}
+
+// Metax kernel for linear operation
+template<typename T>
+__global__ void linearKernel(
+    T *y_data,
+    const T *x_data,
+    const T *w_data,
+    const T *b_data,
+    const int *y_shape,
+    const int *x_shape,
+    const int *w_shape,
+    const int *y_strides,
+    const int *x_strides,
+    const int *w_strides,
+    int y_ndim,
+    int x_ndim,
+    int w_ndim,
+    int batch_size,
+    int in_features,
+    int out_features,
+    int total_elements,
+    bool has_bias) {
+    
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;
+    
+    if (idx >= total_elements) return;
+    
+    // Calculate batch and output feature indices from linear index
+    int batch_idx = idx / out_features;
+    int out_idx = idx % out_features;
+    
+    if (batch_idx >= batch_size || out_idx >= out_features) return;
+    
+    // Convert linear batch index to multi-dimensional indices for x
+    int x_coords[8]; // Support up to 8 dimensions
+    int temp_batch_idx = batch_idx;
+    for (int i = x_ndim - 2; i >= 0; i--) {
+        x_coords[i] = temp_batch_idx % x_shape[i];
+        temp_batch_idx /= x_shape[i];
+    }
+    
+    float sum = 0.0f;
+    
+    // Perform dot product: y[batch, out] = sum(x[batch, in] * w[out, in]) + b[out]
+    for (int in_idx = 0; in_idx < in_features; in_idx++) {
+        // Set input feature coordinate
+        x_coords[x_ndim - 1] = in_idx;
+        
+        // Compute x offset with strides
+        int x_offset = compute_offset(x_coords, x_strides, x_ndim);
+        
+        // Compute w offset with strides
+        int w_coords[2] = {out_idx, in_idx};
+        int w_offset = compute_offset(w_coords, w_strides, 2);
+        
+        sum += device_cast_to_float(x_data[x_offset]) * device_cast_to_float(w_data[w_offset]);
+    }
+    
+    if (has_bias && b_data) {
+        sum += device_cast_to_float(b_data[out_idx]);
+    }
+    
+    // Convert linear batch index to multi-dimensional indices for y
+    int y_coords[8]; // Support up to 8 dimensions
+    temp_batch_idx = batch_idx;
+    for (int i = x_ndim - 2; i >= 0; i--) {
+        y_coords[i] = temp_batch_idx % x_shape[i];
+        temp_batch_idx /= x_shape[i];
+    }
+    y_coords[x_ndim - 1] = out_idx;
+    
+    // Compute y offset with strides
+    int y_offset = compute_offset(y_coords, y_strides, x_ndim);
+    y_data[y_offset] = device_cast_from_float<T>(sum);
+}
+
+template <typename T>
+infiniStatus_t Descriptor::linearMetax(
+    void *y_data,
+    const void *x_data,
+    const void *w_data,
+    const void *b_data,
+    void *stream) const {
+
+    auto metax_stream = static_cast<hcStream_t>(stream);
+    
+    // Allocate device memory for shapes and strides
+    int *d_y_shape, *d_x_shape, *d_w_shape, *d_b_shape = nullptr;
+    int *d_y_strides, *d_x_strides, *d_w_strides, *d_b_strides = nullptr;
+    
+    size_t y_shape_size = _y_dims.size() * sizeof(int);
+    size_t x_shape_size = _x_dims.size() * sizeof(int);
+    size_t w_shape_size = _w_dims.size() * sizeof(int);
+    size_t b_shape_size = _has_bias ? _b_dims.size() * sizeof(int) : 0;
+    
+    hcMalloc((void**)&d_y_shape, y_shape_size);
+    hcMalloc((void**)&d_x_shape, x_shape_size);
+    hcMalloc((void**)&d_w_shape, w_shape_size);
+    hcMalloc((void**)&d_y_strides, y_shape_size);
+    hcMalloc((void**)&d_x_strides, x_shape_size);
+    hcMalloc((void**)&d_w_strides, w_shape_size);
+    
+    if (_has_bias) {
+        hcMalloc((void**)&d_b_shape, b_shape_size);
+        hcMalloc((void**)&d_b_strides, b_shape_size);
+    }
+    
+    // Copy shapes to device
+    hcMemcpyAsync(d_y_shape, _y_dims.data(), y_shape_size, hcMemcpyHostToDevice, metax_stream);
+    hcMemcpyAsync(d_x_shape, _x_dims.data(), x_shape_size, hcMemcpyHostToDevice, metax_stream);
+    hcMemcpyAsync(d_w_shape, _w_dims.data(), w_shape_size, hcMemcpyHostToDevice, metax_stream);
+    
+    // Copy strides to device
+    hcMemcpyAsync(d_y_strides, _y_strides.data(), y_shape_size, hcMemcpyHostToDevice, metax_stream);
+    hcMemcpyAsync(d_x_strides, _x_strides.data(), x_shape_size, hcMemcpyHostToDevice, metax_stream);
+    hcMemcpyAsync(d_w_strides, _w_strides.data(), w_shape_size, hcMemcpyHostToDevice, metax_stream);
+    
+    if (_has_bias) {
+        hcMemcpyAsync(d_b_shape, _b_dims.data(), b_shape_size, hcMemcpyHostToDevice, metax_stream);
+        hcMemcpyAsync(d_b_strides, _b_strides.data(), b_shape_size, hcMemcpyHostToDevice, metax_stream);
+    }
+    
+    // Calculate total output elements
+    size_t total_output_elements = _batch_size * _out_features;
+    
+    if (total_output_elements == 0) {
+        return INFINI_STATUS_SUCCESS;
+    }
+    
+    // Launch kernel
+    const int block_size = 256;
+    const int grid_size = (total_output_elements + block_size - 1) / block_size;
+    
+    linearKernel<T><<<grid_size, block_size, 0, metax_stream>>>(
+        static_cast<T*>(y_data),
+        static_cast<const T*>(x_data),
+        static_cast<const T*>(w_data),
+        static_cast<const T*>(b_data),
+        d_y_shape,
+        d_x_shape,
+        d_w_shape,
+        d_y_strides,
+        d_x_strides,
+        d_w_strides,
+        static_cast<int>(_y_dims.size()),
+        static_cast<int>(_x_dims.size()),
+        static_cast<int>(_w_dims.size()),
+        _batch_size,
+        _in_features,
+        _out_features,
+        static_cast<int>(total_output_elements),
+        _has_bias);
+    
+    // Cleanup device memory
+    hcFree(d_y_shape);
+    hcFree(d_x_shape);
+    hcFree(d_w_shape);
+    hcFree(d_y_strides);
+    hcFree(d_x_strides);
+    hcFree(d_w_strides);
+    
+    if (_has_bias) {
+        hcFree(d_b_shape);
+        hcFree(d_b_strides);
+    }
+    
+    return INFINI_STATUS_SUCCESS;
+}
+
+} // namespace op::linear::metax

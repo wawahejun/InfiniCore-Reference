@@ -1,0 +1,30 @@
+{
+    values = {
+        "/home/spack/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/gcc-11.3.0-7tpmmhoar763gi2qhigyczd2vqqhpgxk/bin/g++",
+        {
+            "-m64",
+            "-L/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64",
+            "-Lbuild/linux/x86_64/release",
+            "-Wl,-rpath=$ORIGIN",
+            "-Wl,-rpath=/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m/lib64",
+            "-s",
+            "-linfinirt",
+            "-linfinirt-cpu",
+            "-linfinirt-nvidia",
+            "-lcudart",
+            "-linfini-utils",
+            "-lcudadevrt",
+            "-lrt",
+            "-lpthread",
+            "-ldl",
+            "-fopenmp"
+        }
+    },
+    files = {
+        "build/.objs/infinirt-test/linux/x86_64/release/src/infinirt-test/test.cc.o",
+        "build/.objs/infinirt-test/linux/x86_64/release/src/infinirt-test/main.cc.o",
+        "build/linux/x86_64/release/libinfini-utils.a",
+        "build/linux/x86_64/release/libinfinirt-nvidia.a",
+        "build/linux/x86_64/release/libinfinirt-cpu.a"
+    }
+}

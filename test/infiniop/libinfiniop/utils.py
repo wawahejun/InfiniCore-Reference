@@ -115,7 +115,8 @@ class TestTensor(CTensor):
         if strides is not None:
             self._data_tensor = rearrange_tensor(self._torch_tensor, torch_strides)
         else:
-            self._data_tensor = self._torch_tensor.clone()
+            # For contiguous tensors, _data_tensor should be the same as _torch_tensor
+            self._data_tensor = self._torch_tensor
 
         super().__init__(self.dt, shape, strides)
 

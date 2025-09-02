@@ -147,6 +147,7 @@ Tensor::Tensor(const GGUFTensorInfo *info,
     _strides = std::vector<ptrdiff_t>(ndim);
     std::vector<ptrdiff_t> contiguous_strides(ndim);
     for (size_t i = 0; i < ndim; i++) {
+    // C++ side reverses dimensions when reading GGUF
         temp_shape[i] = static_cast<size_t>(info->shape[ndim - 1 - i]);
         if (i == 0) {
             contiguous_strides[ndim - 1] = (ptrdiff_t)1;

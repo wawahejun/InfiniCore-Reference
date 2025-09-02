@@ -1,0 +1,52 @@
+{
+    files = {
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/devices/cpu/common_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/devices/cpu/cpu_handle.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/sin/cpu/sin_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/relu/cpu/relu_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/linear/cpu/linear_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/conv/cpu/conv_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/swiglu/cpu/swiglu_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/index_copy_inplace/cpu/index_copy_inplace_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/rms_norm/cpu/rms_norm_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/sub/cpu/sub_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/cos/cpu/cos_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/relu_backward/cpu/relu_backward_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/and/cpu/and_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/gather/cpu/gather_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/rope/cpu/rope_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/clip/cpu/clip_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/scatter/cpu/scatter_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/div/cpu/div_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/triu/cpu/triu_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/gemm/cpu/gemm_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/silu/cpu/silu_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/add/cpu/add_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/cast/cpu/cast_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/causal_softmax/cpu/causal_softmax_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/exp/cpu/exp_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/random_sample/cpu/random_sample_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/gelu_backward/cpu/gelu_backward_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/tanh/cpu/tanh_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/gelu/cpu/gelu_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/equal/cpu/equal_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/or/cpu/or_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/sigmoid_backward/cpu/sigmoid_backward_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/where/cpu/where_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/leaky_relu/cpu/leaky_relu_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/linear_backward/cpu/linear_backward_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/hardswish/cpu/hardswish_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/rearrange/cpu/rearrange_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/mul/cpu/mul_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/crossentropyloss_backward/cpu/crossentropyloss_backward_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/ops/tril/cpu/tril_cpu.cc.o",
+        "build/.objs/infiniop-cpu/linux/x86_64/debug/src/infiniop/reduce/cpu/reduce.cc.o",
+        "build/linux/x86_64/debug/libinfini-utils.a"
+    },
+    values = {
+        "/usr/bin/ar",
+        {
+            "-cr"
+        }
+    }
+}
