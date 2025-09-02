@@ -1,12 +1,12 @@
 {
-    options = {
-        cuda = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m",
-        clean = true,
-        ["nv-gpu"] = true
-    },
+    recheck = false,
     mtimes = {
         ["xmake.lua"] = 1756464238,
         ["xmake/test.lua"] = 1756464238
     },
-    recheck = false
+    options = {
+        clean = true,
+        ["nv-gpu"] = true,
+        cuda = "/data4/spack/spack/opt/spack/linux-icelake/cuda-12.8.0-dns3hb25ruasvf4rqunuvqefbovgey2m"
+    }
 }

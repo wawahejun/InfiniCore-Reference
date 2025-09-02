@@ -1,6 +1,5 @@
 {
     cmdlines = {
-        "xmake install",
         "xmake build infiniop-test",
         "xmake ",
         "xmake install",
@@ -64,6 +63,7 @@
         "xmake build infiniop-test",
         "xmake build infiniop-test",
         "xmake ",
-        "xmake install"
+        "xmake install",
+        "xmake clean"
     }
 }
