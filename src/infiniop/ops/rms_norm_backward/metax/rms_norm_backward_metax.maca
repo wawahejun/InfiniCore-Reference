@@ -1,0 +1,279 @@
+#include "rms_norm_backward_metax.h"
+#include "rms_norm_backward_kernel.cuh"
+#include "../../../devices/metax/metax_common.h"
+#include "../../../../utils/custom_types.h"
+#include <hcr/hc_runtime_api.h>
+#include <cmath>
+
+// Error checking macro for MetaX
+#define CHECK_METAX(call) do { \
+    hcError_t err = call; \
+    if (err != hcSuccess) { \
+        return INFINI_STATUS_EXECUTION_FAILED; \
+    } \
+} while(0)
+
+namespace op::rms_norm_backward::metax {
+
+/**
+ * @brief Launch RMS Norm backward kernel for MetaX devices
+ * 
+ * @tparam Tdata Data type for input/output tensors
+ * @tparam Tcompute Computation type for intermediate calculations
+ * @tparam Tweight Weight tensor data type
+ */
+template <typename Tdata, typename Tcompute, typename Tweight = Tdata>
+infiniStatus_t launchRmsNormBackwardKernel(
+    Tdata * grad_x,
+    Tcompute * grad_w_metax,
+    const Tdata * grad_y,
+    const Tdata * x,
+    const Tweight * w,
+    const RMSNormBackwardInfo& info,
+    hcStream_t stream
+) {
+    constexpr unsigned int BLOCK_SIZE = 256;
+    
+    size_t batch_size = info.batch_size();
+    size_t norm_size = info.dim();
+    size_t ndim = info.ndim();
+    
+    // Allocate device memory for strides and shape
+    ptrdiff_t *d_grad_x_strides = nullptr, *d_grad_y_strides = nullptr, *d_x_strides = nullptr;
+    size_t *d_shape = nullptr;
+    
+    hcError_t err;
+    err = hcMalloc((void**)&d_grad_x_strides, ndim * sizeof(ptrdiff_t));
+    if (err != hcSuccess) goto cleanup;
+    
+    err = hcMalloc((void**)&d_grad_y_strides, ndim * sizeof(ptrdiff_t));
+    if (err != hcSuccess) goto cleanup;
+    
+    err = hcMalloc((void**)&d_x_strides, ndim * sizeof(ptrdiff_t));
+    if (err != hcSuccess) goto cleanup;
+    
+    err = hcMalloc((void**)&d_shape, ndim * sizeof(size_t));
+    if (err != hcSuccess) goto cleanup;
+    
+    // Copy strides and shape to device
+    err = hcMemcpyAsync(d_grad_x_strides, info.grad_x_strides.data(), ndim * sizeof(ptrdiff_t), hcMemcpyHostToDevice, stream);
+    if (err != hcSuccess) goto cleanup;
+    
+    err = hcMemcpyAsync(d_grad_y_strides, info.grad_y_strides.data(), ndim * sizeof(ptrdiff_t), hcMemcpyHostToDevice, stream);
+    if (err != hcSuccess) goto cleanup;
+    
+    err = hcMemcpyAsync(d_x_strides, info.x_strides.data(), ndim * sizeof(ptrdiff_t), hcMemcpyHostToDevice, stream);
+    if (err != hcSuccess) goto cleanup;
+    
+    err = hcMemcpyAsync(d_shape, info.shape.data(), ndim * sizeof(size_t), hcMemcpyHostToDevice, stream);
+    if (err != hcSuccess) goto cleanup;
+    
+    // Launch kernel
+    {
+        dim3 grid(batch_size);
+        dim3 block(BLOCK_SIZE);
+    
+    rmsNormBackwardKernel<BLOCK_SIZE, Tdata, Tcompute, Tweight><<<grid, block, 0, stream>>>(
+        grad_x,
+        grad_w_metax,
+        grad_y,
+        x,
+        w,
+        ndim,
+        batch_size,
+        norm_size,
+        d_grad_x_strides,
+        d_shape,
+        d_grad_y_strides,
+        d_x_strides,
+        info.w_strides[0],
+        info.epsilon
+    );
+    
+        // Check kernel launch error
+        err = hcGetLastError();
+        if (err != hcSuccess) goto cleanup;
+        
+        // Wait for kernel completion
+        err = hcStreamSynchronize(stream);
+        if (err != hcSuccess) goto cleanup;
+    }
+    
+cleanup:
+    // Clean up device memory
+    if (d_grad_x_strides) hcFree(d_grad_x_strides);
+    if (d_grad_y_strides) hcFree(d_grad_y_strides);
+    if (d_x_strides) hcFree(d_x_strides);
+    if (d_shape) hcFree(d_shape);
+    
+    if (err != hcSuccess) {
+        return INFINI_STATUS_INTERNAL_ERROR;
+    }
+    
+    return INFINI_STATUS_SUCCESS;
+}
+
+/**
+ * @brief Launch kernel to sum up weight gradients across batches
+ * 
+ * @tparam Tdata Data type for output gradient tensor
+ * @tparam Tcompute Computation type for intermediate calculations
+ */
+template <typename Tdata, typename Tcompute>
+infiniStatus_t launchSumUpGradWKernel(
+    Tdata * grad_w,
+    Tcompute * grad_w_metax,
+    const RMSNormBackwardInfo& info,
+    hcStream_t stream
+) {
+    constexpr unsigned int BLOCK_SIZE = 256;
+    
+    size_t batch_size = info.batch_size();
+    size_t norm_size = info.dim();
+    
+    dim3 grid(norm_size);
+    dim3 block(BLOCK_SIZE);
+    
+    sumUpGradWKernel<BLOCK_SIZE, Tdata, Tcompute><<<grid, block, 0, stream>>>(
+        grad_w,
+        grad_w_metax,
+        batch_size,
+        info.grad_w_strides[0]
+    );
+    
+    // Check kernel launch error
+    hcError_t err = hcGetLastError();
+    if (err != hcSuccess) {
+        return INFINI_STATUS_INTERNAL_ERROR;
+    }
+    
+    // Wait for kernel completion
+    err = hcStreamSynchronize(stream);
+    if (err != hcSuccess) {
+        return INFINI_STATUS_INTERNAL_ERROR;
+    }
+    
+    return INFINI_STATUS_SUCCESS;
+}
+
+
+
+Descriptor::~Descriptor() = default;
+
+infiniStatus_t Descriptor::create(
+    infiniopHandle_t handle_,
+    Descriptor **desc_ptr,
+    infiniopTensorDescriptor_t grad_x_desc,
+    infiniopTensorDescriptor_t grad_w_desc,
+    infiniopTensorDescriptor_t grad_y_desc,
+    infiniopTensorDescriptor_t x_desc,
+    infiniopTensorDescriptor_t w_desc,
+    float epsilon
+) {
+    if (!handle_ || !desc_ptr || !grad_x_desc || !grad_w_desc || !grad_y_desc || !x_desc || !w_desc) {
+        return INFINI_STATUS_BAD_PARAM;
+    }
+
+    auto handle = static_cast<device::metax::Handle *>(handle_);
+    
+    // Create RMSNormBackwardInfo using the static method
+    auto info_result = RMSNormBackwardInfo::createRMSNormBackwardInfo(
+        grad_x_desc, grad_w_desc, grad_y_desc, x_desc, w_desc, epsilon);
+    
+    if (!info_result) {
+        return info_result.status();
+    }
+    
+    auto info = info_result.take();
+    
+    // Calculate workspace size for intermediate weight gradients
+    size_t workspace_size = info.batch_size() * info.dim() * sizeof(float); // Use float for computation
+    
+    *desc_ptr = new Descriptor(info, workspace_size, handle->device, handle->device_id);
+    
+    return INFINI_STATUS_SUCCESS;
+}
+
+infiniStatus_t Descriptor::calculate(
+    void * workspace,
+    size_t workspace_size,
+    void * grad_x,
+    void * grad_w,
+    const void * grad_y,
+    const void * x,
+    const void * w,
+    void * stream
+) const {
+    if (!grad_x || !grad_w || !grad_y || !x || !w) {
+        return INFINI_STATUS_BAD_PARAM;
+    }
+    
+    hcStream_t hc_stream = static_cast<hcStream_t>(stream);
+    
+    // Dispatch based on data types
+    if (_info.grad_x_dtype == INFINI_DTYPE_F16 && _info.w_dtype == INFINI_DTYPE_F16) {
+        return calculate_rms_norm_backward<__half, float, __half>(
+            workspace, grad_x, grad_w, grad_y, x, w, _info, stream
+        );
+    } else if (_info.grad_x_dtype == INFINI_DTYPE_F16 && _info.w_dtype == INFINI_DTYPE_F32) {
+        return calculate_rms_norm_backward<__half, float, float>(
+            workspace, grad_x, grad_w, grad_y, x, w, _info, stream
+        );
+    } else if (_info.grad_x_dtype == INFINI_DTYPE_BF16 && _info.w_dtype == INFINI_DTYPE_BF16) {
+        return calculate_rms_norm_backward<__hpcc_bfloat16, float, __hpcc_bfloat16>(
+            workspace, grad_x, grad_w, grad_y, x, w, _info, stream
+        );
+    } else if (_info.grad_x_dtype == INFINI_DTYPE_BF16 && _info.w_dtype == INFINI_DTYPE_F32) {
+        return calculate_rms_norm_backward<__hpcc_bfloat16, float, float>(
+            workspace, grad_x, grad_w, grad_y, x, w, _info, stream
+        );
+    } else if (_info.grad_x_dtype == INFINI_DTYPE_F32 && _info.w_dtype == INFINI_DTYPE_F32) {
+        return calculate_rms_norm_backward<float, float, float>(
+            workspace, grad_x, grad_w, grad_y, x, w, _info, stream
+        );
+    } else {
+        return INFINI_STATUS_BAD_TENSOR_DTYPE;
+    }
+}
+
+template <typename GradXType, typename AccType, typename WType>
+infiniStatus_t Descriptor::calculate_rms_norm_backward(
+    void *workspace,
+    void *grad_x_data,
+    void *grad_w_data,
+    const void *grad_y_data,
+    const void *x_data,
+    const void *w_data,
+    const RMSNormBackwardInfo &info,
+    void *stream) const {
+    
+    auto grad_x = static_cast<GradXType*>(grad_x_data);
+    auto grad_w = static_cast<GradXType*>(grad_w_data);
+    auto grad_y = static_cast<const GradXType*>(grad_y_data);
+    auto x = static_cast<const GradXType*>(x_data);
+    auto w = static_cast<const WType*>(w_data);
+    auto hc_stream = static_cast<hcStream_t>(stream);
+    
+    // Use workspace for intermediate weight gradients
+    auto grad_w_metax = static_cast<AccType*>(workspace);
+    
+    // Launch RMS Norm backward kernel
+    infiniStatus_t status = launchRmsNormBackwardKernel<GradXType, AccType, WType>(
+        grad_x, grad_w_metax, grad_y, x, w, info, hc_stream
+    );
+    if (status != INFINI_STATUS_SUCCESS) {
+        return status;
+    }
+    
+    // Sum up weight gradients across batches
+    status = launchSumUpGradWKernel<GradXType, AccType>(
+        grad_w, grad_w_metax, info, hc_stream
+    );
+    if (status != INFINI_STATUS_SUCCESS) {
+        return status;
+    }
+    
+    return INFINI_STATUS_SUCCESS;
+}
+
+} // namespace op::rms_norm_backward::metax

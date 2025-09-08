@@ -74,8 +74,8 @@ target("infinirt-nvidia")
         add_cxxflags("/FS")
     else
         add_cuflags("-Xcompiler=-fPIC")
-        add_culdflags("-Xcompiler=-fPIC")
-        add_cxflags("-fPIC")
+        add_culdflags("-Xcompiler=-fPIC", {force = true})
+        add_cxxflags("-fPIC")
     end
 
     set_languages("cxx17")

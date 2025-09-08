@@ -1,0 +1,2594 @@
+reduce_max.gguf
+Found 30 tests
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [4, 1], Type: F32
+- output: Shape: [1, 4], Strides: [4, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 48.703 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [4, 1], Type: F32
+- output: Shape: [13, 1], Strides: [1, 1], Type: F32
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 46.354 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [10, 1], Type: F32
+- output: Shape: [13, 1], Strides: [10, 1], Type: F32
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 46.426 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [1, 4, 4], Strides: [16, 4, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 47.782 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [13, 4, 1], Strides: [4, 1, 1], Type: F32
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 46.839 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 5632], Strides: [5632, 1], Type: F32
+- output: Shape: [16, 1], Strides: [1, 1], Type: F32
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 500.501 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 5632], Strides: [6000, 1], Type: F32
+- output: Shape: [1, 5632], Strides: [6000, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 52.107 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F32
+- output: Shape: [4, 4, 1], Strides: [4, 1, 1], Type: F32
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 500.345 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F32
+- output: Shape: [1, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 54.513 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F32
+- output: Shape: [16, 8, 1, 8], Strides: [64, 8, 8, 1], Type: F32
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 48.847 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [4, 1], Type: F16
+- output: Shape: [1, 4], Strides: [4, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 51.233 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [4, 1], Type: F16
+- output: Shape: [13, 1], Strides: [1, 1], Type: F16
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 47.641 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [10, 1], Type: F16
+- output: Shape: [13, 1], Strides: [10, 1], Type: F16
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 47.398 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [1, 4, 4], Strides: [16, 4, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 51.891 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [13, 4, 1], Strides: [4, 1, 1], Type: F16
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 47.758 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 5632], Strides: [5632, 1], Type: F16
+- output: Shape: [16, 1], Strides: [1, 1], Type: F16
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2626.55 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 5632], Strides: [6000, 1], Type: F16
+- output: Shape: [1, 5632], Strides: [6000, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 56.37 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F16
+- output: Shape: [4, 4, 1], Strides: [4, 1, 1], Type: F16
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2641.78 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F16
+- output: Shape: [1, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 64.36 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F16
+- output: Shape: [16, 8, 1, 8], Strides: [64, 8, 8, 1], Type: F16
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 57.609 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- output: Shape: [1, 4], Strides: [4, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 54.355 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- output: Shape: [13, 1], Strides: [1, 1], Type: BF16
+- dim: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 53.442 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4], Strides: [10, 1], Type: BF16
+- output: Shape: [13, 1], Strides: [10, 1], Type: BF16
+- dim: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 53.98 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [1, 4, 4], Strides: [16, 4, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 55.323 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [13, 4, 1], Strides: [4, 1, 1], Type: BF16
+- dim: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 53.985 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 5632], Strides: [5632, 1], Type: BF16
+- output: Shape: [16, 1], Strides: [1, 1], Type: BF16
+- dim: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 480.582 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 5632], Strides: [6000, 1], Type: BF16
+- output: Shape: [1, 5632], Strides: [6000, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 57.394 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: BF16
+- output: Shape: [4, 4, 1], Strides: [4, 1, 1], Type: BF16
+- dim: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 480.508 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: BF16
+- output: Shape: [1, 8, 4, 8], Strides: [256, 32, 8, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 58.676 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_max
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: BF16
+- output: Shape: [16, 8, 1, 8], Strides: [64, 8, 8, 1], Type: BF16
+- dim: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 56.722 us
+
+=====================================
+[32mAll tests passed[0m
+reduce_mean.gguf
+Found 30 tests
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [4, 1], Type: F32
+- output: Shape: [1, 4], Strides: [4, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 48.683 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [4, 1], Type: F32
+- output: Shape: [13, 1], Strides: [1, 1], Type: F32
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 46.798 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [10, 1], Type: F32
+- output: Shape: [13, 1], Strides: [10, 1], Type: F32
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 46.857 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [1, 4, 4], Strides: [16, 4, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 48.044 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F32
+- output: Shape: [13, 4, 1], Strides: [4, 1, 1], Type: F32
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 51.259 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 5632], Strides: [5632, 1], Type: F32
+- output: Shape: [16, 1], Strides: [1, 1], Type: F32
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 467.021 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 5632], Strides: [6000, 1], Type: F32
+- output: Shape: [1, 5632], Strides: [6000, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 55.867 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F32
+- output: Shape: [4, 4, 1], Strides: [4, 1, 1], Type: F32
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 474.008 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F32
+- output: Shape: [1, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F32
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 64.376 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F32
+- output: Shape: [16, 8, 1, 8], Strides: [64, 8, 8, 1], Type: F32
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 59.147 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [4, 1], Type: F16
+- output: Shape: [1, 4], Strides: [4, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 62.96 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [4, 1], Type: F16
+- output: Shape: [13, 1], Strides: [1, 1], Type: F16
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 56.175 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [10, 1], Type: F16
+- output: Shape: [13, 1], Strides: [10, 1], Type: F16
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 56.191 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [1, 4, 4], Strides: [16, 4, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 60.534 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: F16
+- output: Shape: [13, 4, 1], Strides: [4, 1, 1], Type: F16
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 56.331 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 5632], Strides: [5632, 1], Type: F16
+- output: Shape: [16, 1], Strides: [1, 1], Type: F16
+- dim: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2543.54 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 5632], Strides: [6000, 1], Type: F16
+- output: Shape: [1, 5632], Strides: [6000, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 55.096 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: F16
+- output: Shape: [4, 4, 1], Strides: [4, 1, 1], Type: F16
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 2546.01 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F16
+- output: Shape: [1, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F16
+- dim: 0
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 58.419 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: F16
+- output: Shape: [16, 8, 1, 8], Strides: [64, 8, 8, 1], Type: F16
+- dim: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 50.537 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- output: Shape: [1, 4], Strides: [4, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 47.124 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [4, 1], Type: BF16
+- output: Shape: [13, 1], Strides: [1, 1], Type: BF16
+- dim: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 46.479 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4], Strides: [10, 1], Type: BF16
+- output: Shape: [13, 1], Strides: [10, 1], Type: BF16
+- dim: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 46.406 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [1, 4, 4], Strides: [16, 4, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 48.051 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [13, 4, 4], Strides: [16, 4, 1], Type: BF16
+- output: Shape: [13, 4, 1], Strides: [4, 1, 1], Type: BF16
+- dim: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 47.147 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 5632], Strides: [5632, 1], Type: BF16
+- output: Shape: [16, 1], Strides: [1, 1], Type: BF16
+- dim: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 449.941 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 5632], Strides: [6000, 1], Type: BF16
+- output: Shape: [1, 5632], Strides: [6000, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 46.886 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [4, 4, 5632], Strides: [22528, 5632, 1], Type: BF16
+- output: Shape: [4, 4, 1], Strides: [4, 1, 1], Type: BF16
+- dim: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 450.252 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: BF16
+- output: Shape: [1, 8, 4, 8], Strides: [256, 32, 8, 1], Type: BF16
+- dim: 0
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 48.958 us
+
+=====================================
+Status: [32mPASS[0m
+Description: reduce_mean
+- input: Shape: [16, 8, 4, 8], Strides: [256, 32, 8, 1], Type: BF16
+- output: Shape: [16, 8, 1, 8], Strides: [64, 8, 8, 1], Type: BF16
+- dim: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 49.254 us
+
+=====================================
+[32mAll tests passed[0m
+batch_norm.gguf
+Found 36 tests
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 0.183903 0.548368 -0.854129 0.250858 0.421471 
+Weight first 5 values: -0.0719231 -1.8199 0.0360351 -0.442552 
+Running mean first 5 values: -0.705793 0.432951 0.552824 -0.0888763 
+Running var first 5 values: 1.31498 1.35739 1.00679 1.30767 
+Expected output first 5 values: -1.0842e-19 -1.833 3.68935e+19 -1.84032 -2 
+Actual output first 5 values: -0.831985 -0.831985 -0.831985 -0.831985 -0.831985 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 1.11707 -2.52533 2.06216 -0.406518 0.227266 
+Weight first 5 values: 1.0084 1.64173 0.871724 0.509263 0.298453 
+Running mean first 5 values: -0.801954 0.74782 -1.20617 -1.71585 -0.756402 
+Running var first 5 values: 1.24863 2.34437 1.94988 1.36329 1.24736 
+Expected output first 5 values: -1.0842e-19 -1.49242 0 -2.20787 -0 
+Actual output first 5 values: -0.121211 -0.121211 -0.121211 -0.121211 -0.121211 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 1 16 32 
+Input first 5 values: -0.634453 -1.00526 2.36502 -1.02389 1.58789 
+Weight first 5 values: -0.231411 0.901109 -0.192012 0.829586 1.25363 
+Running mean first 5 values: 0.439123 -0.376171 -0.165385 -2.01495 -0.410794 
+Running var first 5 values: 1.73837 2.5532 1.97798 2.10468 1.86395 
+Expected output first 5 values: 3.68935e+19 -2.01339 3.68935e+19 -2.00284 2 
+Actual output first 5 values: -2.10714 -2.10714 -2.10714 -2.10714 -2.10714 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 8 32 64 
+Input first 5 values: 0.178831 0.132568 1.35131 1.30545 -1.06095 
+Weight first 5 values: -1.21221 -0.82231 -0.707585 0.625917 -1.01124 
+Running mean first 5 values: 1.4862 -0.0359957 -1.99026 -0.739551 -0.256103 
+Running var first 5 values: 1.44234 1.06674 1.81992 1.17473 2.53125 
+Expected output first 5 values: -2 1.8314 -3.68935e+19 1.84627 -2 
+Actual output first 5 values: 0.825586 0.825586 0.825586 0.825586 0.825586 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 64 128 
+Input first 5 values: -0.261441 -1.47401 0.123672 0.625468 1.0304 
+Weight first 5 values: -0.343829 0.727405 0.34388 0.365273 0.32143 
+Running mean first 5 values: -1.07096 -0.319347 -0.422901 0.850627 -0.381196 
+Running var first 5 values: 2.08773 2.35055 1.36733 1.56573 1.07345 
+Expected output first 5 values: -0 1.84971 2 1.91183 1.0842e-19 
+Actual output first 5 values: 0.898842 0.898842 0.898842 0.898842 0.898842 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 0.854095 0.296885 -0.655301 1.95013 0.879466 
+Weight first 5 values: 1.15762 0.824769 0.947336 1.5659 
+Running mean first 5 values: 3.40672 -0.235739 1.06021 0.636062 
+Running var first 5 values: 3.29798 1.60205 1.23364 2.14873 
+Expected output first 5 values: 2 1.79329 0 -1.59948 -0 
+Actual output first 5 values: 0.67318 0.67318 0.67318 0.67318 0.67318 
+eps: 1e-05
+training: 1
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: -0.0696614 0.803081 -1.47136 0.564594 -0.651304 
+Weight first 5 values: -0.169765 0.273917 -0.354048 0.500338 -1.06839 
+Running mean first 5 values: 1.28315 -0.818102 -0.690154 -0.804844 -0.195718 
+Running var first 5 values: 1.27044 1.18464 1.03742 1.87169 1.20729 
+Expected output first 5 values: -0 -1.59882 2 -1.67507 -1.0842e-19 
+Actual output first 5 values: -0.223819 -0.223819 -0.223819 -0.223819 -0.223819 
+eps: 1e-05
+training: 1
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 0.114466 -1.52485 -0.414254 -0.380647 0.896721 
+Weight first 5 values: 0.0326591 -0.321256 -0.0371133 -1.61543 
+Running mean first 5 values: 0.437016 -0.959185 -0.542777 0.676828 
+Running var first 5 values: 1.59063 2.02581 2.01284 1.75781 
+Expected output first 5 values: -1.0842e-19 1.69673 -3.68935e+19 1.67352 0 
+Actual output first 5 values: 0.393459 0.393459 0.393459 0.393459 0.393459 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 1.12932 -1.85073 0.333795 -0.509894 1.66777 
+Weight first 5 values: 0.712948 -0.92382 -1.34949 -1.37508 -0.568348 
+Running mean first 5 values: 0.493659 1.19208 1.61264 -0.90741 -1.18176 
+Running var first 5 values: 1.10914 1.55325 2.34098 1.85766 1.13026 
+Expected output first 5 values: 0 1.81077 -0 -1.92627 2 
+Actual output first 5 values: 0.743091 0.743091 0.743091 0.743091 0.743091 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 0.14503 0.54561 -2.12529 -0.1468 -0.33924 
+Weight first 5 values: 0.00203762 0.963854 1.80084 0.524575 
+Running mean first 5 values: 1.43005 -1.09048 -0.0295621 0.339125 
+Running var first 5 values: 1.02577 3.56904 1.35719 1.97748 
+Expected output first 5 values: 0 -1.65845 3.68935e+19 -1.65801 -2 
+Actual output first 5 values: -0.316905 -0.316905 -0.316905 -0.316905 -0.316905 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 0.215551 0.646247 1.33858 0.445793 0.814168 
+Weight first 5 values: 1.63578 0.591405 0.969077 -0.156064 -0.419089 
+Running mean first 5 values: -0.723891 -0.276825 -0.411494 -0.553386 -0.605175 
+Running var first 5 values: 1.21972 1.08265 1.33552 1.76745 1.42934 
+Expected output first 5 values: 0 1.97234 3.68935e+19 2.04707 -0 
+Actual output first 5 values: 1.77869 1.77869 1.77869 1.77869 1.77869 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 1.8019 -1.01558 0.185524 1.44426 0.204498 
+Weight first 5 values: 1.08688 -0.0638725 -0.45492 1.79631 
+Running mean first 5 values: 0.752155 -0.0788963 -0.0747626 -0.758315 
+Running var first 5 values: 2.12158 2.15077 2.06017 1.48766 
+Expected output first 5 values: -3.68935e+19 2.16828 -1.0842e-19 1.51607 -3.68935e+19 
+Actual output first 5 values: 3.34622 3.34622 3.34622 3.34622 3.34622 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -5.35444e-06 0.838679 0.000359873 -0.00438652 2.15136e-11 
+Weight first 5 values: -7.25508e-15 0.0365393 0 0 
+Running mean first 5 values: 1.6364e-07 -0.0204139 0 0 
+Running var first 5 values: 0.180915 7.2576 0 0 
+Expected output first 5 values: 3.68935e+19 1.92591 -1.0842e-19 1.93742 3.68935e+19 
+Actual output first 5 values: 0.0787308 0.0787308 0.0787308 0.0787308 0.0787308 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: -0.000578827 -0.621999 4.84881e-06 -6.96296e-09 -4.63103e-05 
+Weight first 5 values: 1.17433e-08 -0.490608 1.33887e-05 -0.00331513 0 
+Running mean first 5 values: 0.000277935 -2.17193e-07 -0.00287224 -3.23626e-05 1.68156e-44 
+Running var first 5 values: 0.0542604 0.23462 1.84569 0.0581673 4.48416e-44 
+Expected output first 5 values: 2 2.09446 -2 2.01048 -3.68935e+19 
+Actual output first 5 values: 16.407 16.407 16.407 16.407 16.407 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 1 16 32 
+Input first 5 values: 0.0284103 -2.8099e-05 0.0154249 0.00150866 -0.729396 
+Weight first 5 values: -0.0728762 -3.46666e-09 0.000662691 -1.61381e-13 -0.010755 
+Running mean first 5 values: -4.51127e-07 -0.678593 0.381262 -0.000868662 0.389012 
+Running var first 5 values: 18.2813 1.75196 0.20336 0.0889891 5.10138 
+Expected output first 5 values: 3.68935e+19 -1.88199 -3.68935e+19 2.23041 -3.68935e+19 
+Actual output first 5 values: -0.0113364 -0.0113364 -0.0113364 -0.0113364 -0.0113364 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 8 32 64 
+Input first 5 values: -2.57513e-12 -1.06507e-07 -0.000170471 -3.03601e-14 -1.2558e-12 
+Weight first 5 values: -0.0158355 -0.057553 -2.20784e-09 0.00134054 9.41262e-09 
+Running mean first 5 values: -0.0259628 -1.36391e-16 -2.95395e-06 -1.23923e-14 -0.0018101 
+Running var first 5 values: 0.00825527 0.449682 0.262188 2.19143 2.19162 
+Expected output first 5 values: 2 -1.65881 1.0842e-19 -1.26343 3.68935e+19 
+Actual output first 5 values: -5.57703e-07 -5.57703e-07 -5.57703e-07 -5.57703e-07 -5.57703e-07 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 64 128 
+Input first 5 values: 1.36035e-05 7.02552e-12 0.652785 -9.47942e-28 -0.00279583 
+Weight first 5 values: -1.36153e-07 0.00629224 0.314832 6.04959e-05 -1.25724e-06 
+Running mean first 5 values: -2.3165e-07 -0.021083 -0.00950563 0.00104324 0.105829 
+Running var first 5 values: 0.289549 0.122193 0.430175 12.1404 0.465323 
+Expected output first 5 values: 3.68935e+19 -1.83232 0 -1.84868 3.68935e+19 
+Actual output first 5 values: -0.00124152 -0.00124152 -0.00124152 -0.00124152 -0.00124152 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -1.06753e-07 1.5231e-07 8.64046e-05 -0.0146619 -2.19332e-06 
+Weight first 5 values: 0.000100475 -2.50695e-06 0 0 
+Running mean first 5 values: 5.39073e-09 0.010818 0 0 
+Running var first 5 values: 3.20684 0.430176 0 0 
+Expected output first 5 values: -3.68935e+19 -1.89891 -2 -1.67693 0 
+Actual output first 5 values: -0.0240158 -0.0240158 -0.0240158 -0.0240158 -0.0240158 
+eps: 1e-05
+training: 1
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: -2.1581e-07 -1.98741e-05 -1.97661e-07 0.0266349 -3.3967e-10 
+Weight first 5 values: 0.0446118 -0.00126814 0.00239858 0.0408286 4.52328e+21 
+Running mean first 5 values: -1.15094e-08 -0.000387554 -2.37234e-07 0.000431488 2.22158e+15 
+Running var first 5 values: 0.133057 0.0176072 0.05792 0.058654 2.23279e+15 
+Expected output first 5 values: 0 -1.72943 -3.68935e+19 -1.8423 -1.0842e-19 
+Actual output first 5 values: -1.29173e-05 -1.29173e-05 -1.29173e-05 -1.29173e-05 -1.29173e-05 
+eps: 1e-05
+training: 1
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 8.43092e-10 -0.00892639 -0.00247506 0.000469629 1.42342e-14 
+Weight first 5 values: -0.000691429 0.0010429 0 0 
+Running mean first 5 values: 0.000706389 -1.87936e-16 4.26637e+21 3.07571e-41 
+Running var first 5 values: 0.0279853 5.00742 0 0 
+Expected output first 5 values: -2 -2.25163 0 -1.41395 -2 
+Actual output first 5 values: -543.063 -543.063 -543.063 -543.063 -543.063 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 7.19346 -0.000131774 -0.00131335 7.71106e-05 1.48769e-07 
+Weight first 5 values: 7.85112e-06 -0.000664482 1.20829e-05 1.75958 2.23575e+15 
+Running mean first 5 values: 2.27912e-07 -4.79294e-10 -15.2017 -2.9301e-24 4.48416e-44 
+Running var first 5 values: 0.140876 22.2811 7.69519 0.778323 1.08826e+21 
+Expected output first 5 values: -0 1.39746 3.68935e+19 -1.87948 -2 
+Actual output first 5 values: 5.23456e-12 5.23456e-12 5.23456e-12 5.23456e-12 5.23456e-12 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -6.51801e-06 -4.41894e-07 1.81897e-08 2.98374e-07 -40.4221 
+Weight first 5 values: -0.082391 -0.00488952 4.2722e+21 3.07571e-41 
+Running mean first 5 values: 0.000108827 0.0436362 0 0 
+Running var first 5 values: 2.78523 25.2805 0 0 
+Expected output first 5 values: -3.68935e+19 1.8881 -1.0842e-19 1.90343 -2 
+Actual output first 5 values: 0.0143577 0.0143577 0.0143577 0.0143577 0.0143577 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: -0.0916621 -9.90336e-05 -0.0125581 0.00478087 0.00913763 
+Weight first 5 values: -4.68544e-08 -8.61771e-05 -7.59003e-05 1.99171e-13 2.23338e+15 
+Running mean first 5 values: 1.45516e-17 -0.0185801 -0.00569894 -0.0132274 2.22848e+15 
+Running var first 5 values: 0.268049 26.7793 0.0184652 1.75186 1.96182e-44 
+Expected output first 5 values: -0 -1.82347 -2 -1.96839 -0 
+Actual output first 5 values: -0.000834381 -0.000834381 -0.000834381 -0.000834381 -0.000834381 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 0.00010786 4.74481e-07 -0.0179713 0.00207129 0.00812831 
+Weight first 5 values: 0.32468 0.000555831 0 0 
+Running mean first 5 values: 0.167217 1.2048 0 0 
+Running var first 5 values: 0.0284726 0.355938 0 0 
+Expected output first 5 values: -3.68935e+19 -1.86899 -0 -1.74702 -1.0842e-19 
+Actual output first 5 values: -0.00633953 -0.00633953 -0.00633953 -0.00633953 -0.00633953 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -3.03513 -1.08397 -1.3652 0.187255 2.2617 
+Weight first 5 values: 0.136959 0.169181 0 0 
+Running mean first 5 values: -1.29098 -0.600564 0 0 
+Running var first 5 values: 1.68946 1.04102 0 0 
+Expected output first 5 values: 0 1.99465 -3.68935e+19 -1.12009 -3.68935e+19 
+Actual output first 5 values: 1.96289 1.96289 1.96289 1.96289 1.96289 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 0.494619 -0.852527 -1.40037 -0.801701 0.883775 
+Weight first 5 values: -0.577119 -0.437984 0.639626 -0.745114 1.08889e+21 
+Running mean first 5 values: -0.774406 0.0221852 0.00883457 -0.651354 1.08889e+21 
+Running var first 5 values: 1.38477 1.83007 2.84768 1.56446 1.08854e+21 
+Expected output first 5 values: -2 -1.8785 -3.68935e+19 -1.88097 -0 
+Actual output first 5 values: -1.03709 -1.03709 -1.03709 -1.03709 -1.03709 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 1 16 32 
+Input first 5 values: 0.993154 -1.08399 0.0335074 -1.40029 -0.306146 
+Weight first 5 values: 0.674778 -1.3105 -1.82222 -1.51362 -1.20115 
+Running mean first 5 values: -0.277824 1.02539 0.161361 0.969704 -2.87097 
+Running var first 5 values: 1.6035 2.09764 2.67579 1.73632 2.08201 
+Expected output first 5 values: 2 -1.86774 -1.0842e-19 -1.87437 3.68935e+19 
+Actual output first 5 values: -0.975578 -0.975578 -0.975578 -0.975578 -0.975578 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 8 32 64 
+Input first 5 values: 0.328604 -0.349118 1.03314 0.0987549 -1.63473 
+Weight first 5 values: -0.706049 -1.90037 0.749014 0.743153 -0.0303033 
+Running mean first 5 values: 0.361804 -0.242428 0.62988 1.79876 -0.983377 
+Running var first 5 values: 2.44142 2.55076 1.61913 1.25976 1.01757 
+Expected output first 5 values: 0 1.38547 0 1.55736 -1.0842e-19 
+Actual output first 5 values: 0.0679885 0.0679885 0.0679885 0.0679885 0.0679885 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 64 128 
+Input first 5 values: 2.73047 -0.743164 0.106567 -0.434074 -1.47457 
+Weight first 5 values: -1.50193 -1.37695 -0.854471 -1.44331 0.512695 
+Running mean first 5 values: 0.637691 -1.27538 0.920886 0.163813 0.817376 
+Running var first 5 values: 1.92382 1.04883 2.332 1.56444 2.16016 
+Expected output first 5 values: -1.0842e-19 -1.72253 -0 2.20312 0 
+Actual output first 5 values: -0.446769 -0.446769 -0.446769 -0.446769 -0.446769 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -0.995085 2.19919 -1.24412 0.463376 -1.33786 
+Weight first 5 values: -1.13081 0.0350937 0 0 
+Running mean first 5 values: -0.610341 0.518497 0 0 
+Running var first 5 values: 1.67381 1.19725 0 0 
+Expected output first 5 values: 2 1.77405 3.68935e+19 1.83049 -0 
+Actual output first 5 values: 0.598619 0.598619 0.598619 0.598619 0.598619 
+eps: 1e-05
+training: 1
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: -0.168692 1.35741 1.00195 0.838853 1.17376 
+Weight first 5 values: -0.932611 1.4121 1.58785 -0.813458 3.02625e+29 
+Running mean first 5 values: 2.12107 -0.491695 -0.606441 -1.14649 4.48416e-44 
+Running var first 5 values: 1.62694 1.04102 2.19141 2.8789 1.12104e-44 
+Expected output first 5 values: -0 1.98452 -2 1.99933 -0 
+Actual output first 5 values: 1.87695 1.87695 1.87695 1.87695 1.87695 
+eps: 1e-05
+training: 1
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -1.04878 0.0224913 0.678709 0.355953 0.0948481 
+Weight first 5 values: 1.83004 -1.4628 0 0 
+Running mean first 5 values: -1.0957 -0.6787 0 0 
+Running var first 5 values: 1.10351 1.25195 0 0 
+Expected output first 5 values: 0 -1.87113 -2 -1.91182 -2 
+Actual output first 5 values: -0.987297 -0.987297 -0.987297 -0.987297 -0.987297 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 0.434077 0.518542 0.410632 -1.04487 0.246823 
+Weight first 5 values: -1.68156 0.366692 0.0205372 -0.762682 0 
+Running mean first 5 values: 1.00194 -0.213619 -0.791984 -0.801728 1.06007e-38 
+Running var first 5 values: 1.93944 2.41016 2.80078 1.64258 1.12104e-44 
+Expected output first 5 values: 3.68935e+19 -1.92237 -0 -1.92558 -0 
+Actual output first 5 values: -1.38866 -1.38866 -1.38866 -1.38866 -1.38866 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: -1.16206 0.672839 0.359858 -1.5449 0.208739 
+Weight first 5 values: 0.52831 0.0677483 0 0 
+Running mean first 5 values: 1.2011 0.954088 0 0 
+Running var first 5 values: 1.42382 1.79882 0 0 
+Expected output first 5 values: 2 -1.97482 1.0842e-19 -2.09677 -0 
+Actual output first 5 values: -1.80273 -1.80273 -1.80273 -1.80273 -1.80273 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 4 8 16 
+Input first 5 values: 1.79882 -1.41211 -0.973629 0.995108 1.42373 
+Weight first 5 values: 0.443843 -1.52539 -2.34764 -0.144774 2.23266e+15 
+Running mean first 5 values: -0.485822 0.543929 2.21483 -1.36519 3.20114e+12 
+Running var first 5 values: 2.14454 1.2285 2.62888 1.21288 1.12104e-44 
+Expected output first 5 values: 0 1.96978 -3.68935e+19 1.98115 -2 
+Actual output first 5 values: 1.75976 1.75976 1.75976 1.75976 1.75976 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=== BatchNorm Debug Info ===
+Input shape: 2 4 8 
+Input first 5 values: 0.055603 0.17163 -0.343246 -0.965814 -0.299313 
+Weight first 5 values: 1.17381 0.377434 5.87822e-33 4.57496e-41 
+Running mean first 5 values: 1.30663 -1.04488 0 0 
+Running var first 5 values: 1.57226 1.51757 0 0 
+Expected output first 5 values: -2 -1.91617 3.68935e+19 1.63623 2 
+Actual output first 5 values: -1.33397 -1.33397 -1.33397 -1.33397 -1.33397 
+eps: 1e-05
+training: 0
+momentum: 0.1
+============================
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+- weight: Shape: [4], Strides: [1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- running_mean: Shape: [4], Strides: [1], Type: F32
+- running_var: Shape: [4], Strides: [1], Type: F32
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+Time: 14.133 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F32
+- weight: Shape: [8], Strides: [1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- running_mean: Shape: [8], Strides: [1], Type: F32
+- running_var: Shape: [8], Strides: [1], Type: F32
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F32
+Time: 13.207 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [1, 16, 32], Strides: [512, 32, 1], Type: F32
+- weight: Shape: [16], Strides: [1], Type: F32
+- bias: Shape: [16], Strides: [1], Type: F32
+- running_mean: Shape: [16], Strides: [1], Type: F32
+- running_var: Shape: [16], Strides: [1], Type: F32
+- output: Shape: [1, 16, 32], Strides: [512, 32, 1], Type: F32
+Time: 10.743 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [8, 32, 64], Strides: [2048, 64, 1], Type: F32
+- weight: Shape: [32], Strides: [1], Type: F32
+- bias: Shape: [32], Strides: [1], Type: F32
+- running_mean: Shape: [32], Strides: [1], Type: F32
+- running_var: Shape: [32], Strides: [1], Type: F32
+- output: Shape: [8, 32, 64], Strides: [2048, 64, 1], Type: F32
+Time: 17.518 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 64, 128], Strides: [8192, 128, 1], Type: F32
+- weight: Shape: [64], Strides: [1], Type: F32
+- bias: Shape: [64], Strides: [1], Type: F32
+- running_mean: Shape: [64], Strides: [1], Type: F32
+- running_var: Shape: [64], Strides: [1], Type: F32
+- output: Shape: [2, 64, 128], Strides: [8192, 128, 1], Type: F32
+Time: 13.791 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: true
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+- weight: Shape: [4], Strides: [1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- running_mean: Shape: [4], Strides: [1], Type: F32
+- running_var: Shape: [4], Strides: [1], Type: F32
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+Time: 11.263 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: true
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F32
+- weight: Shape: [8], Strides: [1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- running_mean: Shape: [8], Strides: [1], Type: F32
+- running_var: Shape: [8], Strides: [1], Type: F32
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F32
+Time: 13.206 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: F32
+- weight: Shape: [4], Strides: [1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- running_mean: Shape: [4], Strides: [1], Type: F32
+- running_var: Shape: [4], Strides: [1], Type: F32
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+Time: 11.238 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [256, 16, 1], Type: F32
+- weight: Shape: [8], Strides: [1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- running_mean: Shape: [8], Strides: [1], Type: F32
+- running_var: Shape: [8], Strides: [1], Type: F32
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F32
+Time: 13.121 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+- weight: Shape: [4], Strides: [1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- running_mean: Shape: [4], Strides: [1], Type: F32
+- running_var: Shape: [4], Strides: [1], Type: F32
+- output: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: F32
+Time: 11.24 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F32
+- weight: Shape: [8], Strides: [1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- running_mean: Shape: [8], Strides: [1], Type: F32
+- running_var: Shape: [8], Strides: [1], Type: F32
+- output: Shape: [4, 8, 16], Strides: [256, 16, 1], Type: F32
+Time: 13.235 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: F32
+- weight: Shape: [4], Strides: [1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- running_mean: Shape: [4], Strides: [1], Type: F32
+- running_var: Shape: [4], Strides: [1], Type: F32
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32
+Time: 11.24 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+- weight: Shape: [4], Strides: [1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- running_mean: Shape: [4], Strides: [1], Type: F16
+- running_var: Shape: [4], Strides: [1], Type: F16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+Time: 11.612 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F16
+- weight: Shape: [8], Strides: [1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- running_mean: Shape: [8], Strides: [1], Type: F16
+- running_var: Shape: [8], Strides: [1], Type: F16
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F16
+Time: 13.602 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [1, 16, 32], Strides: [512, 32, 1], Type: F16
+- weight: Shape: [16], Strides: [1], Type: F16
+- bias: Shape: [16], Strides: [1], Type: F16
+- running_mean: Shape: [16], Strides: [1], Type: F16
+- running_var: Shape: [16], Strides: [1], Type: F16
+- output: Shape: [1, 16, 32], Strides: [512, 32, 1], Type: F16
+Time: 11.037 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [8, 32, 64], Strides: [2048, 64, 1], Type: F16
+- weight: Shape: [32], Strides: [1], Type: F16
+- bias: Shape: [32], Strides: [1], Type: F16
+- running_mean: Shape: [32], Strides: [1], Type: F16
+- running_var: Shape: [32], Strides: [1], Type: F16
+- output: Shape: [8, 32, 64], Strides: [2048, 64, 1], Type: F16
+Time: 17.79 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 64, 128], Strides: [8192, 128, 1], Type: F16
+- weight: Shape: [64], Strides: [1], Type: F16
+- bias: Shape: [64], Strides: [1], Type: F16
+- running_mean: Shape: [64], Strides: [1], Type: F16
+- running_var: Shape: [64], Strides: [1], Type: F16
+- output: Shape: [2, 64, 128], Strides: [8192, 128, 1], Type: F16
+Time: 14.089 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: true
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+- weight: Shape: [4], Strides: [1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- running_mean: Shape: [4], Strides: [1], Type: F16
+- running_var: Shape: [4], Strides: [1], Type: F16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+Time: 11.686 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: true
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F16
+- weight: Shape: [8], Strides: [1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- running_mean: Shape: [8], Strides: [1], Type: F16
+- running_var: Shape: [8], Strides: [1], Type: F16
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F16
+Time: 13.716 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: F16
+- weight: Shape: [4], Strides: [1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- running_mean: Shape: [4], Strides: [1], Type: F16
+- running_var: Shape: [4], Strides: [1], Type: F16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+Time: 11.698 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [256, 16, 1], Type: F16
+- weight: Shape: [8], Strides: [1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- running_mean: Shape: [8], Strides: [1], Type: F16
+- running_var: Shape: [8], Strides: [1], Type: F16
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F16
+Time: 13.738 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+- weight: Shape: [4], Strides: [1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- running_mean: Shape: [4], Strides: [1], Type: F16
+- running_var: Shape: [4], Strides: [1], Type: F16
+- output: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: F16
+Time: 11.703 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: F16
+- weight: Shape: [8], Strides: [1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- running_mean: Shape: [8], Strides: [1], Type: F16
+- running_var: Shape: [8], Strides: [1], Type: F16
+- output: Shape: [4, 8, 16], Strides: [256, 16, 1], Type: F16
+Time: 13.727 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: F16
+- weight: Shape: [4], Strides: [1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- running_mean: Shape: [4], Strides: [1], Type: F16
+- running_var: Shape: [4], Strides: [1], Type: F16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16
+Time: 11.706 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+- weight: Shape: [4], Strides: [1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- running_mean: Shape: [4], Strides: [1], Type: BF16
+- running_var: Shape: [4], Strides: [1], Type: BF16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+Time: 11.708 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: BF16
+- weight: Shape: [8], Strides: [1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- running_mean: Shape: [8], Strides: [1], Type: BF16
+- running_var: Shape: [8], Strides: [1], Type: BF16
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: BF16
+Time: 13.862 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [1, 16, 32], Strides: [512, 32, 1], Type: BF16
+- weight: Shape: [16], Strides: [1], Type: BF16
+- bias: Shape: [16], Strides: [1], Type: BF16
+- running_mean: Shape: [16], Strides: [1], Type: BF16
+- running_var: Shape: [16], Strides: [1], Type: BF16
+- output: Shape: [1, 16, 32], Strides: [512, 32, 1], Type: BF16
+Time: 11.145 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [8, 32, 64], Strides: [2048, 64, 1], Type: BF16
+- weight: Shape: [32], Strides: [1], Type: BF16
+- bias: Shape: [32], Strides: [1], Type: BF16
+- running_mean: Shape: [32], Strides: [1], Type: BF16
+- running_var: Shape: [32], Strides: [1], Type: BF16
+- output: Shape: [8, 32, 64], Strides: [2048, 64, 1], Type: BF16
+Time: 18.459 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 64, 128], Strides: [8192, 128, 1], Type: BF16
+- weight: Shape: [64], Strides: [1], Type: BF16
+- bias: Shape: [64], Strides: [1], Type: BF16
+- running_mean: Shape: [64], Strides: [1], Type: BF16
+- running_var: Shape: [64], Strides: [1], Type: BF16
+- output: Shape: [2, 64, 128], Strides: [8192, 128, 1], Type: BF16
+Time: 14.193 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: true
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+- weight: Shape: [4], Strides: [1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- running_mean: Shape: [4], Strides: [1], Type: BF16
+- running_var: Shape: [4], Strides: [1], Type: BF16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+Time: 11.739 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: true
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: BF16
+- weight: Shape: [8], Strides: [1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- running_mean: Shape: [8], Strides: [1], Type: BF16
+- running_var: Shape: [8], Strides: [1], Type: BF16
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: BF16
+Time: 13.87 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: BF16
+- weight: Shape: [4], Strides: [1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- running_mean: Shape: [4], Strides: [1], Type: BF16
+- running_var: Shape: [4], Strides: [1], Type: BF16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+Time: 11.718 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [256, 16, 1], Type: BF16
+- weight: Shape: [8], Strides: [1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- running_mean: Shape: [8], Strides: [1], Type: BF16
+- running_var: Shape: [8], Strides: [1], Type: BF16
+- output: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: BF16
+Time: 13.873 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+- weight: Shape: [4], Strides: [1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- running_mean: Shape: [4], Strides: [1], Type: BF16
+- running_var: Shape: [4], Strides: [1], Type: BF16
+- output: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: BF16
+Time: 11.71 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [4, 8, 16], Strides: [128, 16, 1], Type: BF16
+- weight: Shape: [8], Strides: [1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- running_mean: Shape: [8], Strides: [1], Type: BF16
+- running_var: Shape: [8], Strides: [1], Type: BF16
+- output: Shape: [4, 8, 16], Strides: [256, 16, 1], Type: BF16
+Time: 13.864 us
+
+=====================================
+Status: [32mPASS[0m
+Description: BatchNorm Test:
+  eps: 1e-05
+  training: false
+  momentum: 0.1
+- input: Shape: [2, 4, 8], Strides: [64, 8, 1], Type: BF16
+- weight: Shape: [4], Strides: [1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- running_mean: Shape: [4], Strides: [1], Type: BF16
+- running_var: Shape: [4], Strides: [1], Type: BF16
+- output: Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16
+Time: 11.703 us
+
+=====================================
+[32mAll tests passed[0m
+layer_norm.gguf
+Found 69 tests
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [1, 4, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [1, 4, 8]
+Time: 9.405 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [1, 4, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [1, 4, 8]
+Time: 5.819 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [4]
+  input shape: [2, 3, 4]
+  weight shape: [4]
+  bias shape: [4]
+  output shape: [2, 3, 4]
+Time: 5.981 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [4]
+  input shape: [2, 3, 4]
+  weight shape: [4]
+  bias: none
+  output shape: [2, 3, 4]
+Time: 5.822 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [10]
+  input shape: [1, 5, 10]
+  weight shape: [10]
+  bias shape: [10]
+  output shape: [1, 5, 10]
+Time: 5.971 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [3, 6, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [3, 6, 8]
+Time: 5.971 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [2, 4, 6, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [2, 4, 6, 8]
+Time: 6.045 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [2, 4, 6, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [2, 4, 6, 8]
+Time: 5.91 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [16]
+  input shape: [1, 2, 3, 16]
+  weight shape: [16]
+  bias shape: [16]
+  output shape: [1, 2, 3, 16]
+Time: 6.008 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [16]
+  input shape: [4, 8, 12, 16]
+  weight shape: [16]
+  bias shape: [16]
+  output shape: [4, 8, 12, 16]
+Time: 7.613 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [5]
+  input shape: [1, 2, 3, 4, 5]
+  weight shape: [5]
+  bias shape: [5]
+  output shape: [1, 2, 3, 4, 5]
+Time: 6.023 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: false
+  normalized_shape: [5]
+  input shape: [1, 2, 3, 4, 5]
+  weight shape: [5]
+  bias: none
+  output shape: [1, 2, 3, 4, 5]
+Time: 5.922 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [32]
+  input shape: [2, 4, 8, 16, 32]
+  weight shape: [32]
+  bias shape: [32]
+  output shape: [2, 4, 8, 16, 32]
+Time: 12.646 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [32]
+  input shape: [1, 16, 32]
+  weight shape: [32]
+  bias shape: [32]
+  output shape: [1, 16, 32]
+Time: 6.01 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [64]
+  input shape: [8, 12, 64]
+  weight shape: [64]
+  bias shape: [64]
+  output shape: [8, 12, 64]
+Time: 6.21 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [128]
+  input shape: [4, 8, 128]
+  weight shape: [128]
+  bias: none
+  output shape: [4, 8, 128]
+Time: 5.939 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [1]
+  input shape: [1, 1, 1]
+  weight shape: [1]
+  bias shape: [1]
+  output shape: [1, 1, 1]
+Time: 5.891 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: false
+  normalized_shape: [1]
+  input shape: [1, 1, 1]
+  weight shape: [1]
+  bias: none
+  output shape: [1, 1, 1]
+Time: 5.77 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [1]
+  input shape: [10, 20, 1]
+  weight shape: [1]
+  bias shape: [1]
+  output shape: [10, 20, 1]
+Time: 6.45 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [512]
+  input shape: [1, 1, 512]
+  weight shape: [512]
+  bias shape: [512]
+  output shape: [1, 1, 512]
+Time: 6.973 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [2, 4, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [2, 4, 8]
+Time: 5.983 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [2, 4, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [2, 4, 8]
+Time: 5.835 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [6]
+  input shape: [1, 3, 6]
+  weight shape: [6]
+  bias shape: [6]
+  output shape: [1, 3, 6]
+Time: 5.93 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [1, 4, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [1, 4, 8]
+Time: 5.844 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [1, 4, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [1, 4, 8]
+Time: 5.847 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [4]
+  input shape: [2, 3, 4]
+  weight shape: [4]
+  bias shape: [4]
+  output shape: [2, 3, 4]
+Time: 5.899 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [4]
+  input shape: [2, 3, 4]
+  weight shape: [4]
+  bias: none
+  output shape: [2, 3, 4]
+Time: 5.853 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [10]
+  input shape: [1, 5, 10]
+  weight shape: [10]
+  bias shape: [10]
+  output shape: [1, 5, 10]
+Time: 5.868 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [3, 6, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [3, 6, 8]
+Time: 5.941 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [2, 4, 6, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [2, 4, 6, 8]
+Time: 6.012 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [2, 4, 6, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [2, 4, 6, 8]
+Time: 5.981 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [16]
+  input shape: [1, 2, 3, 16]
+  weight shape: [16]
+  bias shape: [16]
+  output shape: [1, 2, 3, 16]
+Time: 5.885 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [16]
+  input shape: [4, 8, 12, 16]
+  weight shape: [16]
+  bias shape: [16]
+  output shape: [4, 8, 12, 16]
+Time: 7.661 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [5]
+  input shape: [1, 2, 3, 4, 5]
+  weight shape: [5]
+  bias shape: [5]
+  output shape: [1, 2, 3, 4, 5]
+Time: 5.963 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: false
+  normalized_shape: [5]
+  input shape: [1, 2, 3, 4, 5]
+  weight shape: [5]
+  bias: none
+  output shape: [1, 2, 3, 4, 5]
+Time: 5.908 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [32]
+  input shape: [2, 4, 8, 16, 32]
+  weight shape: [32]
+  bias shape: [32]
+  output shape: [2, 4, 8, 16, 32]
+Time: 12.834 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [32]
+  input shape: [1, 16, 32]
+  weight shape: [32]
+  bias shape: [32]
+  output shape: [1, 16, 32]
+Time: 5.941 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [64]
+  input shape: [8, 12, 64]
+  weight shape: [64]
+  bias shape: [64]
+  output shape: [8, 12, 64]
+Time: 6.102 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [128]
+  input shape: [4, 8, 128]
+  weight shape: [128]
+  bias: none
+  output shape: [4, 8, 128]
+Time: 5.972 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [1]
+  input shape: [1, 1, 1]
+  weight shape: [1]
+  bias shape: [1]
+  output shape: [1, 1, 1]
+Time: 5.799 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: false
+  normalized_shape: [1]
+  input shape: [1, 1, 1]
+  weight shape: [1]
+  bias: none
+  output shape: [1, 1, 1]
+Time: 5.804 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [1]
+  input shape: [10, 20, 1]
+  weight shape: [1]
+  bias shape: [1]
+  output shape: [10, 20, 1]
+Time: 6.498 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [512]
+  input shape: [1, 1, 512]
+  weight shape: [512]
+  bias shape: [512]
+  output shape: [1, 1, 512]
+Time: 6.898 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [2, 4, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [2, 4, 8]
+Time: 5.918 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [2, 4, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [2, 4, 8]
+Time: 5.842 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [6]
+  input shape: [1, 3, 6]
+  weight shape: [6]
+  bias shape: [6]
+  output shape: [1, 3, 6]
+Time: 5.858 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [1, 4, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [1, 4, 8]
+Time: 5.938 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [1, 4, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [1, 4, 8]
+Time: 5.902 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [4]
+  input shape: [2, 3, 4]
+  weight shape: [4]
+  bias shape: [4]
+  output shape: [2, 3, 4]
+Time: 5.972 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [4]
+  input shape: [2, 3, 4]
+  weight shape: [4]
+  bias: none
+  output shape: [2, 3, 4]
+Time: 6.143 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [10]
+  input shape: [1, 5, 10]
+  weight shape: [10]
+  bias shape: [10]
+  output shape: [1, 5, 10]
+Time: 5.954 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [3, 6, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [3, 6, 8]
+Time: 6.018 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [2, 4, 6, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [2, 4, 6, 8]
+Time: 6.121 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [2, 4, 6, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [2, 4, 6, 8]
+Time: 6.112 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [16]
+  input shape: [1, 2, 3, 16]
+  weight shape: [16]
+  bias shape: [16]
+  output shape: [1, 2, 3, 16]
+Time: 6.039 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [16]
+  input shape: [4, 8, 12, 16]
+  weight shape: [16]
+  bias shape: [16]
+  output shape: [4, 8, 12, 16]
+Time: 7.897 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [5]
+  input shape: [1, 2, 3, 4, 5]
+  weight shape: [5]
+  bias shape: [5]
+  output shape: [1, 2, 3, 4, 5]
+Time: 6.111 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: false
+  normalized_shape: [5]
+  input shape: [1, 2, 3, 4, 5]
+  weight shape: [5]
+  bias: none
+  output shape: [1, 2, 3, 4, 5]
+Time: 6.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [32]
+  input shape: [2, 4, 8, 16, 32]
+  weight shape: [32]
+  bias shape: [32]
+  output shape: [2, 4, 8, 16, 32]
+Time: 13.352 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [32]
+  input shape: [1, 16, 32]
+  weight shape: [32]
+  bias shape: [32]
+  output shape: [1, 16, 32]
+Time: 6.09 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [64]
+  input shape: [8, 12, 64]
+  weight shape: [64]
+  bias shape: [64]
+  output shape: [8, 12, 64]
+Time: 6.21 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [128]
+  input shape: [4, 8, 128]
+  weight shape: [128]
+  bias: none
+  output shape: [4, 8, 128]
+Time: 6.08 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [1]
+  input shape: [1, 1, 1]
+  weight shape: [1]
+  bias shape: [1]
+  output shape: [1, 1, 1]
+Time: 5.943 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: false
+  normalized_shape: [1]
+  input shape: [1, 1, 1]
+  weight shape: [1]
+  bias: none
+  output shape: [1, 1, 1]
+Time: 5.91 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: true
+  normalized_shape: [1]
+  input shape: [10, 20, 1]
+  weight shape: [1]
+  bias shape: [1]
+  output shape: [10, 20, 1]
+Time: 6.664 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [512]
+  input shape: [1, 1, 512]
+  weight shape: [512]
+  bias shape: [512]
+  output shape: [1, 1, 512]
+Time: 7.101 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-06
+  has_bias: true
+  normalized_shape: [8]
+  input shape: [2, 4, 8]
+  weight shape: [8]
+  bias shape: [8]
+  output shape: [2, 4, 8]
+Time: 6.035 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 1e-05
+  has_bias: false
+  normalized_shape: [8]
+  input shape: [2, 4, 8]
+  weight shape: [8]
+  bias: none
+  output shape: [2, 4, 8]
+Time: 5.951 us
+
+=====================================
+Status: [32mPASS[0m
+Description: LayerNorm Test:
+  eps: 0.0001
+  has_bias: true
+  normalized_shape: [6]
+  input shape: [1, 3, 6]
+  weight shape: [6]
+  bias shape: [6]
+  output shape: [1, 3, 6]
+Time: 5.969 us
+
+=====================================
+[32mAll tests passed[0m
+rms_norm_backward.gguf
+Found 42 tests
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: F32, input=Shape: [4, 8], Strides: [8, 1], Type: F32, weight=Shape: [8], Strides: [1], Type: F32, grad_input=Shape: [4, 8], Strides: [8, 1], Type: F32, grad_weight=Shape: [8], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 76.846 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 512], Strides: [512, 1], Type: F32, input=Shape: [1, 512], Strides: [512, 1], Type: F32, weight=Shape: [512], Strides: [1], Type: F32, grad_input=Shape: [1, 512], Strides: [512, 1], Type: F32, grad_weight=Shape: [512], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 161.913 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [32, 128], Strides: [128, 1], Type: F32, input=Shape: [32, 128], Strides: [128, 1], Type: F32, weight=Shape: [128], Strides: [1], Type: F32, grad_input=Shape: [32, 128], Strides: [128, 1], Type: F32, grad_weight=Shape: [128], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 107.345 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [16, 256], Strides: [256, 1], Type: F32, input=Shape: [16, 256], Strides: [256, 1], Type: F32, weight=Shape: [256], Strides: [1], Type: F32, grad_input=Shape: [16, 256], Strides: [256, 1], Type: F32, grad_weight=Shape: [256], Strides: [1], Type: F32, epsilon=1e-06, rtol=0.001, atol=0.0015)
+Time: 131.437 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32, input=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32, weight=Shape: [8], Strides: [1], Type: F32, grad_input=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F32, grad_weight=Shape: [8], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 86.414 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: F32, input=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: F32, weight=Shape: [32], Strides: [1], Type: F32, grad_input=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: F32, grad_weight=Shape: [32], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 93.628 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F32, input=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F32, weight=Shape: [64], Strides: [1], Type: F32, grad_input=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F32, grad_weight=Shape: [64], Strides: [1], Type: F32, epsilon=1e-06, rtol=0.001, atol=0.0015)
+Time: 99.429 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 1], Strides: [1, 1], Type: F32, input=Shape: [1, 1], Strides: [1, 1], Type: F32, weight=Shape: [1], Strides: [1], Type: F32, grad_input=Shape: [1, 1], Strides: [1, 1], Type: F32, grad_weight=Shape: [1], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 84.805 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 2048], Strides: [2048, 1], Type: F32, input=Shape: [1, 2048], Strides: [2048, 1], Type: F32, weight=Shape: [2048], Strides: [1], Type: F32, grad_input=Shape: [1, 2048], Strides: [2048, 1], Type: F32, grad_weight=Shape: [2048], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 445.395 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [512, 1], Strides: [1, 1], Type: F32, input=Shape: [512, 1], Strides: [1, 1], Type: F32, weight=Shape: [1], Strides: [1], Type: F32, grad_input=Shape: [512, 1], Strides: [1, 1], Type: F32, grad_weight=Shape: [1], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 88.867 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: F32, input=Shape: [4, 8], Strides: [8, 1], Type: F32, weight=Shape: [8], Strides: [1], Type: F32, grad_input=Shape: [4, 8], Strides: [8, 1], Type: F32, grad_weight=Shape: [8], Strides: [1], Type: F32, epsilon=0.0001, rtol=0.001, atol=0.0015)
+Time: 85.947 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: F32, input=Shape: [4, 8], Strides: [8, 1], Type: F32, weight=Shape: [8], Strides: [1], Type: F32, grad_input=Shape: [4, 8], Strides: [8, 1], Type: F32, grad_weight=Shape: [8], Strides: [1], Type: F32, epsilon=1e-07, rtol=0.001, atol=0.0015)
+Time: 86.019 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [2, 16], Strides: [32, 1], Type: F32, input=Shape: [2, 16], Strides: [32, 1], Type: F32, weight=Shape: [16], Strides: [1], Type: F32, grad_input=Shape: [2, 16], Strides: [16, 1], Type: F32, grad_weight=Shape: [16], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 87.225 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 2, 16], Strides: [256, 32, 1], Type: F32, input=Shape: [1, 2, 16], Strides: [256, 32, 1], Type: F32, weight=Shape: [16], Strides: [1], Type: F32, grad_input=Shape: [1, 2, 16], Strides: [32, 16, 1], Type: F32, grad_weight=Shape: [16], Strides: [1], Type: F32, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 87.88 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: F16, input=Shape: [4, 8], Strides: [8, 1], Type: F16, weight=Shape: [8], Strides: [1], Type: F16, grad_input=Shape: [4, 8], Strides: [8, 1], Type: F16, grad_weight=Shape: [8], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 86.074 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 512], Strides: [512, 1], Type: F16, input=Shape: [1, 512], Strides: [512, 1], Type: F16, weight=Shape: [512], Strides: [1], Type: F16, grad_input=Shape: [1, 512], Strides: [512, 1], Type: F16, grad_weight=Shape: [512], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 190.108 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [32, 128], Strides: [128, 1], Type: F16, input=Shape: [32, 128], Strides: [128, 1], Type: F16, weight=Shape: [128], Strides: [1], Type: F16, grad_input=Shape: [32, 128], Strides: [128, 1], Type: F16, grad_weight=Shape: [128], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 111.069 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [16, 256], Strides: [256, 1], Type: F16, input=Shape: [16, 256], Strides: [256, 1], Type: F16, weight=Shape: [256], Strides: [1], Type: F16, grad_input=Shape: [16, 256], Strides: [256, 1], Type: F16, grad_weight=Shape: [256], Strides: [1], Type: F16, epsilon=1e-06, rtol=0.001, atol=0.0015)
+Time: 136.307 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16, input=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16, weight=Shape: [8], Strides: [1], Type: F16, grad_input=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: F16, grad_weight=Shape: [8], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 87.364 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: F16, input=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: F16, weight=Shape: [32], Strides: [1], Type: F16, grad_input=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: F16, grad_weight=Shape: [32], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 96.002 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F16, input=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F16, weight=Shape: [64], Strides: [1], Type: F16, grad_input=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F16, grad_weight=Shape: [64], Strides: [1], Type: F16, epsilon=1e-06, rtol=0.001, atol=0.0015)
+Time: 99.259 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 1], Strides: [1, 1], Type: F16, input=Shape: [1, 1], Strides: [1, 1], Type: F16, weight=Shape: [1], Strides: [1], Type: F16, grad_input=Shape: [1, 1], Strides: [1, 1], Type: F16, grad_weight=Shape: [1], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 86.01 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 2048], Strides: [2048, 1], Type: F16, input=Shape: [1, 2048], Strides: [2048, 1], Type: F16, weight=Shape: [2048], Strides: [1], Type: F16, grad_input=Shape: [1, 2048], Strides: [2048, 1], Type: F16, grad_weight=Shape: [2048], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 524.104 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [512, 1], Strides: [1, 1], Type: F16, input=Shape: [512, 1], Strides: [1, 1], Type: F16, weight=Shape: [1], Strides: [1], Type: F16, grad_input=Shape: [512, 1], Strides: [1, 1], Type: F16, grad_weight=Shape: [1], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 88.922 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: F16, input=Shape: [4, 8], Strides: [8, 1], Type: F16, weight=Shape: [8], Strides: [1], Type: F16, grad_input=Shape: [4, 8], Strides: [8, 1], Type: F16, grad_weight=Shape: [8], Strides: [1], Type: F16, epsilon=0.0001, rtol=0.001, atol=0.0015)
+Time: 86.632 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: F16, input=Shape: [4, 8], Strides: [8, 1], Type: F16, weight=Shape: [8], Strides: [1], Type: F16, grad_input=Shape: [4, 8], Strides: [8, 1], Type: F16, grad_weight=Shape: [8], Strides: [1], Type: F16, epsilon=1e-07, rtol=0.001, atol=0.0015)
+Time: 86.575 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [2, 16], Strides: [32, 1], Type: F16, input=Shape: [2, 16], Strides: [32, 1], Type: F16, weight=Shape: [16], Strides: [1], Type: F16, grad_input=Shape: [2, 16], Strides: [16, 1], Type: F16, grad_weight=Shape: [16], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 88.18 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 2, 16], Strides: [256, 32, 1], Type: F16, input=Shape: [1, 2, 16], Strides: [256, 32, 1], Type: F16, weight=Shape: [16], Strides: [1], Type: F16, grad_input=Shape: [1, 2, 16], Strides: [32, 16, 1], Type: F16, grad_weight=Shape: [16], Strides: [1], Type: F16, epsilon=1e-05, rtol=0.001, atol=0.0015)
+Time: 88.663 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: BF16, input=Shape: [4, 8], Strides: [8, 1], Type: BF16, weight=Shape: [8], Strides: [1], Type: BF16, grad_input=Shape: [4, 8], Strides: [8, 1], Type: BF16, grad_weight=Shape: [8], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 86.199 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 512], Strides: [512, 1], Type: BF16, input=Shape: [1, 512], Strides: [512, 1], Type: BF16, weight=Shape: [512], Strides: [1], Type: BF16, grad_input=Shape: [1, 512], Strides: [512, 1], Type: BF16, grad_weight=Shape: [512], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 194.248 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [32, 128], Strides: [128, 1], Type: BF16, input=Shape: [32, 128], Strides: [128, 1], Type: BF16, weight=Shape: [128], Strides: [1], Type: BF16, grad_input=Shape: [32, 128], Strides: [128, 1], Type: BF16, grad_weight=Shape: [128], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 117.696 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [16, 256], Strides: [256, 1], Type: BF16, input=Shape: [16, 256], Strides: [256, 1], Type: BF16, weight=Shape: [256], Strides: [1], Type: BF16, grad_input=Shape: [16, 256], Strides: [256, 1], Type: BF16, grad_weight=Shape: [256], Strides: [1], Type: BF16, epsilon=1e-06, rtol=0.01, atol=0.01)
+Time: 150.455 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16, input=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16, weight=Shape: [8], Strides: [1], Type: BF16, grad_input=Shape: [2, 4, 8], Strides: [32, 8, 1], Type: BF16, grad_weight=Shape: [8], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 96.096 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: BF16, input=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: BF16, weight=Shape: [32], Strides: [1], Type: BF16, grad_input=Shape: [8, 16, 32], Strides: [512, 32, 1], Type: BF16, grad_weight=Shape: [32], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 99.348 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: BF16, input=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: BF16, weight=Shape: [64], Strides: [1], Type: BF16, grad_input=Shape: [4, 8, 64], Strides: [512, 64, 1], Type: BF16, grad_weight=Shape: [64], Strides: [1], Type: BF16, epsilon=1e-06, rtol=0.01, atol=0.01)
+Time: 105.856 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 1], Strides: [1, 1], Type: BF16, input=Shape: [1, 1], Strides: [1, 1], Type: BF16, weight=Shape: [1], Strides: [1], Type: BF16, grad_input=Shape: [1, 1], Strides: [1, 1], Type: BF16, grad_weight=Shape: [1], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 89.438 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 2048], Strides: [2048, 1], Type: BF16, input=Shape: [1, 2048], Strides: [2048, 1], Type: BF16, weight=Shape: [2048], Strides: [1], Type: BF16, grad_input=Shape: [1, 2048], Strides: [2048, 1], Type: BF16, grad_weight=Shape: [2048], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 522.527 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [512, 1], Strides: [1, 1], Type: BF16, input=Shape: [512, 1], Strides: [1, 1], Type: BF16, weight=Shape: [1], Strides: [1], Type: BF16, grad_input=Shape: [512, 1], Strides: [1, 1], Type: BF16, grad_weight=Shape: [1], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 97.608 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: BF16, input=Shape: [4, 8], Strides: [8, 1], Type: BF16, weight=Shape: [8], Strides: [1], Type: BF16, grad_input=Shape: [4, 8], Strides: [8, 1], Type: BF16, grad_weight=Shape: [8], Strides: [1], Type: BF16, epsilon=0.0001, rtol=0.01, atol=0.01)
+Time: 91.298 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [4, 8], Strides: [8, 1], Type: BF16, input=Shape: [4, 8], Strides: [8, 1], Type: BF16, weight=Shape: [8], Strides: [1], Type: BF16, grad_input=Shape: [4, 8], Strides: [8, 1], Type: BF16, grad_weight=Shape: [8], Strides: [1], Type: BF16, epsilon=1e-07, rtol=0.01, atol=0.01)
+Time: 90.311 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [2, 16], Strides: [32, 1], Type: BF16, input=Shape: [2, 16], Strides: [32, 1], Type: BF16, weight=Shape: [16], Strides: [1], Type: BF16, grad_input=Shape: [2, 16], Strides: [16, 1], Type: BF16, grad_weight=Shape: [16], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 92.029 us
+
+=====================================
+Status: [32mPASS[0m
+Description: rms_norm_backward(grad_output=Shape: [1, 2, 16], Strides: [256, 32, 1], Type: BF16, input=Shape: [1, 2, 16], Strides: [256, 32, 1], Type: BF16, weight=Shape: [16], Strides: [1], Type: BF16, grad_input=Shape: [1, 2, 16], Strides: [32, 16, 1], Type: BF16, grad_weight=Shape: [16], Strides: [1], Type: BF16, epsilon=1e-05, rtol=0.01, atol=0.01)
+Time: 91.803 us
+
+=====================================
+[32mAll tests passed[0m

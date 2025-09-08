@@ -41,6 +41,11 @@ DECLARE_INFINIOP_TEST(triu)
 DECLARE_INFINIOP_TEST(tril)
 DECLARE_INFINIOP_TEST(linear)
 DECLARE_INFINIOP_TEST(linear_backward)
+DECLARE_INFINIOP_TEST(reduce_max)
+DECLARE_INFINIOP_TEST(reduce_mean)
+DECLARE_INFINIOP_TEST(batch_norm)
+DECLARE_INFINIOP_TEST(layer_norm)
+DECLARE_INFINIOP_TEST(rms_norm_backward)
 
 #define REGISTER_INFINIOP_TEST(name)                      \
     {                                                     \
@@ -93,6 +98,11 @@ DECLARE_INFINIOP_TEST(linear_backward)
         REGISTER_INFINIOP_TEST(tril) \
         REGISTER_INFINIOP_TEST(linear) \
         REGISTER_INFINIOP_TEST(linear_backward) \
+        REGISTER_INFINIOP_TEST(reduce_max) \
+        REGISTER_INFINIOP_TEST(reduce_mean) \
+        REGISTER_INFINIOP_TEST(batch_norm) \
+        REGISTER_INFINIOP_TEST(layer_norm) \
+        REGISTER_INFINIOP_TEST(rms_norm_backward) \
     }
 
 namespace infiniop_test {
