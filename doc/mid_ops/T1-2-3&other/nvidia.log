@@ -1,0 +1,4945 @@
+cross_entropy_loss_float32.gguf
+Found 11 tests
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [10], Strides: [1], Type: F32
+- target: Shape: [], Strides: [], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.98 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [200], Strides: [1], Type: F32
+- target: Shape: [], Strides: [], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 43.783 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [4, 10], Strides: [10, 1], Type: F32
+- target: Shape: [4], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.828 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [8, 5], Strides: [5, 1], Type: F32
+- target: Shape: [8], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 30.913 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [16, 100], Strides: [100, 1], Type: F32
+- target: Shape: [16], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 36.3 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [32, 1000], Strides: [1000, 1], Type: F32
+- target: Shape: [32], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 101.606 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [64, 21], Strides: [21, 1], Type: F32
+- target: Shape: [64], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 36.479 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [128, 50], Strides: [50, 1], Type: F32
+- target: Shape: [128], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 37.376 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [4, 10, 5], Strides: [50, 5, 1], Type: F32
+- target: Shape: [4, 5], Strides: [5, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 35.072 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [2, 8, 8, 8], Strides: [512, 64, 8, 1], Type: F32
+- target: Shape: [2, 8, 8], Strides: [64, 8, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.936 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [3, 10, 10, 20, 30], Strides: [60000, 6000, 600, 30, 1], Type: F32
+- target: Shape: [3, 10, 20, 30], Strides: [6000, 600, 30, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 105.658 us
+
+=====================================
+[32mAll tests passed[0m
+cross_entropy_loss_float16.gguf
+Found 11 tests
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [10], Strides: [1], Type: F16
+- target: Shape: [], Strides: [], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.799 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [200], Strides: [1], Type: F16
+- target: Shape: [], Strides: [], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 42.924 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [4, 10], Strides: [10, 1], Type: F16
+- target: Shape: [4], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.827 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [8, 5], Strides: [5, 1], Type: F16
+- target: Shape: [8], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.722 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [16, 100], Strides: [100, 1], Type: F16
+- target: Shape: [16], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 35.072 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [32, 1000], Strides: [1000, 1], Type: F16
+- target: Shape: [32], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 92.653 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [64, 21], Strides: [21, 1], Type: F16
+- target: Shape: [64], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 35.18 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [128, 50], Strides: [50, 1], Type: F16
+- target: Shape: [128], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 35.894 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [4, 10, 5], Strides: [50, 5, 1], Type: F16
+- target: Shape: [4, 5], Strides: [5, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.676 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [2, 8, 8, 8], Strides: [512, 64, 8, 1], Type: F16
+- target: Shape: [2, 8, 8], Strides: [64, 8, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 35.23 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [3, 10, 10, 20, 30], Strides: [60000, 6000, 600, 30, 1], Type: F16
+- target: Shape: [3, 10, 20, 30], Strides: [6000, 600, 30, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 98.61 us
+
+=====================================
+[32mAll tests passed[0m
+cross_entropy_loss_bfloat16.gguf
+Found 11 tests
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [10], Strides: [1], Type: BF16
+- target: Shape: [], Strides: [], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 34.401 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [200], Strides: [1], Type: BF16
+- target: Shape: [], Strides: [], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 42.724 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [4, 10], Strides: [10, 1], Type: BF16
+- target: Shape: [4], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 34.697 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [8, 5], Strides: [5, 1], Type: BF16
+- target: Shape: [8], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 32.464 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [16, 100], Strides: [100, 1], Type: BF16
+- target: Shape: [16], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 36.059 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [32, 1000], Strides: [1000, 1], Type: BF16
+- target: Shape: [32], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 93.604 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [64, 21], Strides: [21, 1], Type: BF16
+- target: Shape: [64], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 36.212 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [128, 50], Strides: [50, 1], Type: BF16
+- target: Shape: [128], Strides: [1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 37.256 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [4, 10, 5], Strides: [50, 5, 1], Type: BF16
+- target: Shape: [4, 5], Strides: [5, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 35.067 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [2, 8, 8, 8], Strides: [512, 64, 8, 1], Type: BF16
+- target: Shape: [2, 8, 8], Strides: [64, 8, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 34.987 us
+
+=====================================
+Status: [32mPASS[0m
+Description: cross_entropy_loss
+- logits: Shape: [3, 10, 10, 20, 30], Strides: [60000, 6000, 600, 30, 1], Type: BF16
+- target: Shape: [3, 10, 20, 30], Strides: [6000, 600, 30, 1], Type: I64
+- loss: Shape: [], Strides: [], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 102.488 us
+
+=====================================
+[32mAll tests passed[0m
+averagepool_float32.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F32
+- expected_output: Shape: [4, 8, 126], Strides: [1008, 126, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.732 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F32
+- expected_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.13 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F32
+- expected_output: Shape: [8, 4, 20], Strides: [80, 20, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.938 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F32
+- expected_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.111 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F32
+- expected_output: Shape: [3, 2, 19], Strides: [38, 19, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [0]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.642 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F32
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.376 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F32
+- expected_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.242 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F32
+- expected_output: Shape: [1, 8, 30, 30], Strides: [7200, 900, 30, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.121 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F32
+- expected_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.917 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F32
+- expected_output: Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.984 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F32
+- expected_output: Shape: [3, 2, 28, 29], Strides: [1624, 812, 29, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [0, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.884 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F32
+- expected_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.127 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F32
+- expected_output: Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.859 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F32
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.443 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F32
+- expected_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.454 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F32
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [0, 0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.281 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F32
+- expected_output: Shape: [1, 3, 23, 18, 25], Strides: [31050, 10350, 450, 25, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [0, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.546 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F32
+- expected_output: Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.477 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F32
+- expected_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.669 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F32
+- expected_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [1, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.862 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F32
+- expected_output: Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.412 us
+
+=====================================
+[32mAll tests passed[0m
+averagepool_float16.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F16
+- expected_output: Shape: [4, 8, 126], Strides: [1008, 126, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.666 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F16
+- expected_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.077 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F16
+- expected_output: Shape: [8, 4, 20], Strides: [80, 20, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.572 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F16
+- expected_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.412 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F16
+- expected_output: Shape: [3, 2, 19], Strides: [38, 19, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [0]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.25 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F16
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.301 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F16
+- expected_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.616 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F16
+- expected_output: Shape: [1, 8, 30, 30], Strides: [7200, 900, 30, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.185 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F16
+- expected_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.762 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F16
+- expected_output: Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.739 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F16
+- expected_output: Shape: [3, 2, 28, 29], Strides: [1624, 812, 29, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [0, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.877 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F16
+- expected_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.865 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F16
+- expected_output: Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.529 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F16
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.662 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F16
+- expected_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.221 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F16
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [0, 0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.981 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F16
+- expected_output: Shape: [1, 3, 23, 18, 25], Strides: [31050, 10350, 450, 25, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [0, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.669 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F16
+- expected_output: Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.434 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F16
+- expected_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.306 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F16
+- expected_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [1, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.188 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F16
+- expected_output: Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.865 us
+
+=====================================
+[32mAll tests passed[0m
+averagepool_bfloat16.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: BF16
+- expected_output: Shape: [4, 8, 126], Strides: [1008, 126, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [0]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.197 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: BF16
+- expected_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.13 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: BF16
+- expected_output: Shape: [8, 4, 20], Strides: [80, 20, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.681 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: BF16
+- expected_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.699 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: BF16
+- expected_output: Shape: [3, 2, 19], Strides: [38, 19, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [0]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.359 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: BF16
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.546 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: BF16
+- expected_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: BF16
+- expected_output: Shape: [1, 8, 30, 30], Strides: [7200, 900, 30, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [0, 0]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 5.332 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: BF16
+- expected_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.983 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: BF16
+- expected_output: Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.962 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: BF16
+- expected_output: Shape: [3, 2, 28, 29], Strides: [1624, 812, 29, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [0, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.086 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: BF16
+- expected_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [1, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.874 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: BF16
+- expected_output: Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.673 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: BF16
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.782 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: BF16
+- expected_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.609 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: BF16
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [0, 0, 0]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.783 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: BF16
+- expected_output: Shape: [1, 3, 23, 18, 25], Strides: [31050, 10350, 450, 25, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [0, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 5.664 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: BF16
+- expected_output: Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.448 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: BF16
+- expected_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.749 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: BF16
+- expected_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [1, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.416 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: BF16
+- expected_output: Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.424 us
+
+=====================================
+[32mAll tests passed[0m
+averagepool_backward_float32.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F32
+- grad_output (dY): Shape: [4, 8, 126], Strides: [1008, 126, 1], Type: F32
+- expected_grad_input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.589 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F32
+- grad_output (dY): Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F32
+- expected_grad_input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.236 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F32
+- grad_output (dY): Shape: [8, 4, 20], Strides: [80, 20, 1], Type: F32
+- expected_grad_input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.52 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F32
+- grad_output (dY): Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F32
+- expected_grad_input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.629 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F32
+- grad_output (dY): Shape: [3, 2, 19], Strides: [38, 19, 1], Type: F32
+- expected_grad_input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [0]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.514 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F32
+- grad_output (dY): Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F32
+- expected_grad_input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.313 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F32
+- grad_output (dY): Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F32
+- expected_grad_input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 46.877 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F32
+- grad_output (dY): Shape: [1, 8, 30, 30], Strides: [7200, 900, 30, 1], Type: F32
+- expected_grad_input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.882 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F32
+- grad_output (dY): Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F32
+- expected_grad_input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 16.171 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F32
+- grad_output (dY): Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F32
+- expected_grad_input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.155 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F32
+- grad_output (dY): Shape: [3, 2, 28, 29], Strides: [1624, 812, 29, 1], Type: F32
+- expected_grad_input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [0, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.276 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F32
+- grad_output (dY): Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.605 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F32
+- grad_output (dY): Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F32
+- expected_grad_input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.547 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F32
+- grad_output (dY): Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F32
+- expected_grad_input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 22.503 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F32
+- grad_output (dY): Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F32
+- expected_grad_input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 53.802 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F32
+- grad_output (dY): Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [0, 0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 53.615 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F32
+- grad_output (dY): Shape: [1, 3, 23, 18, 25], Strides: [31050, 10350, 450, 25, 1], Type: F32
+- expected_grad_input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [0, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 17.433 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F32
+- grad_output (dY): Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F32
+- expected_grad_input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 42.651 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F32
+- grad_output (dY): Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 19.259 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F32
+- grad_output (dY): Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [1, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 16.829 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F32
+- grad_output (dY): Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F32
+- expected_grad_input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 25.216 us
+
+=====================================
+[32mAll tests passed[0m
+averagepool_backward_float16.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F16
+- grad_output (dY): Shape: [4, 8, 126], Strides: [1008, 126, 1], Type: F16
+- expected_grad_input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.545 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F16
+- grad_output (dY): Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F16
+- expected_grad_input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.794 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F16
+- grad_output (dY): Shape: [8, 4, 20], Strides: [80, 20, 1], Type: F16
+- expected_grad_input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.052 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F16
+- grad_output (dY): Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F16
+- expected_grad_input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.51 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F16
+- grad_output (dY): Shape: [3, 2, 19], Strides: [38, 19, 1], Type: F16
+- expected_grad_input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [0]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.499 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F16
+- grad_output (dY): Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F16
+- expected_grad_input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.213 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F16
+- grad_output (dY): Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F16
+- expected_grad_input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 47.349 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F16
+- grad_output (dY): Shape: [1, 8, 30, 30], Strides: [7200, 900, 30, 1], Type: F16
+- expected_grad_input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.723 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F16
+- grad_output (dY): Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F16
+- expected_grad_input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 16.049 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F16
+- grad_output (dY): Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F16
+- expected_grad_input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.699 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F16
+- grad_output (dY): Shape: [3, 2, 28, 29], Strides: [1624, 812, 29, 1], Type: F16
+- expected_grad_input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [0, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.456 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F16
+- grad_output (dY): Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.907 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F16
+- grad_output (dY): Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F16
+- expected_grad_input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 14.316 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F16
+- grad_output (dY): Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F16
+- expected_grad_input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 23.009 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F16
+- grad_output (dY): Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F16
+- expected_grad_input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 55.289 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F16
+- grad_output (dY): Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [0, 0, 0]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 54.866 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F16
+- grad_output (dY): Shape: [1, 3, 23, 18, 25], Strides: [31050, 10350, 450, 25, 1], Type: F16
+- expected_grad_input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [0, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 17.924 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F16
+- grad_output (dY): Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F16
+- expected_grad_input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 43.985 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F16
+- grad_output (dY): Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 18.747 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F16
+- grad_output (dY): Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [1, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 17.411 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F16
+- grad_output (dY): Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F16
+- expected_grad_input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 25.994 us
+
+=====================================
+[32mAll tests passed[0m
+averagepool_backward_bfloat16.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: BF16
+- grad_output (dY): Shape: [4, 8, 126], Strides: [1008, 126, 1], Type: BF16
+- expected_grad_input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [0]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.792 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: BF16
+- grad_output (dY): Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: BF16
+- expected_grad_input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.766 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: BF16
+- grad_output (dY): Shape: [8, 4, 20], Strides: [80, 20, 1], Type: BF16
+- expected_grad_input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.986 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: BF16
+- grad_output (dY): Shape: [1, 3, 34], Strides: [102, 34, 1], Type: BF16
+- expected_grad_input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.731 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: BF16
+- grad_output (dY): Shape: [3, 2, 19], Strides: [38, 19, 1], Type: BF16
+- expected_grad_input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [0]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.724 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: BF16
+- grad_output (dY): Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: BF16
+- expected_grad_input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.416 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: BF16
+- grad_output (dY): Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: BF16
+- expected_grad_input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 47.112 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: BF16
+- grad_output (dY): Shape: [1, 8, 30, 30], Strides: [7200, 900, 30, 1], Type: BF16
+- expected_grad_input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [0, 0]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 15.636 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: BF16
+- grad_output (dY): Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 16.101 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: BF16
+- grad_output (dY): Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: BF16
+- expected_grad_input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.924 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: BF16
+- grad_output (dY): Shape: [3, 2, 28, 29], Strides: [1624, 812, 29, 1], Type: BF16
+- expected_grad_input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [0, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 13.841 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: BF16
+- grad_output (dY): Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [1, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.855 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: BF16
+- grad_output (dY): Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: BF16
+- expected_grad_input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.278 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: BF16
+- grad_output (dY): Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: BF16
+- expected_grad_input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 23.215 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: BF16
+- grad_output (dY): Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 56.023 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: BF16
+- grad_output (dY): Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [0, 0, 0]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 55.996 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: BF16
+- grad_output (dY): Shape: [1, 3, 23, 18, 25], Strides: [31050, 10350, 450, 25, 1], Type: BF16
+- expected_grad_input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [0, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 17.994 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: BF16
+- grad_output (dY): Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: BF16
+- expected_grad_input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 44.407 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: BF16
+- grad_output (dY): Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 19.167 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: BF16
+- grad_output (dY): Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [1, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 17.604 us
+
+=====================================
+Status: [32mPASS[0m
+Description: averagepool_backward
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: BF16
+- grad_output (dY): Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: BF16
+- expected_grad_input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 25.503 us
+
+=====================================
+[32mAll tests passed[0m
+maxpool_float32.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F32
+- expected_output: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.614 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F32
+- expected_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.881 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F32
+- expected_output: Shape: [8, 4, 22], Strides: [88, 22, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.43 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F32
+- expected_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.305 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F32
+- expected_output: Shape: [3, 2, 20], Strides: [40, 20, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [3]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.373 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F32
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.105 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F32
+- expected_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.474 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F32
+- expected_output: Shape: [1, 8, 32, 32], Strides: [8192, 1024, 32, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [3, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.104 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F32
+- expected_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.541 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F32
+- expected_output: Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.755 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F32
+- expected_output: Shape: [3, 2, 29, 29], Strides: [1682, 841, 29, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.86 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F32
+- expected_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [2, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.881 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F32
+- expected_output: Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.52 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F32
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.995 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F32
+- expected_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.637 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F32
+- expected_output: Shape: [1, 1, 22, 22, 22], Strides: [10648, 10648, 484, 22, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [3, 3, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.469 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F32
+- expected_output: Shape: [1, 3, 25, 18, 25], Strides: [33750, 11250, 450, 25, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [1, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.292 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F32
+- expected_output: Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.887 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F32
+- expected_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.862 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F32
+- expected_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [2, 2, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.65 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F32
+- expected_output: Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.993 us
+
+=====================================
+[32mAll tests passed[0m
+maxpool_float16.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F16
+- expected_output: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.618 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F16
+- expected_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.874 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F16
+- expected_output: Shape: [8, 4, 22], Strides: [88, 22, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.461 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F16
+- expected_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.325 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: F16
+- expected_output: Shape: [3, 2, 20], Strides: [40, 20, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [3]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.257 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F16
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.125 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F16
+- expected_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.372 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F16
+- expected_output: Shape: [1, 8, 32, 32], Strides: [8192, 1024, 32, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [3, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.962 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F16
+- expected_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.547 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F16
+- expected_output: Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.536 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F16
+- expected_output: Shape: [3, 2, 29, 29], Strides: [1682, 841, 29, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.873 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F16
+- expected_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [2, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 3.885 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: F16
+- expected_output: Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 4.322 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F16
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.246 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F16
+- expected_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.753 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: F16
+- expected_output: Shape: [1, 1, 22, 22, 22], Strides: [10648, 10648, 484, 22, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [3, 3, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.828 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F16
+- expected_output: Shape: [1, 3, 25, 18, 25], Strides: [33750, 11250, 450, 25, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [1, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 5.332 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: F16
+- expected_output: Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.593 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F16
+- expected_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.048 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F16
+- expected_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [2, 2, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 6.354 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: F16
+- expected_output: Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 7.197 us
+
+=====================================
+[32mAll tests passed[0m
+maxpool_bfloat16.gguf
+Found 21 tests
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: BF16
+- expected_output: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.646 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: BF16
+- expected_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.899 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: BF16
+- expected_output: Shape: [8, 4, 22], Strides: [88, 22, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [3]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.485 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: BF16
+- expected_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [2]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.314 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [3, 2, 77], Strides: [154, 77, 1], Type: BF16
+- expected_output: Shape: [3, 2, 20], Strides: [40, 20, 1], Type: F64
+- kernel_size: [6]
+- stride: [4]
+- padding: [3]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.279 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: BF16
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.118 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: BF16
+- expected_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.74 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: BF16
+- expected_output: Shape: [1, 8, 32, 32], Strides: [8192, 1024, 32, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [3, 3]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.973 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: BF16
+- expected_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.751 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: BF16
+- expected_output: Shape: [1, 6, 36, 48], Strides: [10368, 1728, 48, 1], Type: F64
+- kernel_size: [7, 3]
+- stride: [2, 1]
+- padding: [3, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.743 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: BF16
+- expected_output: Shape: [3, 2, 29, 29], Strides: [1682, 841, 29, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.876 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: BF16
+- expected_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [2, 2]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 3.88 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 5, 77, 89], Strides: [34265, 6853, 89, 1], Type: BF16
+- expected_output: Shape: [2, 5, 20, 45], Strides: [4500, 900, 45, 1], Type: F64
+- kernel_size: [5, 3]
+- stride: [4, 2]
+- padding: [2, 1]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 4.32 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: BF16
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.698 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: BF16
+- expected_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 15.243 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 64, 64, 64], Strides: [262144, 262144, 4096, 64, 1], Type: BF16
+- expected_output: Shape: [1, 1, 22, 22, 22], Strides: [10648, 10648, 484, 22, 1], Type: F64
+- kernel_size: [7, 7, 7]
+- stride: [3, 3, 3]
+- padding: [3, 3, 3]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.812 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: BF16
+- expected_output: Shape: [1, 3, 25, 18, 25], Strides: [33750, 11250, 450, 25, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [1, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 5.371 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 2, 40, 32, 56], Strides: [143360, 71680, 1792, 56, 1], Type: BF16
+- expected_output: Shape: [2, 2, 20, 32, 19], Strides: [24320, 12160, 608, 19, 1], Type: F64
+- kernel_size: [5, 3, 7]
+- stride: [2, 1, 3]
+- padding: [2, 1, 3]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 14.366 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: BF16
+- expected_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.088 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: BF16
+- expected_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [2, 2, 2]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 6.408 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool
+- input: Shape: [2, 2, 33, 45, 39], Strides: [115830, 57915, 1755, 39, 1], Type: BF16
+- expected_output: Shape: [2, 2, 12, 23, 14], Strides: [7728, 3864, 322, 14, 1], Type: F64
+- kernel_size: [5, 3, 4]
+- stride: [3, 2, 3]
+- padding: [2, 1, 2]
+- ceil_mode: true
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 7.176 us
+
+=====================================
+[32mAll tests passed[0m
+maxpool_backward_float32.gguf
+Found 15 tests
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F32
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F32
+- expected_grad_input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 31.132 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F32
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F32
+- expected_grad_input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 31.567 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [8, 4, 22], Strides: [88, 22, 1], Type: F32
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F32
+- expected_grad_input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.477 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F32
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F32
+- expected_grad_input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 26.334 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F32
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F32
+- expected_grad_input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 23.839 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F32
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F32
+- expected_grad_input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 108.937 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 8, 32, 32], Strides: [8192, 1024, 32, 1], Type: F32
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F32
+- expected_grad_input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [3, 3]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 58.005 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F32
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F32
+- expected_grad_input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 28.975 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [3, 2, 29, 29], Strides: [1682, 841, 29, 1], Type: F32
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F32
+- expected_grad_input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 39.932 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F32
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [2, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 30.864 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F32
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F32
+- expected_grad_input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 63.619 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F32
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F32
+- expected_grad_input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 108.916 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 3, 25, 18, 25], Strides: [33750, 11250, 450, 25, 1], Type: F32
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F32
+- expected_grad_input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [1, 1, 2]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 67.418 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F32
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 67.569 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F32
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F32
+- expected_grad_input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [2, 2, 2]
+- ceil_mode: true
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 40.453 us
+
+=====================================
+[32mAll tests passed[0m
+maxpool_backward_float16.gguf
+Found 15 tests
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F16
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F16
+- expected_grad_input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [1]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 12.898 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F16
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F16
+- expected_grad_input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 13.325 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [8, 4, 22], Strides: [88, 22, 1], Type: F16
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F16
+- expected_grad_input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [3]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 12.663 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: F16
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F16
+- expected_grad_input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [2]
+- ceil_mode: true
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 11.612 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F16
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F16
+- expected_grad_input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 52.14 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: F16
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F16
+- expected_grad_input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 94.036 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 8, 32, 32], Strides: [8192, 1024, 32, 1], Type: F16
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F16
+- expected_grad_input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [3, 3]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 37.612 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: F16
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F16
+- expected_grad_input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 49.551 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [3, 2, 29, 29], Strides: [1682, 841, 29, 1], Type: F16
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F16
+- expected_grad_input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 24.928 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: F16
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [2, 2]
+- ceil_mode: true
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 13.95 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F16
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F16
+- expected_grad_input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 73.955 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F16
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F16
+- expected_grad_input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 87.744 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 3, 25, 18, 25], Strides: [33750, 11250, 450, 25, 1], Type: F16
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F16
+- expected_grad_input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [1, 1, 2]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 45.643 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: F16
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 33.299 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: F16
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F16
+- expected_grad_input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [2, 2, 2]
+- ceil_mode: true
+- rtol=3.00e-03, atol=4.00e-03
+
+Time: 30.115 us
+
+=====================================
+[32mAll tests passed[0m
+maxpool_backward_bfloat16.gguf
+Found 15 tests
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: BF16
+- input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: BF16
+- expected_grad_input: Shape: [4, 8, 128], Strides: [1024, 128, 1], Type: F64
+- kernel_size: [3]
+- stride: [1]
+- padding: [1]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 12.9 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: BF16
+- input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: BF16
+- expected_grad_input: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- kernel_size: [5]
+- stride: [2]
+- padding: [2]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 13.337 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [8, 4, 22], Strides: [88, 22, 1], Type: BF16
+- input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: BF16
+- expected_grad_input: Shape: [8, 4, 64], Strides: [256, 64, 1], Type: F64
+- kernel_size: [7]
+- stride: [3]
+- padding: [3]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 12.685 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 3, 34], Strides: [102, 34, 1], Type: BF16
+- input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: BF16
+- expected_grad_input: Shape: [1, 3, 99], Strides: [297, 99, 1], Type: F64
+- kernel_size: [4]
+- stride: [3]
+- padding: [2]
+- ceil_mode: true
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 11.783 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: BF16
+- input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: BF16
+- expected_grad_input: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- kernel_size: [3, 3]
+- stride: [1, 1]
+- padding: [1, 1]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 52.208 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [4, 16, 64, 64], Strides: [65536, 4096, 64, 1], Type: BF16
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: BF16
+- expected_grad_input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F64
+- kernel_size: [5, 5]
+- stride: [2, 2]
+- padding: [2, 2]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 93.215 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 8, 32, 32], Strides: [8192, 1024, 32, 1], Type: BF16
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: BF16
+- expected_grad_input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F64
+- kernel_size: [7, 7]
+- stride: [3, 3]
+- padding: [3, 3]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 37.68 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 4, 80, 60], Strides: [19200, 4800, 60, 1], Type: BF16
+- input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- kernel_size: [3, 5]
+- stride: [1, 2]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 49.189 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [3, 2, 29, 29], Strides: [1682, 841, 29, 1], Type: BF16
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: BF16
+- expected_grad_input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F64
+- kernel_size: [2, 4]
+- stride: [2, 3]
+- padding: [1, 2]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 24.737 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 12, 12], Strides: [144, 144, 12, 1], Type: BF16
+- input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 33, 33], Strides: [1089, 1089, 33, 1], Type: F64
+- kernel_size: [4, 4]
+- stride: [3, 3]
+- padding: [2, 2]
+- ceil_mode: true
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 13.966 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: BF16
+- input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: BF16
+- expected_grad_input: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- kernel_size: [3, 3, 3]
+- stride: [1, 1, 1]
+- padding: [1, 1, 1]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 70.426 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: BF16
+- input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- kernel_size: [5, 5, 5]
+- stride: [2, 2, 2]
+- padding: [2, 2, 2]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 88.347 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 3, 25, 18, 25], Strides: [33750, 11250, 450, 25, 1], Type: BF16
+- input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: BF16
+- expected_grad_input: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- kernel_size: [2, 3, 4]
+- stride: [1, 2, 2]
+- padding: [1, 1, 2]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 45.412 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 14, 15, 37], Strides: [7770, 7770, 555, 37, 1], Type: BF16
+- input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 28, 44, 36], Strides: [44352, 44352, 1584, 36, 1], Type: F64
+- kernel_size: [3, 5, 2]
+- stride: [2, 3, 1]
+- padding: [1, 2, 1]
+- ceil_mode: false
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 33.995 us
+
+=====================================
+Status: [32mPASS[0m
+Description: maxpool_backward
+- grad_output: Shape: [1, 1, 10, 10, 10], Strides: [1000, 1000, 100, 10, 1], Type: BF16
+- input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: BF16
+- expected_grad_input: Shape: [1, 1, 27, 27, 27], Strides: [19683, 19683, 729, 27, 1], Type: F64
+- kernel_size: [4, 4, 4]
+- stride: [3, 3, 3]
+- padding: [2, 2, 2]
+- ceil_mode: true
+- rtol=2.00e-02, atol=3.00e-02
+
+Time: 30.638 us
+
+=====================================
+[32mAll tests passed[0m
+interpolate_nearest_float32.gguf
+Found 27 tests
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 8, 32], Strides: [256, 32, 1], Type: F32
+- expected_output: Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.375 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F32
+- expected_output: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.354 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 4, 100], Strides: [400, 100, 1], Type: F32
+- expected_output: Shape: [1, 4, 50], Strides: [200, 50, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.889 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 6, 48], Strides: [288, 48, 1], Type: F32
+- expected_output: Shape: [2, 6, 96], Strides: [576, 96, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.178 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 64], Strides: [192, 64, 1], Type: F32
+- expected_output: Shape: [1, 3, 32], Strides: [96, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.793 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 80], Strides: [160, 80, 1], Type: F32
+- expected_output: Shape: [3, 2, 120], Strides: [240, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.175 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 3, 32, 32], Strides: [3072, 1024, 32, 1], Type: F32
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.937 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F32
+- expected_output: Shape: [4, 16, 256, 256], Strides: [1048576, 65536, 256, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 84.759 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F32
+- expected_output: Shape: [1, 8, 48, 48], Strides: [18432, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.918 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 40, 60], Strides: [9600, 2400, 60, 1], Type: F32
+- expected_output: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.716 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F32
+- expected_output: Shape: [1, 6, 36, 96], Strides: [20736, 3456, 96, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.89 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F32
+- expected_output: Shape: [3, 2, 28, 42], Strides: [2352, 1176, 42, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.816 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 32, 48], Strides: [4608, 1536, 48, 1], Type: F32
+- expected_output: Shape: [1, 3, 64, 72], Strides: [13824, 4608, 72, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.805 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 5, 60, 40], Strides: [12000, 2400, 40, 1], Type: F32
+- expected_output: Shape: [2, 5, 45, 50], Strides: [11250, 2250, 50, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.96 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 80, 60], Strides: [4800, 4800, 60, 1], Type: F32
+- expected_output: Shape: [1, 1, 40, 120], Strides: [4800, 4800, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.749 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 16, 16, 16], Strides: [8192, 4096, 256, 16, 1], Type: F32
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.335 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F32
+- expected_output: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.988 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 40, 40, 40], Strides: [64000, 64000, 1600, 40, 1], Type: F32
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.351 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 12, 18, 24], Strides: [15552, 5184, 432, 24, 1], Type: F32
+- expected_output: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.755 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 2, 20, 16, 28], Strides: [17920, 8960, 448, 28, 1], Type: F32
+- expected_output: Shape: [2, 2, 10, 32, 14], Strides: [8960, 4480, 448, 14, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.498 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 32, 24, 16], Strides: [12288, 12288, 384, 16, 1], Type: F32
+- expected_output: Shape: [1, 1, 16, 48, 32], Strides: [24576, 24576, 1536, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.546 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 18, 24, 30], Strides: [25920, 12960, 720, 30, 1], Type: F32
+- expected_output: Shape: [1, 2, 27, 18, 24], Strides: [23328, 11664, 432, 24, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.514 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 4], Strides: [4, 4, 1], Type: F32
+- expected_output: Shape: [1, 1, 16], Strides: [16, 16, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.755 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 4, 4], Strides: [16, 16, 4, 1], Type: F32
+- expected_output: Shape: [1, 1, 16, 16], Strides: [256, 256, 16, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.292 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 4, 4, 4], Strides: [64, 64, 16, 4, 1], Type: F32
+- expected_output: Shape: [1, 1, 8, 8, 8], Strides: [512, 512, 64, 8, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.843 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 16, 16], Strides: [256, 256, 16, 1], Type: F32
+- expected_output: Shape: [1, 1, 48, 48], Strides: [2304, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.647 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 1], Strides: [3, 1, 1], Type: F32
+- expected_output: Shape: [1, 3, 10], Strides: [30, 10, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.76 us
+
+=====================================
+[32mAll tests passed[0m
+interpolate_nearest_float16.gguf
+Found 22 tests
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 8, 32], Strides: [256, 32, 1], Type: F16
+- expected_output: Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.365 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: F16
+- expected_output: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.335 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 4, 100], Strides: [400, 100, 1], Type: F16
+- expected_output: Shape: [1, 4, 50], Strides: [200, 50, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.9 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 6, 48], Strides: [288, 48, 1], Type: F16
+- expected_output: Shape: [2, 6, 96], Strides: [576, 96, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.248 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 64], Strides: [192, 64, 1], Type: F16
+- expected_output: Shape: [1, 3, 32], Strides: [96, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.855 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 80], Strides: [160, 80, 1], Type: F16
+- expected_output: Shape: [3, 2, 120], Strides: [240, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.255 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 3, 32, 32], Strides: [3072, 1024, 32, 1], Type: F16
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.958 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: F16
+- expected_output: Shape: [4, 16, 256, 256], Strides: [1048576, 65536, 256, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 84.667 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: F16
+- expected_output: Shape: [1, 8, 48, 48], Strides: [18432, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.93 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 40, 60], Strides: [9600, 2400, 60, 1], Type: F16
+- expected_output: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.782 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: F16
+- expected_output: Shape: [1, 6, 36, 96], Strides: [20736, 3456, 96, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.918 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: F16
+- expected_output: Shape: [3, 2, 28, 42], Strides: [2352, 1176, 42, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.812 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 32, 48], Strides: [4608, 1536, 48, 1], Type: F16
+- expected_output: Shape: [1, 3, 64, 72], Strides: [13824, 4608, 72, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.813 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 5, 60, 40], Strides: [12000, 2400, 40, 1], Type: F16
+- expected_output: Shape: [2, 5, 45, 50], Strides: [11250, 2250, 50, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.944 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 80, 60], Strides: [4800, 4800, 60, 1], Type: F16
+- expected_output: Shape: [1, 1, 40, 120], Strides: [4800, 4800, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.791 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 16, 16, 16], Strides: [8192, 4096, 256, 16, 1], Type: F16
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.335 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: F16
+- expected_output: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 31.594 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 40, 40, 40], Strides: [64000, 64000, 1600, 40, 1], Type: F16
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 13.746 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 12, 18, 24], Strides: [15552, 5184, 432, 24, 1], Type: F16
+- expected_output: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 12.775 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 2, 20, 16, 28], Strides: [17920, 8960, 448, 28, 1], Type: F16
+- expected_output: Shape: [2, 2, 10, 32, 14], Strides: [8960, 4480, 448, 14, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.541 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 32, 24, 16], Strides: [12288, 12288, 384, 16, 1], Type: F16
+- expected_output: Shape: [1, 1, 16, 48, 32], Strides: [24576, 24576, 1536, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.595 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 18, 24, 30], Strides: [25920, 12960, 720, 30, 1], Type: F16
+- expected_output: Shape: [1, 2, 27, 18, 24], Strides: [23328, 11664, 432, 24, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.571 us
+
+=====================================
+[32mAll tests passed[0m
+interpolate_nearest_bfloat16.gguf
+Found 22 tests
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 8, 32], Strides: [256, 32, 1], Type: BF16
+- expected_output: Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.408 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: BF16
+- expected_output: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.369 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 4, 100], Strides: [400, 100, 1], Type: BF16
+- expected_output: Shape: [1, 4, 50], Strides: [200, 50, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.933 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 6, 48], Strides: [288, 48, 1], Type: BF16
+- expected_output: Shape: [2, 6, 96], Strides: [576, 96, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.271 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 64], Strides: [192, 64, 1], Type: BF16
+- expected_output: Shape: [1, 3, 32], Strides: [96, 32, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 8.841 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 80], Strides: [160, 80, 1], Type: BF16
+- expected_output: Shape: [3, 2, 120], Strides: [240, 120, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.28 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 3, 32, 32], Strides: [3072, 1024, 32, 1], Type: BF16
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.027 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: BF16
+- expected_output: Shape: [4, 16, 256, 256], Strides: [1048576, 65536, 256, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 84.689 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: BF16
+- expected_output: Shape: [1, 8, 48, 48], Strides: [18432, 2304, 48, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.933 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 40, 60], Strides: [9600, 2400, 60, 1], Type: BF16
+- expected_output: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.76 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: BF16
+- expected_output: Shape: [1, 6, 36, 96], Strides: [20736, 3456, 96, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.939 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: BF16
+- expected_output: Shape: [3, 2, 28, 42], Strides: [2352, 1176, 42, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.833 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 32, 48], Strides: [4608, 1536, 48, 1], Type: BF16
+- expected_output: Shape: [1, 3, 64, 72], Strides: [13824, 4608, 72, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.838 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 5, 60, 40], Strides: [12000, 2400, 40, 1], Type: BF16
+- expected_output: Shape: [2, 5, 45, 50], Strides: [11250, 2250, 50, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.972 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 80, 60], Strides: [4800, 4800, 60, 1], Type: BF16
+- expected_output: Shape: [1, 1, 40, 120], Strides: [4800, 4800, 120, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 9.796 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 16, 16, 16], Strides: [8192, 4096, 256, 16, 1], Type: BF16
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 11.368 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: BF16
+- expected_output: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 35.066 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 40, 40, 40], Strides: [64000, 64000, 1600, 40, 1], Type: BF16
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.41 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 12, 18, 24], Strides: [15552, 5184, 432, 24, 1], Type: BF16
+- expected_output: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 12.812 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 2, 20, 16, 28], Strides: [17920, 8960, 448, 28, 1], Type: BF16
+- expected_output: Shape: [2, 2, 10, 32, 14], Strides: [8960, 4480, 448, 14, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.53 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 32, 24, 16], Strides: [12288, 12288, 384, 16, 1], Type: BF16
+- expected_output: Shape: [1, 1, 16, 48, 32], Strides: [24576, 24576, 1536, 32, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.614 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 18, 24, 30], Strides: [25920, 12960, 720, 30, 1], Type: BF16
+- expected_output: Shape: [1, 2, 27, 18, 24], Strides: [23328, 11664, 432, 24, 1], Type: F64
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 10.573 us
+
+=====================================
+[32mAll tests passed[0m
+interpolate_nearest_int8.gguf
+Found 22 tests
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 8, 32], Strides: [256, 32, 1], Type: I8
+- expected_output: Shape: [4, 8, 64], Strides: [512, 64, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.308 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 16, 128], Strides: [2048, 128, 1], Type: I8
+- expected_output: Shape: [2, 16, 256], Strides: [4096, 256, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.331 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 4, 100], Strides: [400, 100, 1], Type: I8
+- expected_output: Shape: [1, 4, 50], Strides: [200, 50, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.863 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 6, 48], Strides: [288, 48, 1], Type: I8
+- expected_output: Shape: [2, 6, 96], Strides: [576, 96, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.199 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 64], Strides: [192, 64, 1], Type: I8
+- expected_output: Shape: [1, 3, 32], Strides: [96, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 8.781 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 80], Strides: [160, 80, 1], Type: I8
+- expected_output: Shape: [3, 2, 120], Strides: [240, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.186 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 3, 32, 32], Strides: [3072, 1024, 32, 1], Type: I8
+- expected_output: Shape: [2, 3, 64, 64], Strides: [12288, 4096, 64, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.918 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [4, 16, 128, 128], Strides: [262144, 16384, 128, 1], Type: I8
+- expected_output: Shape: [4, 16, 256, 256], Strides: [1048576, 65536, 256, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 84.132 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 8, 96, 96], Strides: [73728, 9216, 96, 1], Type: I8
+- expected_output: Shape: [1, 8, 48, 48], Strides: [18432, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.932 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 40, 60], Strides: [9600, 2400, 60, 1], Type: I8
+- expected_output: Shape: [2, 4, 80, 120], Strides: [38400, 9600, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.708 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 6, 72, 48], Strides: [20736, 3456, 48, 1], Type: I8
+- expected_output: Shape: [1, 6, 36, 96], Strides: [20736, 3456, 96, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.914 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [3, 2, 56, 84], Strides: [9408, 4704, 84, 1], Type: I8
+- expected_output: Shape: [3, 2, 28, 42], Strides: [2352, 1176, 42, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.782 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 32, 48], Strides: [4608, 1536, 48, 1], Type: I8
+- expected_output: Shape: [1, 3, 64, 72], Strides: [13824, 4608, 72, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.789 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 5, 60, 40], Strides: [12000, 2400, 40, 1], Type: I8
+- expected_output: Shape: [2, 5, 45, 50], Strides: [11250, 2250, 50, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.898 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 80, 60], Strides: [4800, 4800, 60, 1], Type: I8
+- expected_output: Shape: [1, 1, 40, 120], Strides: [4800, 4800, 120, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 9.743 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 16, 16, 16], Strides: [8192, 4096, 256, 16, 1], Type: I8
+- expected_output: Shape: [1, 2, 32, 32, 32], Strides: [65536, 32768, 1024, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 11.274 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 4, 24, 24, 24], Strides: [55296, 13824, 576, 24, 1], Type: I8
+- expected_output: Shape: [2, 4, 48, 48, 48], Strides: [442368, 110592, 2304, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 31.565 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 40, 40, 40], Strides: [64000, 64000, 1600, 40, 1], Type: I8
+- expected_output: Shape: [1, 1, 20, 20, 20], Strides: [8000, 8000, 400, 20, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.305 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 3, 12, 18, 24], Strides: [15552, 5184, 432, 24, 1], Type: I8
+- expected_output: Shape: [1, 3, 24, 36, 48], Strides: [124416, 41472, 1728, 48, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 15.951 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [2, 2, 20, 16, 28], Strides: [17920, 8960, 448, 28, 1], Type: I8
+- expected_output: Shape: [2, 2, 10, 32, 14], Strides: [8960, 4480, 448, 14, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.447 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 1, 32, 24, 16], Strides: [12288, 12288, 384, 16, 1], Type: I8
+- expected_output: Shape: [1, 1, 16, 48, 32], Strides: [24576, 24576, 1536, 32, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.538 us
+
+=====================================
+Status: [32mPASS[0m
+Description: interpolate_nearest
+- input: Shape: [1, 2, 18, 24, 30], Strides: [25920, 12960, 720, 30, 1], Type: I8
+- expected_output: Shape: [1, 2, 27, 18, 24], Strides: [23328, 11664, 432, 24, 1], Type: F64
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 10.49 us
+
+=====================================
+[32mAll tests passed[0m
+conv_backward_float32.gguf
+Found 10 tests
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 8, 12], Strides: [96, 12, 1], Type: F32
+- input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F32
+- weight: Shape: [8, 4, 5], Strides: [20, 5, 1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- expected_grad_input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5], Strides: [20, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [1]
+- padding: [0]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 34.237 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 8, 16], Strides: [128, 16, 1], Type: F32
+- input: Shape: [2, 4, 32], Strides: [128, 32, 1], Type: F32
+- weight: Shape: [8, 4, 3], Strides: [12, 3, 1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- expected_grad_input: Shape: [2, 4, 32], Strides: [128, 32, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 3], Strides: [12, 3, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2]
+- padding: [1]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 33.012 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 21], Strides: [84, 21, 1], Type: F32
+- input: Shape: [1, 2, 64], Strides: [128, 64, 1], Type: F32
+- weight: Shape: [4, 2, 7], Strides: [14, 7, 1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- expected_grad_input: Shape: [1, 2, 64], Strides: [128, 64, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7], Strides: [14, 7, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3]
+- padding: [2]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 32.774 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 6, 12, 7], Strides: [504, 84, 7, 1], Type: F32
+- input: Shape: [2, 3, 16, 16], Strides: [768, 256, 16, 1], Type: F32
+- weight: Shape: [6, 3, 3, 3], Strides: [27, 9, 3, 1], Type: F32
+- bias: Shape: [6], Strides: [1], Type: F32
+- expected_grad_input: Shape: [2, 3, 16, 16], Strides: [768, 256, 16, 1], Type: F64
+- expected_grad_weight: Shape: [6, 3, 3, 3], Strides: [27, 9, 3, 1], Type: F64
+- expected_grad_bias: Shape: [6], Strides: [1], Type: F64
+- stride: [1, 2]
+- padding: [0, 1]
+- dilation: [2, 2]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 33.218 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 8, 16, 28], Strides: [3584, 448, 28, 1], Type: F32
+- input: Shape: [1, 4, 32, 32], Strides: [4096, 1024, 32, 1], Type: F32
+- weight: Shape: [8, 4, 5, 5], Strides: [100, 25, 5, 1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- expected_grad_input: Shape: [1, 4, 32, 32], Strides: [4096, 1024, 32, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5, 5], Strides: [100, 25, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2, 1]
+- padding: [2, 0]
+- dilation: [1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 41.255 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 20, 17], Strides: [1360, 340, 17, 1], Type: F32
+- input: Shape: [1, 2, 64, 32], Strides: [4096, 2048, 32, 1], Type: F32
+- weight: Shape: [4, 2, 7, 3], Strides: [42, 21, 3, 1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- expected_grad_input: Shape: [1, 2, 64, 32], Strides: [4096, 2048, 32, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7, 3], Strides: [42, 21, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3, 2]
+- padding: [1, 2]
+- dilation: [1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 30.429 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 6, 4, 10], Strides: [960, 240, 40, 10, 1], Type: F32
+- input: Shape: [1, 2, 8, 8, 8], Strides: [1024, 512, 64, 8, 1], Type: F32
+- weight: Shape: [4, 2, 3, 3, 3], Strides: [54, 27, 9, 3, 1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- expected_grad_input: Shape: [1, 2, 8, 8, 8], Strides: [1024, 512, 64, 8, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 3, 3, 3], Strides: [54, 27, 9, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [1, 2, 1]
+- padding: [0, 1, 2]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 32.109 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 8, 8, 12, 5], Strides: [3840, 480, 60, 5, 1], Type: F32
+- input: Shape: [1, 4, 16, 16, 16], Strides: [16384, 4096, 256, 16, 1], Type: F32
+- weight: Shape: [8, 4, 5, 5, 5], Strides: [500, 125, 25, 5, 1], Type: F32
+- bias: Shape: [8], Strides: [1], Type: F32
+- expected_grad_input: Shape: [1, 4, 16, 16, 16], Strides: [16384, 4096, 256, 16, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5, 5, 5], Strides: [500, 125, 25, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2, 1, 3]
+- padding: [2, 0, 1]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 75.665 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 10, 9, 4], Strides: [1440, 360, 36, 4, 1], Type: F32
+- input: Shape: [1, 2, 32, 16, 8], Strides: [8192, 4096, 128, 8, 1], Type: F32
+- weight: Shape: [4, 2, 7, 3, 5], Strides: [210, 105, 15, 5, 1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- expected_grad_input: Shape: [1, 2, 32, 16, 8], Strides: [8192, 4096, 128, 8, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7, 3, 5], Strides: [210, 105, 15, 5, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3, 2, 1]
+- padding: [1, 2, 0]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 32.336 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F32
+- input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F32
+- weight: Shape: [4, 2, 3], Strides: [6, 3, 1], Type: F32
+- bias: Shape: [4], Strides: [1], Type: F32
+- expected_grad_input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 3], Strides: [6, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [1]
+- padding: [1]
+- dilation: [1]
+- groups: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 24.523 us
+
+=====================================
+[32mAll tests passed[0m
+conv_backward_float16.gguf
+Found 10 tests
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 8, 12], Strides: [96, 12, 1], Type: F16
+- input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F16
+- weight: Shape: [8, 4, 5], Strides: [20, 5, 1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- expected_grad_input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5], Strides: [20, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [1]
+- padding: [0]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 28.123 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 8, 16], Strides: [128, 16, 1], Type: F16
+- input: Shape: [2, 4, 32], Strides: [128, 32, 1], Type: F16
+- weight: Shape: [8, 4, 3], Strides: [12, 3, 1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- expected_grad_input: Shape: [2, 4, 32], Strides: [128, 32, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 3], Strides: [12, 3, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2]
+- padding: [1]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 37.613 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 21], Strides: [84, 21, 1], Type: F16
+- input: Shape: [1, 2, 64], Strides: [128, 64, 1], Type: F16
+- weight: Shape: [4, 2, 7], Strides: [14, 7, 1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- expected_grad_input: Shape: [1, 2, 64], Strides: [128, 64, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7], Strides: [14, 7, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3]
+- padding: [2]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 28.074 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 6, 12, 7], Strides: [504, 84, 7, 1], Type: F16
+- input: Shape: [2, 3, 16, 16], Strides: [768, 256, 16, 1], Type: F16
+- weight: Shape: [6, 3, 3, 3], Strides: [27, 9, 3, 1], Type: F16
+- bias: Shape: [6], Strides: [1], Type: F16
+- expected_grad_input: Shape: [2, 3, 16, 16], Strides: [768, 256, 16, 1], Type: F64
+- expected_grad_weight: Shape: [6, 3, 3, 3], Strides: [27, 9, 3, 1], Type: F64
+- expected_grad_bias: Shape: [6], Strides: [1], Type: F64
+- stride: [1, 2]
+- padding: [0, 1]
+- dilation: [2, 2]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 26.2 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 8, 16, 28], Strides: [3584, 448, 28, 1], Type: F16
+- input: Shape: [1, 4, 32, 32], Strides: [4096, 1024, 32, 1], Type: F16
+- weight: Shape: [8, 4, 5, 5], Strides: [100, 25, 5, 1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- expected_grad_input: Shape: [1, 4, 32, 32], Strides: [4096, 1024, 32, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5, 5], Strides: [100, 25, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2, 1]
+- padding: [2, 0]
+- dilation: [1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 53.971 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 20, 17], Strides: [1360, 340, 17, 1], Type: F16
+- input: Shape: [1, 2, 64, 32], Strides: [4096, 2048, 32, 1], Type: F16
+- weight: Shape: [4, 2, 7, 3], Strides: [42, 21, 3, 1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- expected_grad_input: Shape: [1, 2, 64, 32], Strides: [4096, 2048, 32, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7, 3], Strides: [42, 21, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3, 2]
+- padding: [1, 2]
+- dilation: [1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 30.603 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 6, 4, 10], Strides: [960, 240, 40, 10, 1], Type: F16
+- input: Shape: [1, 2, 8, 8, 8], Strides: [1024, 512, 64, 8, 1], Type: F16
+- weight: Shape: [4, 2, 3, 3, 3], Strides: [54, 27, 9, 3, 1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- expected_grad_input: Shape: [1, 2, 8, 8, 8], Strides: [1024, 512, 64, 8, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 3, 3, 3], Strides: [54, 27, 9, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [1, 2, 1]
+- padding: [0, 1, 2]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 31.735 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 8, 8, 12, 5], Strides: [3840, 480, 60, 5, 1], Type: F16
+- input: Shape: [1, 4, 16, 16, 16], Strides: [16384, 4096, 256, 16, 1], Type: F16
+- weight: Shape: [8, 4, 5, 5, 5], Strides: [500, 125, 25, 5, 1], Type: F16
+- bias: Shape: [8], Strides: [1], Type: F16
+- expected_grad_input: Shape: [1, 4, 16, 16, 16], Strides: [16384, 4096, 256, 16, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5, 5, 5], Strides: [500, 125, 25, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2, 1, 3]
+- padding: [2, 0, 1]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 218.764 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 10, 9, 4], Strides: [1440, 360, 36, 4, 1], Type: F16
+- input: Shape: [1, 2, 32, 16, 8], Strides: [8192, 4096, 128, 8, 1], Type: F16
+- weight: Shape: [4, 2, 7, 3, 5], Strides: [210, 105, 15, 5, 1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- expected_grad_input: Shape: [1, 2, 32, 16, 8], Strides: [8192, 4096, 128, 8, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7, 3, 5], Strides: [210, 105, 15, 5, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3, 2, 1]
+- padding: [1, 2, 0]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 85.008 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F16
+- input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F16
+- weight: Shape: [4, 2, 3], Strides: [6, 3, 1], Type: F16
+- bias: Shape: [4], Strides: [1], Type: F16
+- expected_grad_input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 3], Strides: [6, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [1]
+- padding: [1]
+- dilation: [1]
+- groups: 2
+- rtol=1.00e-03, atol=1.50e-03
+
+Time: 28.505 us
+
+=====================================
+[32mAll tests passed[0m
+conv_backward_bfloat16.gguf
+Found 10 tests
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 8, 12], Strides: [96, 12, 1], Type: BF16
+- input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: BF16
+- weight: Shape: [8, 4, 5], Strides: [20, 5, 1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5], Strides: [20, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [1]
+- padding: [0]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 27.597 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 8, 16], Strides: [128, 16, 1], Type: BF16
+- input: Shape: [2, 4, 32], Strides: [128, 32, 1], Type: BF16
+- weight: Shape: [8, 4, 3], Strides: [12, 3, 1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 32], Strides: [128, 32, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 3], Strides: [12, 3, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2]
+- padding: [1]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 37.464 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 21], Strides: [84, 21, 1], Type: BF16
+- input: Shape: [1, 2, 64], Strides: [128, 64, 1], Type: BF16
+- weight: Shape: [4, 2, 7], Strides: [14, 7, 1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [1, 2, 64], Strides: [128, 64, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7], Strides: [14, 7, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3]
+- padding: [2]
+- dilation: [1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 27.786 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 6, 12, 7], Strides: [504, 84, 7, 1], Type: BF16
+- input: Shape: [2, 3, 16, 16], Strides: [768, 256, 16, 1], Type: BF16
+- weight: Shape: [6, 3, 3, 3], Strides: [27, 9, 3, 1], Type: BF16
+- bias: Shape: [6], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [2, 3, 16, 16], Strides: [768, 256, 16, 1], Type: F64
+- expected_grad_weight: Shape: [6, 3, 3, 3], Strides: [27, 9, 3, 1], Type: F64
+- expected_grad_bias: Shape: [6], Strides: [1], Type: F64
+- stride: [1, 2]
+- padding: [0, 1]
+- dilation: [2, 2]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 26.221 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 8, 16, 28], Strides: [3584, 448, 28, 1], Type: BF16
+- input: Shape: [1, 4, 32, 32], Strides: [4096, 1024, 32, 1], Type: BF16
+- weight: Shape: [8, 4, 5, 5], Strides: [100, 25, 5, 1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [1, 4, 32, 32], Strides: [4096, 1024, 32, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5, 5], Strides: [100, 25, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2, 1]
+- padding: [2, 0]
+- dilation: [1, 1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 63.522 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 20, 17], Strides: [1360, 340, 17, 1], Type: BF16
+- input: Shape: [1, 2, 64, 32], Strides: [4096, 2048, 32, 1], Type: BF16
+- weight: Shape: [4, 2, 7, 3], Strides: [42, 21, 3, 1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [1, 2, 64, 32], Strides: [4096, 2048, 32, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7, 3], Strides: [42, 21, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3, 2]
+- padding: [1, 2]
+- dilation: [1, 1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 35.072 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 6, 4, 10], Strides: [960, 240, 40, 10, 1], Type: BF16
+- input: Shape: [1, 2, 8, 8, 8], Strides: [1024, 512, 64, 8, 1], Type: BF16
+- weight: Shape: [4, 2, 3, 3, 3], Strides: [54, 27, 9, 3, 1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [1, 2, 8, 8, 8], Strides: [1024, 512, 64, 8, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 3, 3, 3], Strides: [54, 27, 9, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [1, 2, 1]
+- padding: [0, 1, 2]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 35.306 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 8, 8, 12, 5], Strides: [3840, 480, 60, 5, 1], Type: BF16
+- input: Shape: [1, 4, 16, 16, 16], Strides: [16384, 4096, 256, 16, 1], Type: BF16
+- weight: Shape: [8, 4, 5, 5, 5], Strides: [500, 125, 25, 5, 1], Type: BF16
+- bias: Shape: [8], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [1, 4, 16, 16, 16], Strides: [16384, 4096, 256, 16, 1], Type: F64
+- expected_grad_weight: Shape: [8, 4, 5, 5, 5], Strides: [500, 125, 25, 5, 1], Type: F64
+- expected_grad_bias: Shape: [8], Strides: [1], Type: F64
+- stride: [2, 1, 3]
+- padding: [2, 0, 1]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 229.984 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [1, 4, 10, 9, 4], Strides: [1440, 360, 36, 4, 1], Type: BF16
+- input: Shape: [1, 2, 32, 16, 8], Strides: [8192, 4096, 128, 8, 1], Type: BF16
+- weight: Shape: [4, 2, 7, 3, 5], Strides: [210, 105, 15, 5, 1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [1, 2, 32, 16, 8], Strides: [8192, 4096, 128, 8, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 7, 3, 5], Strides: [210, 105, 15, 5, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [3, 2, 1]
+- padding: [1, 2, 0]
+- dilation: [1, 1, 1]
+- groups: 1
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 90.15 us
+
+=====================================
+Status: [32mPASS[0m
+Description: conv_backward
+- grad_output: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: BF16
+- input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: BF16
+- weight: Shape: [4, 2, 3], Strides: [6, 3, 1], Type: BF16
+- bias: Shape: [4], Strides: [1], Type: BF16
+- expected_grad_input: Shape: [2, 4, 16], Strides: [64, 16, 1], Type: F64
+- expected_grad_weight: Shape: [4, 2, 3], Strides: [6, 3, 1], Type: F64
+- expected_grad_bias: Shape: [4], Strides: [1], Type: F64
+- stride: [1]
+- padding: [1]
+- dilation: [1]
+- groups: 2
+- rtol=1.00e-02, atol=1.00e-02
+
+Time: 28.45 us
+
+=====================================
+[32mAll tests passed[0m
