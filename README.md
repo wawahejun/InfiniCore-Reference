@@ -77,7 +77,7 @@
 ## PPL专项算子补充
 | 算子名称 | 开发说明 | 完成时间 |
 | --- | --- | --- |
-| logsoftmax | 对齐torch.log_softmax逻辑，实现细节参考 [项目issue文档](./doc/ISSUE.md) 与 [算子跨平台测试文档](./doc/README.md) | 8月13日 |
+| logsoftmax | 对齐torch.log_softmax逻辑，实现细节参考 [项目issue文档](./doc/ISSUE.md) 与 [算子跨平台测试文档](./doc/README.md) | 8.13 |
 
 
 ## 算子开发时间表
@@ -86,7 +86,7 @@
 | 7.17 | 完成并提交训练营测评工具的文档与代码 |
 | 7.21 | 启动算子开发工作，同步熟悉项目框架 |
 | 8.4 | 完成 easy_ops-1 模块全部9个算子的NVIDIA与MetaX平台开发及测试 |
-| 8.6 | 完成除 BatchNorm、LayerNorm、RMSNorm 三个反向算子外，其余算子的NVIDIA与MetaX平台开发及测试 |
+| 8.6 | 完成 mid_ops-1 模块除 BatchNorm、LayerNorm、RMSNorm 三个反向算子外，其余算子的NVIDIA与MetaX平台开发及测试 |
 | 8.11 | 完成 easy_ops-1 模块算子的全平台测试 |
 | 8.13 | 完成 logsoftmax 算子的编写 |
 | 8.17 | 完成 easy_ops-2 模块全部9个算子的全平台开发及测试 |
