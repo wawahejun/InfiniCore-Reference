@@ -148,11 +148,6 @@ def test(
 
     lib_gather()
 
-    # Invalidate the shape and strides in the descriptor to prevent them from being directly used by the kernel
-    # Note: This should be done AFTER the gather operation to avoid accessing freed memory
-    for tensor in [input_tensor, output, index]:
-        tensor.destroy_desc()
-
     # 验证结果
     atol, rtol = get_tolerance(_TOLERANCE_MAP, dtype)
     actual_output = output.actual_tensor()
@@ -163,9 +158,14 @@ def test(
     # 性能分析
     if PROFILE:
         # fmt: off
-        profile_operation("PyTorch", lambda: gather_torch(input_tensor.torch_tensor(), dim, index.torch_tensor()), torch_device, NUM_PRERUN, NUM_ITERATIONS)
+        profile_operation("PyTorch", lambda: gather_torch(input_tensor.torch_tensor(), dim, index.torch_tensor().long()), torch_device, NUM_PRERUN, NUM_ITERATIONS)
         profile_operation("    lib", lambda: lib_gather(), torch_device, NUM_PRERUN, NUM_ITERATIONS)
         # fmt: on
+
+    # Invalidate the shape and strides in the descriptor to prevent them from being directly used by the kernel
+    # Note: This should be done AFTER all operations (including profiling) to avoid accessing freed memory
+    for tensor in [input_tensor, output, index]:
+        tensor.destroy_desc()
 
     check_error(LIBINFINIOP.infiniopDestroyGatherDescriptor(descriptor))
 

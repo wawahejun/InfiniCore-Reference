@@ -27,6 +27,7 @@
 #include "infiniop/ops/linear.h"
 #include "infiniop/ops/linear_backward.h"
 #include "infiniop/ops/index_copy_inplace.h"
+#include "infiniop/ops/logsoftmax.h"
 #include "infiniop/ops/mul.h"
 #include "infiniop/ops/or.h"
 #include "infiniop/ops/random_sample.h"

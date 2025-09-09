@@ -213,21 +213,19 @@ def test(
 
     # 性能测试
     if PROFILE:
-        profile_operation(
-            lambda: LIBINFINIOP.infiniopLinear(
-                descriptor,
-                workspace.ptr,
-                workspace_size.value,
-                output_tensor.ptr,
-                input_tensor.ptr,
-                weight_tensor.ptr,
-                bias_tensor.ptr if bias_tensor is not None else None,
-                sync,
-            ),
-            NUM_PRERUN,
-            NUM_ITERATIONS,
-            f"Linear {InfiniDtypeNames[dtype]} {input_shape}x{weight_shape}",
-        )
+        # fmt: off
+        profile_operation("PyTorch", lambda: linear_torch(torch_input, torch_weight, torch_bias), device, NUM_PRERUN, NUM_ITERATIONS)
+        profile_operation("    lib", lambda: LIBINFINIOP.infiniopLinear(
+            descriptor,
+            workspace.data(),
+            workspace_size.value,
+            output_tensor.data(),
+            input_tensor.data(),
+            weight_tensor.data(),
+            bias_tensor.data() if bias_tensor is not None else None,
+            None,
+        ), device, NUM_PRERUN, NUM_ITERATIONS)
+        # fmt: on
 
     # 清理资源
     check_error(LIBINFINIOP.infiniopDestroyLinearDescriptor(descriptor))

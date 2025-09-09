@@ -101,12 +101,14 @@ static infiniStatus_t linear_backward_kernel(
      
      // Compute grad_w = grad_y^T * x
      if (grad_w) {
-         // Initialize grad_w to zero
-         for (int out = 0; out < out_features; out++) {
-             for (int in = 0; in < in_features; in++) {
-                 std::vector<int> grad_w_indices = {out, in};
-                 ptrdiff_t grad_w_offset = compute_offset(grad_w_indices, grad_w_strides);
-                 grad_w[grad_w_offset] = T{};
+         // Pre-compute all batch indices to avoid repeated calculations
+         std::vector<std::vector<int>> all_batch_indices(batch_size);
+         for (int batch = 0; batch < batch_size; batch++) {
+             all_batch_indices[batch].resize(grad_y_dims.size() - 1);
+             int temp_batch = batch;
+             for (int i = grad_y_dims.size() - 2; i >= 0; i--) {
+                 all_batch_indices[batch][i] = temp_batch % grad_y_dims[i];
+                 temp_batch /= grad_y_dims[i];
              }
          }
          
@@ -114,55 +116,51 @@ static infiniStatus_t linear_backward_kernel(
              for (int in = 0; in < in_features; in++) {
                  if constexpr (std::is_same<T, fp16_t>::value || std::is_same<T, bf16_t>::value) {
                      float sum = 0.0f;
-                     std::vector<int> batch_indices(grad_y_dims.size() - 1, 0);
                      for (int batch = 0; batch < batch_size; batch++) {
-                         // Convert linear batch index to multi-dimensional indices
-                         int temp_batch = batch;
-                         for (int i = grad_y_dims.size() - 2; i >= 0; i--) {
-                             batch_indices[i] = temp_batch % grad_y_dims[i];
-                             temp_batch /= grad_y_dims[i];
+                         // Use pre-computed batch indices
+                         const auto& batch_indices = all_batch_indices[batch];
+                         
+                         // Compute grad_y offset directly
+                         ptrdiff_t grad_y_offset = out * grad_y_strides.back();
+                         for (size_t i = 0; i < batch_indices.size(); i++) {
+                             grad_y_offset += batch_indices[i] * grad_y_strides[i];
                          }
                          
-                         // Compute grad_y index with strides
-                         std::vector<int> grad_y_indices = batch_indices;
-                         grad_y_indices.push_back(out);
-                         ptrdiff_t grad_y_offset = compute_offset(grad_y_indices, grad_y_strides);
-                         
-                         // Compute x index with strides
-                         std::vector<int> x_indices = batch_indices;
-                         x_indices.push_back(in);
-                         ptrdiff_t x_offset = compute_offset(x_indices, x_strides);
+                         // Compute x offset directly
+                         ptrdiff_t x_offset = in * x_strides.back();
+                         for (size_t i = 0; i < batch_indices.size(); i++) {
+                             x_offset += batch_indices[i] * x_strides[i];
+                         }
                          
                          sum += utils::cast<float>(grad_y[grad_y_offset]) * utils::cast<float>(x[x_offset]);
                      }
                      
+                     // Compute grad_w index with strides
                      std::vector<int> grad_w_indices = {out, in};
                      ptrdiff_t grad_w_offset = compute_offset(grad_w_indices, grad_w_strides);
                      grad_w[grad_w_offset] = utils::cast<T>(sum);
                  } else {
-                     T sum{};
-                     std::vector<int> batch_indices(grad_y_dims.size() - 1, 0);
+                     T sum = T{};
                      for (int batch = 0; batch < batch_size; batch++) {
-                         // Convert linear batch index to multi-dimensional indices
-                         int temp_batch = batch;
-                         for (int i = grad_y_dims.size() - 2; i >= 0; i--) {
-                             batch_indices[i] = temp_batch % grad_y_dims[i];
-                             temp_batch /= grad_y_dims[i];
+                         // Use pre-computed batch indices
+                         const auto& batch_indices = all_batch_indices[batch];
+                         
+                         // Compute grad_y offset directly
+                         ptrdiff_t grad_y_offset = out * grad_y_strides.back();
+                         for (size_t i = 0; i < batch_indices.size(); i++) {
+                             grad_y_offset += batch_indices[i] * grad_y_strides[i];
                          }
                          
-                         // Compute grad_y index with strides
-                         std::vector<int> grad_y_indices = batch_indices;
-                         grad_y_indices.push_back(out);
-                         ptrdiff_t grad_y_offset = compute_offset(grad_y_indices, grad_y_strides);
-                         
-                         // Compute x index with strides
-                         std::vector<int> x_indices = batch_indices;
-                         x_indices.push_back(in);
-                         ptrdiff_t x_offset = compute_offset(x_indices, x_strides);
+                         // Compute x offset directly
+                         ptrdiff_t x_offset = in * x_strides.back();
+                         for (size_t i = 0; i < batch_indices.size(); i++) {
+                             x_offset += batch_indices[i] * x_strides[i];
+                         }
                          
                          sum += grad_y[grad_y_offset] * x[x_offset];
                      }
                      
+                     // Compute grad_w index with strides
                      std::vector<int> grad_w_indices = {out, in};
                      ptrdiff_t grad_w_offset = compute_offset(grad_w_indices, grad_w_strides);
                      grad_w[grad_w_offset] = sum;

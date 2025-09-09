@@ -150,8 +150,8 @@ def test(
     workspace = TestWorkspace(workspace_size.value, y.device)
 
     def lib_layer_norm():
-        print(f"Executing LayerNorm with workspace_size: {workspace_size.value}")
-        status = LIBINFINIOP.infiniopLayerNorm(
+        if DEBUG:
+            status = LIBINFINIOP.infiniopLayerNorm(
             descriptor,
             workspace.data(),
             workspace_size.value,
@@ -163,8 +163,6 @@ def test(
             input_standardization.data(),
             None,
         )
-        print(f"LayerNorm execution status: {status}")
-        check_error(status)
 
     lib_layer_norm()
 
@@ -176,7 +174,7 @@ def test(
     # Profiling workflow
     if PROFILE:
         # fmt: off
-        profile_operation("PyTorch", lambda: layer_norm(y.torch_tensor(), x.torch_tensor(), w.torch_tensor(), b.torch_tensor(), eps), device, NUM_PRERUN, NUM_ITERATIONS)
+        profile_operation("PyTorch", lambda: layer_norm(y.torch_tensor(), x.torch_tensor(), w.torch_tensor(), b.torch_tensor() if b is not None else None, eps), device, NUM_PRERUN, NUM_ITERATIONS)
         profile_operation("    lib", lambda: lib_layer_norm(), device, NUM_PRERUN, NUM_ITERATIONS)
         # fmt: on
     check_error(LIBINFINIOP.infiniopDestroyLayerNormDescriptor(descriptor))

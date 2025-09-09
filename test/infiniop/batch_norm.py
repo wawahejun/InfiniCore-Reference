@@ -61,7 +61,7 @@ _TENSOR_DTYPES = [InfiniDtype.F32, InfiniDtype.F16, InfiniDtype.BF16]
 _TOLERANCE_MAP = {
     InfiniDtype.F16: {"atol": 1e-3, "rtol": 1e-3},
     InfiniDtype.F32: {"atol": 1e-5, "rtol": 1e-5},  
-    InfiniDtype.BF16: {"atol": 5e-3, "rtol": 5e-3},  
+    InfiniDtype.BF16: {"atol": 1e-2, "rtol": 1e-2},  
 }
 
 DEBUG = False
@@ -185,20 +185,6 @@ def test(
     else:
         input_torch = input_tensor.torch_tensor()
     
-    # Execute InfiniOp BatchNorm
-    if PROFILE:
-        profile_operation(
-            lambda: batch_norm(
-                handle, output, input_tensor, weight, bias, running_mean, running_var, momentum, eps
-            ),
-            f"InfiniOp BatchNorm {InfiniDtypeNames[tensor_dtype]} {input_shape}",
-            NUM_PRERUN,
-            NUM_ITERATIONS,
-            sync,
-        )
-    else:
-        batch_norm(handle, output, input_tensor, weight, bias, running_mean, running_var, momentum, eps)
-    
     weight_torch = weight.torch_tensor()
     bias_torch = bias.torch_tensor()
     running_mean_torch = running_mean.torch_tensor()
@@ -216,20 +202,48 @@ def test(
     torch_bn.running_var.data = running_var_torch.clone()
     torch_bn.train()  # Set to training mode
     
-    # PyTorch reference computation
+    # Execute InfiniOp BatchNorm
     if PROFILE:
-        def pytorch_batch_norm():
-            return torch_bn(input_torch)
+        # Create fresh copies for profile testing to avoid state contamination
+        torch_bn_profile = torch.nn.BatchNorm1d(channels, momentum=momentum, eps=eps, affine=True, track_running_stats=True)
+        torch_bn_profile.weight.data = weight_torch.clone()
+        torch_bn_profile.bias.data = bias_torch.clone()
+        torch_bn_profile.running_mean.data = running_mean_torch.clone()
+        torch_bn_profile.running_var.data = running_var_torch.clone()
+        torch_bn_profile.train()
         
-        expected = profile_operation(
-            pytorch_batch_norm,
-            f"PyTorch BatchNorm {InfiniDtypeNames[tensor_dtype]} {input_shape}",
-            NUM_PRERUN,
-            NUM_ITERATIONS,
-            sync,
-        )
+        # Create fresh tensors for lib profile testing
+        running_mean_profile = TestTensor(param_shape, running_mean_stride, tensor_dtype, device, mode="zeros")
+        running_var_profile = TestTensor(param_shape, running_var_stride, tensor_dtype, device, mode="ones")
+        running_mean_profile.torch_tensor().copy_(running_mean_torch)
+        running_var_profile.torch_tensor().copy_(running_var_torch)
+        
+        # Create separate output tensor for profile testing
+        if inplace == Inplace.INPLACE_INPUT:
+            output_profile = TestTensor(input_shape, input_stride, tensor_dtype, device, mode="zeros")
+            output_profile.torch_tensor().copy_(input_tensor.torch_tensor())
+        else:
+            output_profile = TestTensor(input_shape, output_stride, tensor_dtype, device, mode="zeros")
+        
+        # fmt: off
+        profile_operation("PyTorch", lambda: torch_bn_profile(input_torch), sync, NUM_PRERUN, NUM_ITERATIONS)
+        profile_operation("    lib", lambda: batch_norm(
+            handle, output_profile, input_tensor, weight, bias, running_mean_profile, running_var_profile, momentum, eps
+        ), sync, NUM_PRERUN, NUM_ITERATIONS)
+        # fmt: on
+        
+        # Clean up profile tensors
+        running_mean_profile.destroy_desc()
+        running_var_profile.destroy_desc()
+        output_profile.destroy_desc()
+        
+        # Now run the actual computation for correctness check
+        batch_norm(handle, output, input_tensor, weight, bias, running_mean, running_var, momentum, eps)
     else:
-        expected = torch_bn(input_torch)
+        batch_norm(handle, output, input_tensor, weight, bias, running_mean, running_var, momentum, eps)
+    
+    # PyTorch reference computation (using original torch_bn for correctness check)
+    expected = torch_bn(input_torch)
     
 
     

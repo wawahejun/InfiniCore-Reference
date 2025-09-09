@@ -289,23 +289,29 @@ def test(
     
     # 性能测试
     if PROFILE:
-        profile_operation(
-            lambda: LIBINFINIOP.infiniopLinearBackward(
+        # fmt: off
+        profile_operation("PyTorch", lambda: linear_backward_torch(grad_y_tensor.torch_tensor(), x_tensor.torch_tensor(), w_tensor.torch_tensor(), has_bias), device, NUM_PRERUN, NUM_ITERATIONS)
+        def lib_linear_backward():
+            check_error(LIBINFINIOP.infiniopLinearBackward(
                 desc,
                 workspace.data(),
-                workspace_size,
-                grad_y_tensor.data(),
-                x_tensor.data(),
-                w_tensor.data(),
+                workspace_size.value,
                 grad_x_tensor.data(),
                 grad_w_tensor.data(),
                 grad_b_tensor.data() if has_bias else None,
-                sync,
-            ),
-            NUM_PRERUN,
-            NUM_ITERATIONS,
-            f"LinearBackward {InfiniDtypeNames[dtype]} {grad_y_shape}x{x_shape}x{w_shape}",
-        )
+                grad_y_tensor.data(),
+                x_tensor.data(),
+                w_tensor.data(),
+                None,
+            ))
+        profile_operation("    lib", lib_linear_backward, device, NUM_PRERUN, NUM_ITERATIONS)
+        # fmt: on
+    
+    # 销毁tensor descriptors（在profile之后）
+    for tensor in [grad_y_tensor, x_tensor, w_tensor, grad_x_tensor, grad_w_tensor]:
+        tensor.destroy_desc()
+    if has_bias and grad_b_tensor:
+        grad_b_tensor.destroy_desc()
     
     # 清理资源
     check_error(LIBINFINIOP.infiniopDestroyLinearBackwardDescriptor(desc))

@@ -183,12 +183,10 @@ def test(
     
     # Profile if needed
     if PROFILE:
-        profile_operation(
-            lib_reduce_mean,
-            f"reduce_mean {InfiniDtypeNames[dtype]} {shape} dim={dim}",
-            NUM_PRERUN,
-            NUM_ITERATIONS,
-        )
+        # fmt: off
+        profile_operation("PyTorch", lambda: torch.mean(input_tensor.torch_tensor(), dim=dim, keepdim=True), device, NUM_PRERUN, NUM_ITERATIONS)
+        profile_operation("    lib", lib_reduce_mean, device, NUM_PRERUN, NUM_ITERATIONS)
+        # fmt: on
     
     # Cleanup
     check_error(LIBINFINIOP.infiniopDestroyReduceMeanDescriptor(descriptor))

@@ -198,7 +198,10 @@ def test(
         print(f"  ✓ Test passed")
 
     if PROFILE:
-        profile_operation(lib_rms_norm_backward, NUM_PRERUN, NUM_ITERATIONS)
+        # fmt: off
+        profile_operation("PyTorch", lambda: torch_rms_norm_backward(x.torch_tensor(), dy.torch_tensor(), w.torch_tensor(), epsilon=adaptive_eps), device, NUM_PRERUN, NUM_ITERATIONS)
+        profile_operation("    lib", lib_rms_norm_backward, device, NUM_PRERUN, NUM_ITERATIONS)
+        # fmt: on
 
 
 if __name__ == "__main__":

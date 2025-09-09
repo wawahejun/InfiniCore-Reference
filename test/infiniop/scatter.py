@@ -244,7 +244,7 @@ def test(
         random.seed(42)
         torch.manual_seed(42)
         
-        max_index = output_shape[scatter_dim]  # 索引范围：0到max_index-1
+        max_index = input_shape[scatter_dim]  # 索引范围：0到max_index-1
         total_indices = torch.prod(torch.tensor(index_shape)).item()
         
         # 根据索引数量和目标维度大小选择模式
@@ -419,12 +419,16 @@ def test(
 
     # Profiling workflow
     if PROFILE:
+        # 为profile创建独立副本避免内存共享冲突
+        output_profile = TestTensor.from_torch(output.torch_tensor().clone(), dtype, torch_device)
         # fmt: off
-        profile_operation("PyTorch", lambda: output.torch_tensor().scatter_(
-            dim, index.torch_tensor(), input.torch_tensor()
+        profile_operation("PyTorch", lambda: output_profile.torch_tensor().scatter_(
+            dim, index.torch_tensor(), src.torch_tensor()
         ), torch_device, NUM_PRERUN, NUM_ITERATIONS)
         profile_operation("    lib", lambda: lib_scatter(), torch_device, NUM_PRERUN, NUM_ITERATIONS)
         # fmt: on
+        # 清理profile张量
+        del output_profile
     check_error(LIBINFINIOP.infiniopDestroyScatterDescriptor(descriptor))
 
 
