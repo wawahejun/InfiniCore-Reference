@@ -83,19 +83,19 @@
 ## 算子开发时间表
 | 日期 | 完成任务 |
 | --- | --- |
-| 7月17日 | 完成并提交训练营测评工具的文档与代码 |
-| 7月21日 | 启动算子开发工作，同步熟悉项目框架 |
-| 8月4日 | 完成 easy_ops-1 模块全部9个算子的NVIDIA与MetaX平台开发及测试 |
-| 8月6日 | 完成除 BatchNorm、LayerNorm、RMSNorm 三个反向算子外，其余算子的NVIDIA与MetaX平台开发及测试 |
-| 8月11日 | 完成 easy_ops-1 模块算子的全平台测试 |
-| 8月13日 | 完成 logsoftmax 算子的编写 |
-| 8月17日 | 完成 easy_ops-2 模块全部9个算子的全平台开发及测试 |
-| 8月20日 | 完成 mid_ops-1 模块全部7个算子的NVIDIA平台开发及测试 |
-| 8月21日 | 完成所有简单算子的整合工作，及全平台测试验证 |
-| 8月22日 | 完成 mid_ops-2 模块除 IndexCopyInplace、Scatter 外，其余5个算子的NVIDIA与MetaX平台开发及测试 |
-| 8月23日 | 完成 mid_ops-3 模块全部7个算子的NVIDIA平台开发及测试 |
-| 8月24日 | 完成 mid_ops-2 模块全部7个算子的开发，实现该模块全算子全平台测试通过 |
-| 9月2日 | 完成 mid_ops-2 模块算子的GGUF测试文件开发，及全平台测试验证 |
-| 9月7日 | 完成 mid_ops-1 模块除 BatchNorm Backward、LayerNorm Backward 外，其余5个算子的GGUF测试文件开发及全平台测试 |
-| 9月8日 | 完成 mid_ops-3 模块全部算子的GGUF测试文件在NVIDIA平台的测试验证 |
-| 9月9日 | 完成以上所有工作的算子的pytorch profile测试功能的编写与验证测试 |
+| 7.17 | 完成并提交训练营测评工具的文档与代码 |
+| 7.21 | 启动算子开发工作，同步熟悉项目框架 |
+| 8.4 | 完成 easy_ops-1 模块全部9个算子的NVIDIA与MetaX平台开发及测试 |
+| 8.6 | 完成除 BatchNorm、LayerNorm、RMSNorm 三个反向算子外，其余算子的NVIDIA与MetaX平台开发及测试 |
+| 8.11 | 完成 easy_ops-1 模块算子的全平台测试 |
+| 8.13 | 完成 logsoftmax 算子的编写 |
+| 8.17 | 完成 easy_ops-2 模块全部9个算子的全平台开发及测试 |
+| 8.20 | 完成 mid_ops-1 模块全部7个算子的NVIDIA平台开发及测试 |
+| 8.21 | 完成所有简单算子的整合工作，及全平台测试验证 |
+| 8.22 | 完成 mid_ops-2 模块除 IndexCopyInplace、Scatter 外，其余5个算子的NVIDIA与MetaX平台开发及测试 |
+| 8.23 | 完成 mid_ops-3 模块全部7个算子的NVIDIA平台开发及测试 |
+| 8.24 | 完成 mid_ops-2 模块全部7个算子的开发，实现该模块全算子全平台测试通过 |
+| 9.2 | 完成 mid_ops-2 模块算子的GGUF测试文件开发，及全平台测试验证 |
+| 9.7 | 完成 mid_ops-1 模块除 BatchNorm Backward、LayerNorm Backward 外，其余5个算子的GGUF测试文件开发及全平台测试 |
+| 9.8 | 完成 mid_ops-3 模块全部算子的GGUF测试文件在NVIDIA平台的测试验证 |
+| 9.9 | 完成以上所有工作的算子的pytorch profile测试功能的编写与验证测试 |
