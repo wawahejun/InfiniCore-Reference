@@ -99,12 +99,9 @@ infiniStatus_t layerNormBackwardImpl(
         return offset;
     };
     
-    // Get tensor dimensions
     const auto& shape = info.shape;
     const size_t ndim = shape.size();
     
-    // Helper function to convert linear batch index to multi-dimensional indices
-    // batch_size is the product of all dimensions except the last one
     auto get_batch_indices = [&](size_t batch_idx) -> std::vector<size_t> {
         std::vector<size_t> indices(ndim - 1, 0);  // Only batch dimensions, not including feature dim
         size_t temp_batch = batch_idx;
@@ -127,12 +124,10 @@ infiniStatus_t layerNormBackwardImpl(
         // 计算中间变量用于grad_input
         float sum_grad_out = 0.0f;
         float sum_grad_out_norm = 0.0f;
-        
-        // Get multi-dimensional indices for this batch
+
         auto batch_indices = get_batch_indices(batch_idx);
         
         for (size_t i = 0; i < dim; ++i) {
-            // Create full indices for grad_output and input_standardization
             auto grad_out_indices = batch_indices;
             grad_out_indices.push_back(i);
             auto input_norm_indices = batch_indices;
@@ -164,7 +159,6 @@ infiniStatus_t layerNormBackwardImpl(
         float mean_grad_out_norm = sum_grad_out_norm / static_cast<float>(dim);
         
         for (size_t i = 0; i < dim; ++i) {
-            // Create full indices for all tensors
             auto grad_out_indices = batch_indices;
             grad_out_indices.push_back(i);
             auto input_norm_indices = batch_indices;
@@ -258,7 +252,7 @@ infiniStatus_t Descriptor::get_workspace_size(size_t *size) const {
     if (!size) {
         return INFINI_STATUS_BAD_PARAM;
     }
-    *size = 0; // CPU实现不需要额外workspace
+    *size = 0; 
     return INFINI_STATUS_SUCCESS;
 }
 

@@ -58,13 +58,9 @@ public:
         return x > static_cast<T>(0) ? x : static_cast<T>(negative_slope) * x;
     }
     
-    // 为bf16类型特化，使用double作为中间计算类型以提高精度
     bf16_t operator()(const bf16_t &x, float negative_slope) const {
-        // 将bf16转换为double进行计算，然后再转回bf16
         double x_double = static_cast<double>(_bf16_to_f32(x));
-        // LeakyReLU计算
         double result = x_double > 0.0 ? x_double : static_cast<double>(negative_slope) * x_double;
-        // 使用utils::cast从double直接转换到bf16，保留更高精度
         return utils::cast<bf16_t>(result);
     }
 } LeakyReLUOp;

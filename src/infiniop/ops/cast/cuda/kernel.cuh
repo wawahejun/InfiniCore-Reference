@@ -9,10 +9,8 @@ struct CastOp {
 public:
     static constexpr size_t num_inputs = 1;
     
-    // 模板化的类型转换操作符
     template <typename Tout, typename Tin>
     __device__ __forceinline__ Tout operator()(const Tin &input) const {
-        // 使用utils::cast进行类型转换
         return utils::cast<Tout>(input);
     }
 };

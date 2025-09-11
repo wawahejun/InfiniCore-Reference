@@ -4,11 +4,9 @@
 #include "../../../devices/nvidia/nvidia_kernel_common.cuh"
 #include <cub/block/block_reduce.cuh>
 
-// 计算基于stride的内存偏移 (CUDA device function)
 __device__ inline size_t compute_stride_offset_cuda(
     ptrdiff_t stride_n, ptrdiff_t stride_c, ptrdiff_t stride_s,
     size_t n, size_t c, size_t s) {
-    // 对于3D张量 (N, C, H*W)，计算正确的内存偏移
     return n * stride_n + c * stride_c + s * stride_s;
 }
 

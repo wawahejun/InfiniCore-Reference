@@ -4,7 +4,6 @@
 #include "../../../../utils.h"
 #include "../cuda/kernel.cuh"
 
-// 支持混合数据类型的LayerNorm kernel
 template <unsigned int BLOCK_SIZE, typename T, typename WeightT = T, typename BiasT = T>
 __global__ void layerNormKernel(
     T *__restrict__ output,
@@ -45,7 +44,6 @@ infiniStatus_t Descriptor::create(
     infiniopTensorDescriptor_t input_standardization_desc,
     float eps) {
     
-    // 验证输入参数
     if (!handle_ || !desc_ptr || !output_desc || !input_desc || 
         !weight_desc || !input_std_deviation_desc || !input_standardization_desc) {
         return INFINI_STATUS_BAD_PARAM;
@@ -58,22 +56,18 @@ infiniStatus_t Descriptor::create(
     auto handle = reinterpret_cast<device::nvidia::Handle *>(handle_);
     auto dtype = input_desc->dtype();
     
-    // 检查数据类型支持
     CHECK_DTYPE(dtype, INFINI_DTYPE_F16, INFINI_DTYPE_F32, INFINI_DTYPE_BF16);
     
-    // 检查数据类型一致性
     if (input_desc->dtype() != output_desc->dtype() ||
         input_desc->dtype() != input_std_deviation_desc->dtype() ||
         input_desc->dtype() != input_standardization_desc->dtype()) {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查输入维度（至少1D）
         if (input_desc->ndim() < 1) {
             return INFINI_STATUS_BAD_TENSOR_SHAPE;
         }
     
-    // 检查形状兼容性
     if (input_desc->ndim() != output_desc->ndim() ||
         input_desc->ndim() != input_standardization_desc->ndim()) {
         return INFINI_STATUS_BAD_PARAM;
@@ -86,13 +80,11 @@ infiniStatus_t Descriptor::create(
         }
     }
     
-    // weight应该是1D张量，长度为最后一维
     size_t normalized_size = input_desc->dim(input_desc->ndim() - 1);
     if (weight_desc->ndim() != 1 || weight_desc->dim(0) != normalized_size) {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查bias形状（如果存在）
     bool has_bias = (bias_desc != nullptr);
     if (has_bias) {
         if (bias_desc->ndim() != 1 || bias_desc->dim(0) != normalized_size) {
@@ -100,7 +92,6 @@ infiniStatus_t Descriptor::create(
         }
     }
     
-    // 检查input_std_deviation形状（应该是input去掉最后一维）
     size_t expected_std_ndim = (input_desc->ndim() == 1) ? 0 : input_desc->ndim() - 1;
     if (input_std_deviation_desc->ndim() != expected_std_ndim) {
         return INFINI_STATUS_BAD_PARAM;
@@ -111,10 +102,8 @@ infiniStatus_t Descriptor::create(
         }
     }
     
-    // 创建LayerNormInfo
     LayerNormInfo info;
     
-    // 计算batch_size（除了最后一维的所有维度的乘积）
     info._batch_size = 1;
         for (size_t i = 0; i < input_desc->ndim() - 1; ++i) {
             info._batch_size *= input_desc->dim(i);
@@ -128,7 +117,6 @@ infiniStatus_t Descriptor::create(
     info.eps = eps;
     info.has_bias = has_bias;
     
-    // 复制形状和步长信息
     info.input_shape = input_desc->shape();
     info.output_shape = output_desc->shape();
     info.weight_shape = weight_desc->shape();
@@ -147,7 +135,6 @@ infiniStatus_t Descriptor::create(
     info.input_std_deviation_strides = input_std_deviation_desc->strides();
     info.input_standardization_strides = input_standardization_desc->strides();
     
-    // LayerNorm不需要额外的workspace
     size_t workspace_size = 0;
     
     *desc_ptr = new Descriptor(
@@ -176,11 +163,8 @@ infiniStatus_t launchKernel(
     
     switch (info.dtype) {
     case INFINI_DTYPE_F32:
-        // 根据权重和偏置的实际数据类型进行正确的类型转换
         if (info.wtype == INFINI_DTYPE_F32) {
-            // 权重是F32类型
             if (info.has_bias && info.btype == INFINI_DTYPE_F32) {
-                // 偏置也是F32类型
                 layerNormKernel<BLOCK_SIZE, float><<<grid, block, 0, cuda_stream>>>(
                     reinterpret_cast<float*>(output),
                     reinterpret_cast<const float*>(input),
@@ -191,7 +175,7 @@ infiniStatus_t launchKernel(
                     info.batch_size(), info.dim(),
                     info.eps, info.has_bias);
             } else {
-                // 偏置与输入类型相同或无偏置
+                // The bias is of the same type as the input or there is no bias
                 layerNormKernel<BLOCK_SIZE, float><<<grid, block, 0, cuda_stream>>>(
                     reinterpret_cast<float*>(output),
                     reinterpret_cast<const float*>(input),
@@ -203,7 +187,7 @@ infiniStatus_t launchKernel(
                     info.eps, info.has_bias);
             }
         } else {
-            // 权重与输入类型相同
+            // The weight is of the same type as the input.
             layerNormKernel<BLOCK_SIZE, float><<<grid, block, 0, cuda_stream>>>(
                 reinterpret_cast<float*>(output),
                 reinterpret_cast<const float*>(input),
@@ -216,11 +200,8 @@ infiniStatus_t launchKernel(
         }
         break;
     case INFINI_DTYPE_F16:
-        // 根据权重和偏置的实际数据类型进行正确的类型转换
          if (info.wtype == INFINI_DTYPE_F32) {
-             // 权重是F32类型，需要特殊处理
              if (info.has_bias && info.btype == INFINI_DTYPE_F32) {
-                 // 权重和偏置都是F32类型
                  layerNormKernel<BLOCK_SIZE, __half, float, float><<<grid, block, 0, cuda_stream>>>(
                      reinterpret_cast<__half*>(output),
                      reinterpret_cast<const __half*>(input),
@@ -231,7 +212,6 @@ infiniStatus_t launchKernel(
                      info.batch_size(), info.dim(),
                      info.eps, info.has_bias);
              } else {
-                 // 权重是F32，偏置与输入类型相同或无偏置
                  layerNormKernel<BLOCK_SIZE, __half, float, __half><<<grid, block, 0, cuda_stream>>>(
                      reinterpret_cast<__half*>(output),
                      reinterpret_cast<const __half*>(input),
@@ -243,7 +223,6 @@ infiniStatus_t launchKernel(
                      info.eps, info.has_bias);
              }
          } else {
-             // 权重与输入类型相同
              layerNormKernel<BLOCK_SIZE, __half><<<grid, block, 0, cuda_stream>>>(
                  reinterpret_cast<__half*>(output),
                  reinterpret_cast<const __half*>(input),
@@ -256,11 +235,8 @@ infiniStatus_t launchKernel(
          }
         break;
     case INFINI_DTYPE_BF16:
-        // 根据权重和偏置的实际数据类型进行正确的类型转换
          if (info.wtype == INFINI_DTYPE_F32) {
-             // 权重是F32类型，需要特殊处理
              if (info.has_bias && info.btype == INFINI_DTYPE_F32) {
-                 // 权重和偏置都是F32类型
                  layerNormKernel<BLOCK_SIZE, __nv_bfloat16, float, float><<<grid, block, 0, cuda_stream>>>(
                      reinterpret_cast<__nv_bfloat16*>(output),
                      reinterpret_cast<const __nv_bfloat16*>(input),
@@ -271,7 +247,6 @@ infiniStatus_t launchKernel(
                      info.batch_size(), info.dim(),
                      info.eps, info.has_bias);
              } else {
-                 // 权重是F32，偏置与输入类型相同或无偏置
                  layerNormKernel<BLOCK_SIZE, __nv_bfloat16, float, __nv_bfloat16><<<grid, block, 0, cuda_stream>>>(
                      reinterpret_cast<__nv_bfloat16*>(output),
                      reinterpret_cast<const __nv_bfloat16*>(input),
@@ -283,7 +258,6 @@ infiniStatus_t launchKernel(
                      info.eps, info.has_bias);
              }
          } else {
-             // 权重与输入类型相同
              layerNormKernel<BLOCK_SIZE, __nv_bfloat16><<<grid, block, 0, cuda_stream>>>(
                  reinterpret_cast<__nv_bfloat16*>(output),
                  reinterpret_cast<const __nv_bfloat16*>(input),
@@ -331,7 +305,6 @@ infiniStatus_t Descriptor::calculate(
     
     auto cuda_stream = reinterpret_cast<cudaStream_t>(stream);
     
-    // 根据设备能力选择合适的block size
     if (_opaque->internal->maxThreadsPerBlock() == CUDA_BLOCK_SIZE_1024) {
         CHECK_STATUS(launchKernel<CUDA_BLOCK_SIZE_1024>(
             info, output, input, weight, bias,

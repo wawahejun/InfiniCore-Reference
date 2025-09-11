@@ -24,18 +24,14 @@ infiniStatus_t Descriptor::create(
     const auto &a_shape = a_desc->shape();
     const auto &b_shape = b_desc->shape();
 
-    // Equal算子支持所有合法类型，输出为bool类型
-    // Check if input dtypes are supported
     if (a_desc->dtype() != b_desc->dtype()) {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 输出必须是bool类型且为标量（torch.equal返回单个bool值）
     if (dtype != INFINI_DTYPE_BOOL) {
         return INFINI_STATUS_BAD_TENSOR_DTYPE;
     }
     
-    // 输出必须是标量（shape为空或者所有维度为1）
     if (c_shape.size() > 0) {
         bool is_scalar = true;
         for (auto dim : c_shape) {
@@ -49,7 +45,6 @@ infiniStatus_t Descriptor::create(
         }
     }
 
-    // 输入张量形状必须相同
     CHECK_SAME_SHAPE(a_shape, b_shape);
 
     *desc_ptr = new Descriptor(
@@ -76,13 +71,11 @@ infiniStatus_t Descriptor::calculate(
     bool *result = static_cast<bool *>(output);
     void *cuda_stream = stream;
 
-    // 计算张量的总元素数量
     size_t total_elements = 1;
     for (auto dim : _shape) {
         total_elements *= dim;
     }
 
-    // 根据数据类型进行比较
     switch (_dtype) {
     case INFINI_DTYPE_F16:
         return compareArraysCuda<fp16_t>(a_data, b_data, total_elements, _a_strides, _b_strides, result, cuda_stream);

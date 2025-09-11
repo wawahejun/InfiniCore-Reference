@@ -49,7 +49,7 @@ __global__ void linear_kernel(
     float sum = 0.0f;
     for (int in_idx = 0; in_idx < in_features; in_idx++) {
         // Convert linear batch index to multi-dimensional indices for x
-        int x_indices[10]; // Support up to 10 dimensions
+        int x_indices[10]; 
         int temp_batch_idx = batch_idx;
         for (int i = x_ndim - 2; i >= 0; i--) {
             x_indices[i] = temp_batch_idx % x_shape[i];
@@ -71,7 +71,7 @@ __global__ void linear_kernel(
     }
     
     // Convert linear batch index to multi-dimensional indices for y
-    int y_indices[10]; // Support up to 10 dimensions
+    int y_indices[10]; 
     int temp_batch_idx = batch_idx;
     for (int i = x_ndim - 2; i >= 0; i--) {
         y_indices[i] = temp_batch_idx % x_shape[i];

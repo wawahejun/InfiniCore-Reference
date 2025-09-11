@@ -165,7 +165,6 @@ infiniStatus_t Descriptor::create(
     info.input_std_deviation_strides = input_std_deviation_desc->strides();
     info.input_standardization_strides = input_standardization_desc->strides();
     
-    // LayerNorm反向传播不需要额外的workspace
     size_t workspace_size = 0;
     
     *desc_ptr = new Descriptor(

@@ -115,7 +115,7 @@ infiniStatus_t Descriptor::create(
     *desc_ptr = new Descriptor(
         new Opaque{handle->internal()},
         std::move(info),
-        0, // workspace_size will be calculated
+        0, 
         handle->device,
         handle->device_id
     );
@@ -130,7 +130,6 @@ infiniStatus_t Descriptor::get_workspace_size(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // GPU实现不需要额外的workspace
     *workspace_size = 0;
     
     return INFINI_STATUS_SUCCESS;
@@ -152,7 +151,6 @@ static infiniStatus_t launchKernel(
     size_t batch_size = info._batch_size;
     size_t channels = info._channels;
     size_t spatial_size = info._spatial_size;
-    // momentum parameter has been removed
     double eps = static_cast<double>(info.eps);
     
     // 每个channel使用一个block

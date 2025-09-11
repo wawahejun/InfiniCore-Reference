@@ -23,9 +23,9 @@ __device__ inline double ultraPreciseCast(const T& val) {
 template<typename T>
 __device__ inline float preciseCast(const T& val) {
     if constexpr (std::is_same_v<T, __half>) {
-        return __half2float(val);  // f16->float（硬件原生支持）
+        return __half2float(val);  
     } else if constexpr (std::is_same_v<T, __nv_bfloat16>) {
-        return __bfloat162float(val);  // bf16->float（硬件原生支持）
+        return __bfloat162float(val);  
     } else {
         return static_cast<float>(val);
     }
@@ -117,7 +117,7 @@ __device__ inline float sanitizeBF16(float val) {
 
 // 数值清洗函数
 __device__ inline double sanitizeValue(double val) {
-    // 只处理真正的异常值，保留正常的数值精度
+    // 处理异常值，保留正常的数值精度
     if (isnan(val)) {
         return 0.0;
     }

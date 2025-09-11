@@ -9,20 +9,19 @@
 namespace op::batch_norm_backward {
 
 struct BatchNormBackwardInfo {
-    size_t _batch_size;         // 批次大小
-    size_t _channels;           // 通道数
-    size_t _spatial_size;       // 空间维度大小 (H * W)
-    size_t total_elements;      // 总元素数量
+    size_t _batch_size;         
+    size_t _channels;           
+    size_t _spatial_size;       
+    size_t total_elements;      
     size_t input_size;
     size_t output_size;
     
-    infiniDtype_t dtype;        // 主数据类型
-    infiniDtype_t wtype;        // 权重数据类型
-    infiniDtype_t btype;        // 偏置数据类型
-    infiniDtype_t atype;        // 激活数据类型
-    // float momentum;             // 动量参数 - 反向传播不需要
-    float eps;                  // epsilon值
-    bool has_bias;              // 是否有bias参数
+    infiniDtype_t dtype;        
+    infiniDtype_t wtype;        
+    infiniDtype_t btype;        
+    infiniDtype_t atype;        
+    float eps;                  
+    bool has_bias;              
     
     std::vector<size_t> grad_input_shape;
     std::vector<size_t> grad_weight_shape;
@@ -32,7 +31,7 @@ struct BatchNormBackwardInfo {
     std::vector<size_t> weight_shape;
     std::vector<size_t> running_mean_shape;
     std::vector<size_t> running_var_shape;
-    std::vector<size_t> shape;  // 输出形状（兼容参考实现）
+    std::vector<size_t> shape;  
     
     std::vector<ptrdiff_t> grad_input_strides;
     std::vector<ptrdiff_t> grad_weight_strides;
@@ -43,7 +42,6 @@ struct BatchNormBackwardInfo {
     std::vector<ptrdiff_t> running_mean_strides;
     std::vector<ptrdiff_t> running_var_strides;
     
-    // 兼容参考实现的方法
     size_t ndim() const { return shape.size(); }
     size_t channels() const { return _channels; }
     size_t batch_size() const {

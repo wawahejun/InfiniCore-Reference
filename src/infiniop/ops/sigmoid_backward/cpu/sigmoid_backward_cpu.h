@@ -21,17 +21,13 @@ public:
         return grad_output * sigmoid_val * (T(1) - sigmoid_val);
     }
     
-    // 为bf16类型特化，使用double作为中间计算类型以提高精度
     bf16_t operator()(const bf16_t &input, const bf16_t &grad_output) const {
-        // 将bf16转换为double进行计算，然后再转回bf16
         double input_double = static_cast<double>(_bf16_to_f32(input));
         double grad_output_double = static_cast<double>(_bf16_to_f32(grad_output));
         
-        // Sigmoid backward计算
         double sigmoid_val = 1.0 / (1.0 + std::exp(-input_double));
         double result = grad_output_double * sigmoid_val * (1.0 - sigmoid_val);
         
-        // 使用utils::cast从double直接转换到bf16，保留更高精度
         return utils::cast<bf16_t>(result);
     }
 } SigmoidBackwardOp;

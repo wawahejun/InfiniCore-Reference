@@ -65,10 +65,8 @@ infiniStatus_t Descriptor::create(
     auto handle = reinterpret_cast<device::nvidia::Handle *>(handle_);
     auto dtype = input_desc->dtype();
     
-    // 检查数据类型支持
     CHECK_DTYPE(dtype, INFINI_DTYPE_F16, INFINI_DTYPE_F32, INFINI_DTYPE_BF16);
     
-    // 检查数据类型一致性
     if (input_desc->dtype() != output_desc->dtype() ||
         input_desc->dtype() != weight_desc->dtype() ||
         input_desc->dtype() != bias_desc->dtype() ||
@@ -77,12 +75,10 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查形状兼容性
     if (input_desc->ndim() < 2) {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 输入和输出形状应该相同
     if (input_desc->ndim() != output_desc->ndim()) {
         return INFINI_STATUS_BAD_PARAM;
     }
@@ -102,12 +98,11 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 创建BatchNormInfo
+    // BatchNormInfo
     BatchNormInfo info;
     info.batch_size = input_desc->dim(0);
     info.channels = channels;
     
-    // 计算spatial_size (除了batch和channel维度的所有维度的乘积)
     info.spatial_size = 1;
     for (size_t i = 2; i < input_desc->ndim(); ++i) {
         info.spatial_size *= input_desc->dim(i);
@@ -119,7 +114,6 @@ infiniStatus_t Descriptor::create(
     info.momentum = momentum;
     info.eps = eps;
     
-    // 复制形状和步长信息
     info.input_shape = input_desc->shape();
     info.output_shape = output_desc->shape();
     info.input_strides = input_desc->strides();
@@ -129,7 +123,6 @@ infiniStatus_t Descriptor::create(
     info.running_mean_strides = running_mean_desc->strides();
     info.running_var_strides = running_var_desc->strides();
     
-    // 计算workspace大小
     size_t dtype_size = infiniSizeOf(dtype);
     size_t workspace_size = 2 * channels * dtype_size; // mean + var
     
@@ -243,7 +236,6 @@ infiniStatus_t Descriptor::calculate(
     
     auto cuda_stream = reinterpret_cast<cudaStream_t>(stream);
     
-    // 根据设备能力选择合适的block size
     if (_opaque->internal->maxThreadsPerBlock() == CUDA_BLOCK_SIZE_1024) {
         CHECK_STATUS(launchKernel<CUDA_BLOCK_SIZE_1024>(
             info, output, input, weight, bias,

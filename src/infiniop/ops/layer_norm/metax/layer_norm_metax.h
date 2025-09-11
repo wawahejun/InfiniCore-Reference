@@ -39,7 +39,6 @@ public:
         void *stream) const;
 };
 
-// 模板函数声明
 template<typename T>
 infiniStatus_t layerNormMetax(
     const LayerNormInfo &info,

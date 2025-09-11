@@ -51,7 +51,6 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_TENSOR_DTYPE;
     }
     
-    // Check that input data type is supported
     if (input_dtype != INFINI_DTYPE_F16 && input_dtype != INFINI_DTYPE_F32 && 
         input_dtype != INFINI_DTYPE_F64 && input_dtype != INFINI_DTYPE_BF16 &&
         input_dtype != INFINI_DTYPE_I8 && input_dtype != INFINI_DTYPE_I16 && 

@@ -23,7 +23,6 @@ infiniStatus_t Descriptor::create(
     auto handle = reinterpret_cast<device::nvidia::Handle *>(handle_);
     auto dtype = target_desc->dtype();
     
-    // Check data types - 支持所有合法类型
     CHECK_DTYPE(dtype, INFINI_DTYPE_F16, INFINI_DTYPE_F32, INFINI_DTYPE_F64, INFINI_DTYPE_BF16,
                 INFINI_DTYPE_I8, INFINI_DTYPE_I16, INFINI_DTYPE_I32, INFINI_DTYPE_I64,
                 INFINI_DTYPE_U8, INFINI_DTYPE_U16, INFINI_DTYPE_U32, INFINI_DTYPE_U64,
@@ -56,8 +55,8 @@ infiniStatus_t Descriptor::create(
     }
     
     auto desc = new Descriptor();
-    desc->device_type = handle->device;  // 设置设备类型
-    desc->device_id = handle->device_id;  // 设置设备ID
+    desc->device_type = handle->device;  
+    desc->device_id = handle->device_id;  
     desc->_target_desc = target_desc;
     desc->_source_desc = source_desc;
     desc->_index_desc = index_desc;

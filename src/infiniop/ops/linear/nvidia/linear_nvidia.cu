@@ -236,7 +236,6 @@ infiniStatus_t Descriptor::calculate(
     if (err != cudaSuccess) goto cleanup;
     
 cleanup:
-    // No need to free device memory since we're using workspace
     return (err == cudaSuccess) ? INFINI_STATUS_SUCCESS : INFINI_STATUS_INTERNAL_ERROR;
 }
 

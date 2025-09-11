@@ -18,16 +18,16 @@ static infiniStatus_t calculate_gather(
     const T * input,
     const IndexT * index
 ) {
-    // 计算总元素数量
+
     size_t total_elements = 1;
     for (size_t d = 0; d < output_shape.size(); d++) {
         total_elements *= output_shape[d];
     }
     
-    // 使用串行处理避免并行化可能导致的问题
+    //Use serial processing to avoid problems that may be caused by parallelization
     for(size_t linear_idx = 0; linear_idx < total_elements; linear_idx++) {
         
-        // 将线性索引转换为多维坐标
+        // Convert a linear index to multi-dimensional coordinates
         std::vector<size_t> coords(output_shape.size());
         size_t temp_idx = linear_idx;
         for (int d = output_shape.size() - 1; d >= 0; d--) {
@@ -35,25 +35,24 @@ static infiniStatus_t calculate_gather(
             temp_idx /= output_shape[d];
         }
         
-        // 计算输出偏移量
         size_t output_offset = 0;
         for (size_t d = 0; d < output_shape.size(); d++) {
             output_offset += coords[d] * output_strides[d];
         }
         
-        // 计算索引偏移量（以字节为单位，与其他strides保持一致）
         size_t index_offset = 0;
         for (size_t d = 0; d < output_shape.size(); d++) {
             index_offset += coords[d] * index_strides[d];
         }
         
-        // 获取索引值并进行边界检查
+        // Obtain the index value and perform boundary checks
         IndexT gather_index = *((const IndexT*)((const char*)index + index_offset));
         if (gather_index < 0 || gather_index >= static_cast<IndexT>(input_shape[dim])) {
-            return INFINI_STATUS_BAD_PARAM; // 返回错误状态
+            return INFINI_STATUS_BAD_PARAM; 
         }
         
-        // 计算输入偏移量 - 对于gather操作，在dim维度使用gather_index，其他维度使用输出坐标
+        // Calculate the input offset - For the gather operation, 
+        // use gather_index in the dim dimension and output coordinates in other dimensions.
         size_t input_offset = 0;
         for (size_t d = 0; d < input_shape.size(); d++) {
             if (d == dim) {
@@ -63,7 +62,6 @@ static infiniStatus_t calculate_gather(
             }
         }
         
-        // 复制数据（按字节复制，避免类型转换问题）
         std::memcpy((char*)output + output_offset, (const char*)input + input_offset, sizeof(T));
     }
     
@@ -83,7 +81,6 @@ infiniStatus_t Descriptor::create(
     auto handle = reinterpret_cast<device::cpu::Handle *>(handle_);
     auto dtype = input_desc->dtype();
 
-    // Check data types - 支持所有合法类型
     CHECK_DTYPE(dtype, INFINI_DTYPE_F16, INFINI_DTYPE_F32, INFINI_DTYPE_F64, INFINI_DTYPE_BF16,
                 INFINI_DTYPE_I8, INFINI_DTYPE_I16, INFINI_DTYPE_I32, INFINI_DTYPE_I64,
                 INFINI_DTYPE_U8, INFINI_DTYPE_U16, INFINI_DTYPE_U32, INFINI_DTYPE_U64,
@@ -148,9 +145,6 @@ infiniStatus_t Descriptor::create(
     return INFINI_STATUS_SUCCESS;
 }
 
-// gather_kernel function removed - replaced by calculate_gather
-
-// gather_kernel函数已被移除，直接使用calculate_gather函数
 
 infiniStatus_t Descriptor::calculate(
     void *workspace,
@@ -169,13 +163,11 @@ infiniStatus_t Descriptor::calculate(
     auto dtype = _dtype;
     auto index_dtype = _index_dtype;
     
-    // 计算输出总元素数量
     size_t output_size = 1;
     for (size_t d = 0; d < output_shape.size(); d++) {
         output_size *= output_shape[d];
     }
 
-    // 根据数据类型调用相应的kernel
     if (index_dtype == INFINI_DTYPE_I32) {
         switch (dtype) {
             case INFINI_DTYPE_F16:

@@ -20,7 +20,7 @@ infiniStatus_t Descriptor::create(
     float momentum,
     float eps) {
     
-    // 验证输入参数
+    // Validate input parameters
     if (!handle || !desc_ptr || !output_desc || !input_desc || 
         !weight_desc || !bias_desc || !running_mean_desc || !running_var_desc) {
         return INFINI_STATUS_BAD_PARAM;
@@ -30,7 +30,7 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查数据类型一致性
+    // Validate input parameters
     if (input_desc->dtype() != output_desc->dtype() ||
         input_desc->dtype() != weight_desc->dtype() ||
         input_desc->dtype() != bias_desc->dtype() ||
@@ -39,12 +39,10 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查输入维度
     if (input_desc->ndim() < 2) {
         return INFINI_STATUS_BAD_TENSOR_SHAPE;
     }
     
-    // 检查形状一致性
     if (input_desc->ndim() != output_desc->ndim()) {
         return INFINI_STATUS_BAD_TENSOR_SHAPE;
     }
@@ -67,11 +65,11 @@ infiniStatus_t Descriptor::create(
     auto desc = new Descriptor();
     desc->device_type = handle->device;
     
-    // 填充BatchNormInfo
+    // BatchNormInfo
     desc->info.batch_size = input_desc->dim(0);
     desc->info.channels = channels;
     
-    // 计算spatial_size (除了batch和channel维度的所有维度的乘积)
+    // spatial_size (The product of all dimensions except the batch and channel dimensions)
     desc->info.spatial_size = 1;
     for (size_t i = 2; i < input_desc->ndim(); ++i) {
         desc->info.spatial_size *= input_desc->dim(i);
@@ -83,7 +81,7 @@ infiniStatus_t Descriptor::create(
     desc->info.momentum = momentum;
     desc->info.eps = eps;
     
-    // 复制形状和步长信息
+    // Copy the shape and step information
     desc->info.input_shape = input_desc->shape();
     desc->info.output_shape = output_desc->shape();
     desc->info.input_strides = input_desc->strides();
@@ -102,18 +100,17 @@ infiniStatus_t Descriptor::get_workspace_size(size_t *size) const {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 需要临时存储每个channel的均值和方差
+    // It is necessary to temporarily store the mean and variance of each channel.
     size_t dtype_size = infiniSizeOf(info.dtype);
     *size = 2 * info.channels * dtype_size; // mean + var
     
     return INFINI_STATUS_SUCCESS;
 }
 
-// 计算基于stride的内存偏移
+// Calculate the memory offset based on stride
 static inline size_t compute_stride_offset(
     const std::vector<ptrdiff_t> &strides,
     size_t n, size_t c, size_t s) {
-    // 对于3D张量 (N, C, H*W)，计算正确的内存偏移
     return n * strides[0] + c * strides[1] + s * strides[2];
 }
 
@@ -136,7 +133,7 @@ static void batch_norm_impl(
     const float eps = info.eps;
     const float one_minus_momentum = 1.0f - info.momentum;
     
-    // 计算每个channel的均值
+    // channel mean
     for (size_t c = 0; c < channels; ++c) {
         float sum = 0.0f;
         for (size_t n = 0; n < batch_size; ++n) {
@@ -157,7 +154,7 @@ static void batch_norm_impl(
         }
     }
     
-    // 计算每个channel的方差
+    // channel variance
     for (size_t c = 0; c < channels; ++c) {
         float sum_sq_diff = 0.0f;
         float mean_val;
@@ -187,7 +184,7 @@ static void batch_norm_impl(
         }
     }
     
-    // 更新running statistics
+    // running statistics
     for (size_t c = 0; c < channels; ++c) {
         float old_mean, old_var, new_mean, new_var;
         if constexpr (std::is_same<T, fp16_t>::value || std::is_same<T, bf16_t>::value) {
@@ -207,7 +204,7 @@ static void batch_norm_impl(
         }
     }
     
-    // 执行归一化和线性变换
+    // Perform normalization and linear transformation
     for (size_t n = 0; n < batch_size; ++n) {
         for (size_t c = 0; c < channels; ++c) {
             float mean_val, var_val, w_val, b_val;

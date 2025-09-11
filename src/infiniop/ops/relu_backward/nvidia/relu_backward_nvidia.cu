@@ -26,7 +26,6 @@ infiniStatus_t Descriptor::create(
 
     CHECK_SAME_SHAPE(grad_input_shape, grad_output_shape, input_shape);
 
-    // create CUDA elementwise descriptor
     CREATE_ELEMENTWISE_CUDA_DESCRIPTOR(handle, dtype, out_desc, input_desc_vec)
 
     return INFINI_STATUS_SUCCESS;

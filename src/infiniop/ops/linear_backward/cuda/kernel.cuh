@@ -8,27 +8,7 @@
 
 namespace op::linear_backward::cuda {
 
-// Linear backward CUDA kernel
-// Computes gradients for linear layer:
-// grad_x = grad_y * w^T
-// grad_w = grad_y^T * x  
-// grad_b = sum(grad_y, dim=0)
-//
-// Parameters:
-// - grad_x: gradient w.r.t. input [batch_size, in_features]
-// - grad_w: gradient w.r.t. weight [out_features, in_features]
-// - grad_b: gradient w.r.t. bias [out_features]
-// - grad_y: gradient w.r.t. output [batch_size, out_features]
-// - x: input tensor [batch_size, in_features]
-// - w: weight tensor [out_features, in_features]
-// - x_shape: shape of x tensor
-// - w_shape: shape of w tensor
-// - x_strides: strides of x tensor
-// - w_strides: strides of w tensor
-// - grad_y_strides: strides of grad_y tensor
-// - grad_x_strides: strides of grad_x tensor (if not null)
-// - grad_w_strides: strides of grad_w tensor (if not null)
-// - grad_b_strides: strides of grad_b tensor (if not null)
+
 // Helper function to compute offset from multi-dimensional indices and strides
 __device__ int compute_offset(const int *indices, const int *strides, int ndim) {
     int offset = 0;

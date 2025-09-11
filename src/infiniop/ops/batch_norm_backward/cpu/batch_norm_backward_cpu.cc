@@ -65,7 +65,7 @@ struct EnhancedKahanSum {
 
 // 数值清洗函数
 inline long double sanitizeValue(long double val) {
-    // 只处理真正的异常值，保留正常的数值精度
+    // 处理异常值，保留正常的数值精度
     if (std::isnan(val)) {
         return 0.0L;
     }
@@ -176,7 +176,6 @@ infiniStatus_t Descriptor::create(
     infiniopTensorDescriptor_t running_var_desc,
     float eps) {
     
-    // 验证输入参数
     if (!handle || !desc_ptr || !grad_output_desc || !input_desc || 
         !weight_desc || !running_mean_desc || !running_var_desc) {
         return INFINI_STATUS_BAD_PARAM;
@@ -186,7 +185,6 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查数据类型一致性
     if (input_desc->dtype() != grad_output_desc->dtype() ||
         input_desc->dtype() != weight_desc->dtype() ||
         input_desc->dtype() != running_mean_desc->dtype() ||
@@ -206,12 +204,10 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查输入维度
     if (input_desc->ndim() < 2) {
         return INFINI_STATUS_BAD_TENSOR_SHAPE;
     }
     
-    // 创建BatchNormBackwardInfo
     auto info_result = BatchNormBackwardInfo::create(
         grad_input_desc, grad_weight_desc, grad_bias_desc, grad_output_desc,
         input_desc, weight_desc, running_mean_desc, running_var_desc,
@@ -223,7 +219,6 @@ infiniStatus_t Descriptor::create(
     
     auto info = info_result.take();
     
-    // 创建Descriptor
     auto desc = new Descriptor(handle->device, handle->device_id, std::move(info));
     *desc_ptr = desc;
     

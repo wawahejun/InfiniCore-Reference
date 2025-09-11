@@ -76,10 +76,8 @@ infiniStatus_t Descriptor::create(
     // Set the negative slope in device constant memory
     op::leaky_relu::cuda::setNegativeSlope(negative_slope);
     
-    // Create CUDA elementwise descriptor
     CREATE_ELEMENTWISE_CUDA_DESCRIPTOR(handle, dtype, output_desc, input_descs);
     
-    // Store negative slope in descriptor
     reinterpret_cast<Descriptor*>(*desc_ptr)->_negative_slope = negative_slope;
     
     return INFINI_STATUS_SUCCESS;

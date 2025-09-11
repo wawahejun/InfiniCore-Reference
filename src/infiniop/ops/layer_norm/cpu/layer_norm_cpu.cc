@@ -12,20 +12,17 @@
 
 namespace op::layer_norm::cpu {
 
-// 设置全局舍入模式为PyTorch默认模式
 void setOptimalRoundingMode() {
-    fesetround(FE_TONEAREST); // 四舍五入到最近值
+    fesetround(FE_TONEAREST); 
 }
 
-// 直接从long double转换到目标类型，避免中间float损耗
+// long double
 template<typename T>
 T directCast(long double val) {
     if constexpr (std::is_same<T, bf16_t>::value) {
-        // BF16数值范围限制
         val = std::max(static_cast<long double>(-65504.0), std::min(static_cast<long double>(65504.0), val));
         return utils::cast<bf16_t>(static_cast<float>(val));
     } else if constexpr (std::is_same<T, fp16_t>::value) {
-        // F16数值范围限制
         val = std::max(static_cast<long double>(-65504.0), std::min(static_cast<long double>(65504.0), val));
         return utils::cast<fp16_t>(static_cast<float>(val));
     } else {
@@ -33,7 +30,6 @@ T directCast(long double val) {
     }
 }
 
-// 高精度类型转换
 template<typename T>
 float preciseCast(const T& val) {
     if constexpr (std::is_same<T, bf16_t>::value) {
@@ -45,23 +41,22 @@ float preciseCast(const T& val) {
     }
 }
 
-// 单次遍历计算均值和平方和（减少误差累积）
+// Calculate the mean and sum of squares in a single traversal (to reduce error accumulation)
 void computeMeanAndSumSq(const float* x_batch, size_t dim, float& mean, float& sum_sq) {
     float sum_x = 0.0f;
     float sum_x2 = 0.0f;
-    float c_x = 0.0f;  // 均值计算的补偿项
-    float c_x2 = 0.0f; // 平方和计算的补偿项
+    float c_x = 0.0f;  // Compensation term for mean calculation
+    float c_x2 = 0.0f; // The compensation term for the sum of squares calculation
 
     for (size_t i = 0; i < dim; ++i) {
         float x = x_batch[i];
         
-        // Kahan求和计算sum_x
+        // Kahan-sum_x
         float y_x = x - c_x;
         float t_x = sum_x + y_x;
         c_x = (t_x - sum_x) - y_x;
         sum_x = t_x;
         
-        // Kahan求和计算sum_x2
         float x_sq = static_cast<long double>(x) * x; // 使用long double提高精度
         float y_x2 = x_sq - c_x2;
         float t_x2 = sum_x2 + y_x2;
@@ -72,7 +67,7 @@ void computeMeanAndSumSq(const float* x_batch, size_t dim, float& mean, float& s
     mean = sum_x / static_cast<float>(dim);
     sum_sq = (sum_x2 / static_cast<float>(dim)) - (mean * mean);
     
-    // 数值清洗：处理极小负值
+    // Numerical cleaning: handling extremely small negative values
     if (sum_sq < 0.0f && sum_sq > -1e-12f) {
         sum_sq = 0.0f;
     }
@@ -88,7 +83,6 @@ void layer_norm_impl(
     T *input_standardization,
     const LayerNormInfo &info) {
     
-    // 设置最优舍入模式
     setOptimalRoundingMode();
     
     const size_t batch_size = info.batch_size();
@@ -96,7 +90,7 @@ void layer_norm_impl(
     const float epsilon = info.epsilon;
     const bool has_bias = info.has_bias;
     
-    // 根据实际数据类型正确转换权重和偏置
+    // Correctly convert weights and biases according to the actual data types
     std::vector<float> w_float(normalized_size);
     if (info.wtype == INFINI_DTYPE_F32) {
         const float *w_f32 = reinterpret_cast<const float *>(weight);
@@ -104,7 +98,7 @@ void layer_norm_impl(
             w_float[i] = w_f32[i];
         }
     } else {
-        // 权重与输入类型相同
+        // The weight is of the same type as the input.
         const T *w = reinterpret_cast<const T *>(weight);
         for (size_t i = 0; i < normalized_size; ++i) {
             w_float[i] = preciseCast(w[i]);
@@ -120,7 +114,7 @@ void layer_norm_impl(
                 b_float[i] = b_f32[i];
             }
         } else {
-            // 偏置与输入类型相同
+            // The bias is of the same type as the input
             const T *b = reinterpret_cast<const T *>(bias);
             for (size_t i = 0; i < normalized_size; ++i) {
                 b_float[i] = preciseCast(b[i]);
@@ -128,42 +122,38 @@ void layer_norm_impl(
         }
     }
     
-    // 转换输入到FP32（高精度转换）
     std::vector<float> x_float(batch_size * normalized_size);
     for (size_t i = 0; i < batch_size * normalized_size; ++i) {
         x_float[i] = preciseCast(input[i]);
     }
     
-    // 并行处理每个batch
+    // Process each batch in parallel
     #pragma omp parallel for
     for (size_t batch_idx = 0; batch_idx < batch_size; ++batch_idx) {
         const float *x_batch = x_float.data() + batch_idx * normalized_size;
         T *y_batch = output + batch_idx * normalized_size;
         T *standardization_batch = input_standardization + batch_idx * normalized_size;
         
-        // 单次遍历计算均值和平方和（提高稳定性）
         float mean, sum_sq;
         computeMeanAndSumSq(x_batch, normalized_size, mean, sum_sq);
         
-        // 计算方差（匹配PyTorch的实现：max(var, 0) + epsilon）
         float var = std::max(sum_sq, 0.0f) + epsilon;
         float std_dev = std::sqrt(var);
         
-        // 存储标准差到输出张量
+        // Store the standard deviation into the output tensor
         if (input_std_deviation) {
             input_std_deviation[batch_idx] = directCast<T>(std_dev);
         }
         
-        // 计算标准差的倒数（减少除法次数，提高精度）
+        // Calculate the reciprocal of the standard deviation (reduce the number of divisions to improve accuracy)
         float inv_std_dev = 1.0f / std_dev;
         
-        // 归一化计算
+        // Normalization calculation
         for (size_t i = 0; i < normalized_size; ++i) {
-            // 使用long double提高中间计算精度
             long double centered = static_cast<long double>(x_batch[i]) - mean;
             long double normalized = centered * inv_std_dev; // 乘法替代除法
             
-            // 存储标准化后的输入
+            // Store the standardized input
             if (input_standardization) {
                 standardization_batch[i] = directCast<T>(normalized);
             }
@@ -175,16 +165,14 @@ void layer_norm_impl(
                 result += b_float[i];
             }
             
-            // 针对临界值的微小补偿（仅对接近阈值的数值生效）
+            // Minor compensation for critical values (only effective for values close to the threshold)
             if constexpr (std::is_same<T, fp16_t>::value || std::is_same<T, bf16_t>::value) {
-                // 对临界值添加极小补偿
                 long double abs_result = std::abs(result);
                 if (abs_result > 0.01 && abs_result < 0.02) {
                     result += (result > 0) ? 1e-6L : -1e-6L;
                 }
             }
             
-            // 直接从long double转换到目标类型
             y_batch[i] = directCast<T>(result);
         }
     }
@@ -201,7 +189,6 @@ infiniStatus_t Descriptor::create(
     infiniopTensorDescriptor_t input_standardization_desc,
     float eps) {
     
-    // 验证输入参数
     if (!handle || !desc_ptr || !output_desc || !input_desc || 
         !weight_desc || !input_std_deviation_desc || !input_standardization_desc) {
         return INFINI_STATUS_BAD_PARAM;
@@ -211,19 +198,16 @@ infiniStatus_t Descriptor::create(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查输入维度（至少1D）
     if (input_desc->ndim() < 1) {
         return INFINI_STATUS_BAD_TENSOR_SHAPE;
     }
     
-    // 检查数据类型一致性
     if (input_desc->dtype() != output_desc->dtype() ||
         input_desc->dtype() != input_std_deviation_desc->dtype() ||
         input_desc->dtype() != input_standardization_desc->dtype()) {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查形状一致性
     if (input_desc->ndim() != output_desc->ndim() ||
         input_desc->ndim() != input_standardization_desc->ndim()) {
         return INFINI_STATUS_BAD_PARAM;
@@ -236,13 +220,11 @@ infiniStatus_t Descriptor::create(
         }
     }
     
-    // 检查weight形状（应该是1D，长度为最后一维）
     size_t normalized_size = input_desc->dim(input_desc->ndim() - 1);
     if (weight_desc->ndim() != 1 || weight_desc->dim(0) != normalized_size) {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 检查bias形状（如果存在）
     bool has_bias = (bias_desc != nullptr);
     if (has_bias) {
         if (bias_desc->ndim() != 1 || bias_desc->dim(0) != normalized_size) {
@@ -250,7 +232,8 @@ infiniStatus_t Descriptor::create(
         }
     }
     
-    // 检查input_std_deviation形状（应该是input去掉最后一维）
+    // Check the shape of input_std_deviation 
+    // it should be the input with the last dimension removed
     size_t expected_std_ndim = (input_desc->ndim() == 1) ? 0 : input_desc->ndim() - 1;
     if (input_std_deviation_desc->ndim() != expected_std_ndim) {
         return INFINI_STATUS_BAD_PARAM;
@@ -263,10 +246,10 @@ infiniStatus_t Descriptor::create(
     
     auto handle_impl = reinterpret_cast<InfiniopHandle *>(handle);
     
-    // 创建LayerNormInfo
+    // LayerNormInfo
     LayerNormInfo info;
     
-    // 计算batch_size（除了最后一维的所有维度的乘积）
+    // batch_size
     info._batch_size = 1;
     for (size_t i = 0; i < input_desc->ndim() - 1; ++i) {
         info._batch_size *= input_desc->dim(i);
@@ -285,7 +268,6 @@ infiniStatus_t Descriptor::create(
     info.has_bias = has_bias;
     info.shape = output_desc->shape();
     
-    // 复制形状和步长信息
     info.input_shape = input_desc->shape();
     info.output_shape = output_desc->shape();
     info.weight_shape = weight_desc->shape();
@@ -313,7 +295,6 @@ infiniStatus_t Descriptor::get_workspace_size(size_t *size) const {
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // LayerNorm不需要额外的workspace
     *size = 0;
     
     return INFINI_STATUS_SUCCESS;
@@ -337,7 +318,6 @@ infiniStatus_t Descriptor::calculate(
         return INFINI_STATUS_BAD_PARAM;
     }
     
-    // 根据数据类型调用相应的实现
     switch (info.dtype) {
         case INFINI_DTYPE_F32:
             layer_norm_impl<float>(

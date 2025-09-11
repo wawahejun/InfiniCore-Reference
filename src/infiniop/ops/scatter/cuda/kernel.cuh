@@ -99,7 +99,6 @@ cudaError_t launch_scatter_kernel(
 
 } // namespace op::scatter::cuda
 
-//  ------------------------------- start: perform operator on CUDA --------------------------------
 template <unsigned int BLOCK_SIZE, typename Tdata>
 __device__ void scatterKernel(
     Tdata * output,
@@ -132,4 +131,3 @@ __device__ void scatterKernel(
                 *(src_ptr + c * src_strides[scatter_dim]);
         }
 }
-//  -------------------------------- end: perform operator on CUDA ---------------------------------
